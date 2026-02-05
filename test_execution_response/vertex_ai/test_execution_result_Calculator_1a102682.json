@@ -1,0 +1,362 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "java",
+    "test_framework": "junit",
+    "execution_timestamp": "2026-02-05T12:14:14.701146",
+    "execution_timestamp_unix": 1770273854.7011478,
+    "source_file": "Calculator.java",
+    "test_file": "testcases/vertex_ai/CalculatorTest_1a102682.java",
+    "commit_hash": "1a102682"
+  },
+  "execution_summary": {
+    "status": "success",
+    "duration_seconds": 2.36,
+    "duration_readable": "2.36s",
+    "test_statistics": {
+      "total_unique_test_cases": 17,
+      "test_cases_passed": 0,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 17,
+      "test_cases_other_status": 0,
+      "test_cases_breakdown": {
+        "passed": 0,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 17,
+        "other": 0,
+        "_total": 17
+      },
+      "test_executions": {
+        "total_run": 30,
+        "passed": 30,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": true,
+      "output_length": 1712,
+      "key_messages": []
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 0.0,
+      "lines_covered": 0,
+      "lines_total": 0,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": false
+  },
+  "test_results": {
+    "summary": {
+      "status": "success",
+      "passed": 30,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 2.36
+    },
+    "test_details": [],
+    "raw_output": "\nThanks for using JUnit! Support its development at https://junit.org/sponsoring\n\n\u001b[36m\u2577\u001b[0m\n\u001b[36m\u251c\u2500\u001b[0m \u001b[36mJUnit Jupiter\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u251c\u2500\u001b[0m \u001b[36mJUnit Vintage\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u2514\u2500\u001b[0m \u001b[36mCalculatorTest\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_largeNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestSubtractNumbers_positiveNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_positiveAndNegativeDecimalNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_twoNegativeNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_oneNegativeNumber\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_decimalNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_NaNAArguments\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_withZero\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_NaNArgument\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_negativeDecimalNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u2514\u2500\u001b[0m \u001b[34mtestAddNumbers_positiveNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2514\u2500\u001b[0m \u001b[36mJUnit Platform Suite\u001b[0m \u001b[32m\u2714\u001b[0m\n\nTest run finished after 16 ms\n[         4 containers found      ]\n[         0 containers skipped    ]\n[         4 containers started    ]\n[         0 containers aborted    ]\n[         4 containers successful ]\n[         0 containers failed     ]\n[        11 tests found           ]\n[         0 tests skipped         ]\n[        11 tests started         ]\n[         0 tests aborted         ]\n[        11 tests successful      ]\n[         0 tests failed          ]\n\n\nWARNING: Delegated to the 'execute' command.\n         This behaviour has been deprecated and will be removed in a future release.\n         Please use the 'execute' command directly.\n"
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "testAddNumbers_positiveNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "8.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_oneNegativeNumber",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_twoNegativeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-8.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_withZero",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "3.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_largeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1000005.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_decimalNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "8.5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_negativeDecimalNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-2.5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_positiveAndNegativeDecimalNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_positiveNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_negativeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_positiveAndNegative",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "4.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_zeroAndDecimal",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "6.5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_withinRange",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_negativeNumbers_returnsCorrectSum",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              "a",
+              "b"
+            ]
+          },
+          "expected_output": "expectedSum",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_zeroInput_returnsCorrectSum",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              "a",
+              "b"
+            ]
+          },
+          "expected_output": "expectedSum",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_decimalNumbers_returnsCorrectSum",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              "a",
+              "b"
+            ]
+          },
+          "expected_output": "expectedSum",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_NaNInput_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.addNumbers": [
+              "a",
+              "b"
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "testAddNumbers_positiveNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "8.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_oneNegativeNumber",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_twoNegativeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-8.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_withZero",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "3.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_largeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1000005.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_decimalNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "8.5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_negativeDecimalNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-2.5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_positiveAndNegativeDecimalNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_positiveNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_negativeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_positiveAndNegative",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "4.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_zeroAndDecimal",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "6.5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_withinRange",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_negativeNumbers_returnsCorrectSum",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            "a",
+            "b"
+          ]
+        },
+        "expected_output": "expectedSum",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_zeroInput_returnsCorrectSum",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            "a",
+            "b"
+          ]
+        },
+        "expected_output": "expectedSum",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_decimalNumbers_returnsCorrectSum",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            "a",
+            "b"
+          ]
+        },
+        "expected_output": "expectedSum",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_NaNInput_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.addNumbers": [
+            "a",
+            "b"
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      }
+    ]
+  }
+}
