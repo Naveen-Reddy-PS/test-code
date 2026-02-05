@@ -1,0 +1,261 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "java",
+    "test_framework": "junit",
+    "execution_timestamp": "2026-02-05T12:33:23.409379",
+    "execution_timestamp_unix": 1770275003.4093812,
+    "source_file": "Calculator.java",
+    "test_file": "testcases/vertex_ai/CalculatorTest_498c75b8.java",
+    "commit_hash": "498c75b8"
+  },
+  "execution_summary": {
+    "status": "failed",
+    "duration_seconds": 2.507,
+    "duration_readable": "2.51s",
+    "test_statistics": {
+      "total_unique_test_cases": 11,
+      "test_cases_passed": 1,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 10,
+      "test_cases_other_status": 0,
+      "test_cases_breakdown": {
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 10,
+        "other": 0,
+        "_total": 11
+      },
+      "test_executions": {
+        "total_run": 28,
+        "passed": 24,
+        "failed": 2,
+        "errors": 2,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": true,
+      "output_length": 2267,
+      "key_messages": [
+        "Error: expected:<-1.0> but was:<-3.0>"
+      ]
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 7.0,
+      "lines_covered": 7,
+      "lines_total": 100,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": false
+  },
+  "test_results": {
+    "summary": {
+      "status": "failed",
+      "passed": 24,
+      "failed": 2,
+      "errors": 2,
+      "skipped": 0,
+      "duration_seconds": 2.507
+    },
+    "test_details": [
+      {
+        "name": "testAddNumbers_negativeNumbers",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      }
+    ],
+    "raw_output": "\nThanks for using JUnit! Support its development at https://junit.org/sponsoring\n\n\u001b[36m\u2577\u001b[0m\n\u001b[36m\u251c\u2500\u001b[0m \u001b[36mJUnit Jupiter\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u251c\u2500\u001b[0m \u001b[36mJUnit Vintage\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u2514\u2500\u001b[0m \u001b[36mCalculatorTest\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[31mtestAddNumbers_negativeNumbers\u001b[0m \u001b[31m\u2718\u001b[0m \u001b[31mexpected:<-1.0> but was:<-3.0>\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_mixedNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_zeroValues\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_largeNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestSubtractNumbers_positiveNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_decimalNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_bothArgumentsNan\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_nanArgumentA\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_nanArgumentB\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u2514\u2500\u001b[0m \u001b[34mtestAddNumbers_positiveNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2514\u2500\u001b[0m \u001b[36mJUnit Platform Suite\u001b[0m \u001b[32m\u2714\u001b[0m\n\nFailures (1):\n  JUnit Vintage:CalculatorTest:testAddNumbers_negativeNumbers\n    MethodSource [className = 'CalculatorTest', methodName = 'testAddNumbers_negativeNumbers', methodParameterTypes = '']\n    => java.lang.AssertionError: expected:<-1.0> but was:<-3.0>\n       org.junit.Assert.fail(Assert.java:89)\n       org.junit.Assert.failNotEquals(Assert.java:835)\n       org.junit.Assert.assertEquals(Assert.java:555)\n       org.junit.Assert.assertEquals(Assert.java:685)\n       CalculatorTest.testAddNumbers_negativeNumbers(CalculatorTest.java:22)\n       java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\nTest run finished after 18 ms\n[         4 containers found      ]\n[         0 containers skipped    ]\n[         4 containers started    ]\n[         0 containers aborted    ]\n[         4 containers successful ]\n[         0 containers failed     ]\n[        10 tests found           ]\n[         0 tests skipped         ]\n[        10 tests started         ]\n[         0 tests aborted         ]\n[         9 tests successful      ]\n[         1 tests failed          ]\n\n\nWARNING: Delegated to the 'execute' command.\n         This behaviour has been deprecated and will be removed in a future release.\n         Please use the 'execute' command directly.\n"
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "testAddNumbers_positiveNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_negativeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-1.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "-1.0"
+        },
+        {
+          "name": "testAddNumbers_mixedNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_zeroValues",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_largeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1000004.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_decimalNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_positiveNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_negativeInput_returnsCorrectSum",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_largeInput_returnsCorrectSum",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1000004.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_NaNInput_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.addNumbers": [
+              "Double.NaN",
+              2.0
+            ]
+          },
+          "expected_output": "Both arguments must be numbers",
+          "status": "not_executed"
+        },
+        {
+          "name": "subtractNumbers_validInput_returnsCorrectDifference",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "testAddNumbers_positiveNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_negativeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-1.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "-1.0"
+      },
+      {
+        "name": "testAddNumbers_mixedNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_zeroValues",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_largeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1000004.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_decimalNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_positiveNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_negativeInput_returnsCorrectSum",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_largeInput_returnsCorrectSum",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1000004.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_NaNInput_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.addNumbers": [
+            "Double.NaN",
+            2.0
+          ]
+        },
+        "expected_output": "Both arguments must be numbers",
+        "status": "not_executed"
+      },
+      {
+        "name": "subtractNumbers_validInput_returnsCorrectDifference",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      }
+    ]
+  }
+}
