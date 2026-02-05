@@ -1,0 +1,1269 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "javascript",
+    "test_framework": "jest",
+    "execution_timestamp": "2026-02-05T14:19:10.317787",
+    "execution_timestamp_unix": 1770281350.317791,
+    "source_file": "calculator.js",
+    "test_file": "testcases/vertex_ai/calculator.test_e1ca5ead.js",
+    "commit_hash": "e1ca5ead"
+  },
+  "execution_summary": {
+    "status": "success",
+    "duration_seconds": 7.362,
+    "duration_readable": "7.36s",
+    "test_statistics": {
+      "total_unique_test_cases": 36,
+      "test_cases_passed": 36,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 0,
+      "test_cases_other_status": 0,
+      "test_cases_breakdown": {
+        "passed": 36,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 0,
+        "other": 0,
+        "_total": 36
+      },
+      "test_executions": {
+        "total_run": 42,
+        "passed": 42,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": true,
+      "output_length": 980,
+      "key_messages": []
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 100.0,
+      "lines_covered": 3,
+      "lines_total": 3,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": false
+  },
+  "test_results": {
+    "summary": {
+      "status": "success",
+      "passed": 42,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 7.362
+    },
+    "test_details": [
+      {
+        "name": "should add two positive numbers correctly",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        }
+      },
+      {
+        "name": "should add two negative numbers correctly",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            -4
+          ]
+        }
+      },
+      {
+        "name": "should throw an error when arguments are not numbers",
+        "status": "passed",
+        "duration": 5,
+        "inputs": {
+          "calculator.addNumbers": [
+            "a",
+            2
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw an error when either argument is NaN",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "calculator.addNumbers": [
+            "NaN",
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should add two positive numbers correctly (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should add a positive and a negative number correctly",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            4
+          ]
+        }
+      },
+      {
+        "name": "should add two negative numbers correctly (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should add a number and zero correctly",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            8
+          ]
+        }
+      },
+      {
+        "name": "should add zero and a number correctly",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        }
+      },
+      {
+        "name": "should add two large numbers correctly",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            150001
+          ]
+        }
+      },
+      {
+        "name": "should throw an error when arguments are not numbers (5 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should throw an error when one argument is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculator.addNumbers": [
+            5,
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw an error when both arguments are not numbers",
+        "status": "passed",
+        "inputs": {
+          "calculator.addNumbers": [
+            "a",
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw an error when either argument is NaN (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "addNumbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            150001
+          ],
+          "calculator.addNumbers": [
+            "NaN",
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "adds two positive numbers",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        }
+      },
+      {
+        "name": "throws TypeError when one argument is NaN",
+        "status": "passed",
+        "duration": 5,
+        "inputs": {
+          "calculator.addNumbers": [
+            "NaN",
+            5
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "throws TypeError when one argument is not a number",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "calculator.addNumbers": [
+            5,
+            "hello"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "adds two positive numbers (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "adds a positive and a negative number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            4
+          ]
+        }
+      },
+      {
+        "name": "adds two negative numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -4
+          ]
+        }
+      },
+      {
+        "name": "adds a number and zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            8
+          ]
+        }
+      },
+      {
+        "name": "adds zero and zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        }
+      },
+      {
+        "name": "adds large positive numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1000001
+          ]
+        }
+      },
+      {
+        "name": "adds a number and a decimal",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            6.5
+          ]
+        }
+      },
+      {
+        "name": "adds two decimals",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            7
+          ]
+        }
+      },
+      {
+        "name": "throws TypeError when one argument is NaN (5 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "throws TypeError when one argument is not a number (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should throw an error when one of the arguments is not a number",
+        "status": "passed",
+        "duration": 4,
+        "inputs": {
+          "addNumbers": [
+            "a",
+            5
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw an error when one of the arguments is NaN",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "addNumbers": [
+            "NaN",
+            5
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should add zero to a number correctly",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        }
+      },
+      {
+        "name": "should add two zeros correctly",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        }
+      },
+      {
+        "name": "should throw an error when one of the arguments is not a number (4 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should throw an error when one of the arguments is NaN (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should throw an error when both arguments are NaN",
+        "status": "passed",
+        "inputs": {
+          "addNumbers": [
+            "NaN",
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should add large numbers correctly",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            2000001
+          ]
+        }
+      }
+    ],
+    "raw_output": "(node:97350) Warning: `--localstorage-file` was provided without a valid path\n(Use `node --trace-warnings ...` to show where the warning was created)\nPASS testcases/vertex_ai/calculator.test_20260205_141858.js\n  addNumbers\n    \u2713 should add two positive numbers correctly (1 ms)\n    \u2713 should add a positive and a negative number correctly\n    \u2713 should add two negative numbers correctly (1 ms)\n    \u2713 should add a number and zero correctly\n    \u2713 should add zero and a number correctly\n    \u2713 should add two large numbers correctly\n    \u2713 should throw an error when arguments are not numbers (5 ms)\n    \u2713 should throw an error when one argument is not a number\n    \u2713 should throw an error when both arguments are not numbers\n    \u2713 should throw an error when either argument is NaN (1 ms)\n\nTest Suites: 1 passed, 1 total\nTests:       10 passed, 10 total\nSnapshots:   0 total\nTime:        0.199 s\nRan all test suites matching /testcases\\/vertex_ai\\/calculator.test_20260205_141858.js/i.\n"
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "addNumbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              150001
+            ],
+            "calculator.addNumbers": [
+              "NaN",
+              "NaN"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should add two positive numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              6
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should add a positive and a negative number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              4
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should add two negative numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -4
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should add a number and zero correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              8
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should add zero and a number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              6
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should add two large numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              150001
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error when arguments are not numbers",
+          "type": "test",
+          "inputs": {
+            "calculator.addNumbers": [
+              "a",
+              2
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error when one argument is not a number",
+          "type": "test",
+          "inputs": {
+            "calculator.addNumbers": [
+              5,
+              "b"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error when both arguments are not numbers",
+          "type": "test",
+          "inputs": {
+            "calculator.addNumbers": [
+              "a",
+              "b"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error when either argument is NaN",
+          "type": "test",
+          "inputs": {
+            "calculator.addNumbers": [
+              "NaN",
+              "NaN"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "adds two positive numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              6
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "adds a positive and a negative number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              4
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "adds two negative numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -4
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "adds a number and zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              8
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "adds zero and zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "adds large positive numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000001
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "adds a number and a decimal",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              6.5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "adds two decimals",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              7
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws TypeError when one argument is NaN",
+          "type": "test",
+          "inputs": {
+            "calculator.addNumbers": [
+              "NaN",
+              5
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws TypeError when one argument is not a number",
+          "type": "test",
+          "inputs": {
+            "calculator.addNumbers": [
+              5,
+              "hello"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should add zero to a number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              6
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should add two zeros correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error when one of the arguments is not a number",
+          "type": "test",
+          "inputs": {
+            "addNumbers": [
+              "a",
+              5
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error when one of the arguments is NaN",
+          "type": "test",
+          "inputs": {
+            "addNumbers": [
+              "NaN",
+              5
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error when both arguments are NaN",
+          "type": "test",
+          "inputs": {
+            "addNumbers": [
+              "NaN",
+              "NaN"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should add large numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2000001
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should add two positive numbers correctly (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should add two negative numbers correctly (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw an error when arguments are not numbers (5 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw an error when either argument is NaN (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "adds two positive numbers (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "throws TypeError when one argument is NaN (5 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "throws TypeError when one argument is not a number (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw an error when one of the arguments is not a number (4 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw an error when one of the arguments is NaN (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "addNumbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            150001
+          ],
+          "calculator.addNumbers": [
+            "NaN",
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should add two positive numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should add a positive and a negative number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            4
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should add two negative numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -4
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should add a number and zero correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            8
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should add zero and a number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should add two large numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            150001
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error when arguments are not numbers",
+        "type": "test",
+        "inputs": {
+          "calculator.addNumbers": [
+            "a",
+            2
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error when one argument is not a number",
+        "type": "test",
+        "inputs": {
+          "calculator.addNumbers": [
+            5,
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error when both arguments are not numbers",
+        "type": "test",
+        "inputs": {
+          "calculator.addNumbers": [
+            "a",
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error when either argument is NaN",
+        "type": "test",
+        "inputs": {
+          "calculator.addNumbers": [
+            "NaN",
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "adds two positive numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "adds a positive and a negative number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            4
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "adds two negative numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -4
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "adds a number and zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            8
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "adds zero and zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "adds large positive numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000001
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "adds a number and a decimal",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            6.5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "adds two decimals",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            7
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws TypeError when one argument is NaN",
+        "type": "test",
+        "inputs": {
+          "calculator.addNumbers": [
+            "NaN",
+            5
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws TypeError when one argument is not a number",
+        "type": "test",
+        "inputs": {
+          "calculator.addNumbers": [
+            5,
+            "hello"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should add zero to a number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should add two zeros correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error when one of the arguments is not a number",
+        "type": "test",
+        "inputs": {
+          "addNumbers": [
+            "a",
+            5
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error when one of the arguments is NaN",
+        "type": "test",
+        "inputs": {
+          "addNumbers": [
+            "NaN",
+            5
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error when both arguments are NaN",
+        "type": "test",
+        "inputs": {
+          "addNumbers": [
+            "NaN",
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should add large numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2000001
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should add two positive numbers correctly (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should add two negative numbers correctly (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw an error when arguments are not numbers (5 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw an error when either argument is NaN (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "adds two positive numbers (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "throws TypeError when one argument is NaN (5 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "throws TypeError when one argument is not a number (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw an error when one of the arguments is not a number (4 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw an error when one of the arguments is NaN (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      }
+    ]
+  }
+}
