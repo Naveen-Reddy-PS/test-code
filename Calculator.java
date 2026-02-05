@@ -13,7 +13,7 @@ public class Calculator {
      * @param a First number
      * @param b Second number
      * @return Sum of a and b
-     * @throws IllegalArgumentException if either argument is null
+     * @throws IllegalArgumentException if    either argument is null
      */
     public double addNumbers(double a, double b) {
         if (Double.isNaN(a) || Double.isNaN(b)) {
