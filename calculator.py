@@ -4,6 +4,24 @@
 MAX_RESULT = 1000001  # Maximum allowed result value
 
 
+def add_numbers(a: float, b: float) -> float:
+    """
+    Add two numbers    together.
+
+    Args:
+        a: First number
+        b: Second number
+
+    Returns:
+        Sum of a and b
+
+    Raises:
+        TypeError: If either argument is not a number
+    """
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError("Both arguments must be numbers")
+    return a + b
+
 
 def subtract_numbers(a: float, b: float) -> float:
     """
