@@ -1,0 +1,1908 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "java",
+    "test_framework": "junit",
+    "execution_timestamp": "2026-02-05T10:58:39.556458",
+    "execution_timestamp_unix": 1770269319.556461,
+    "source_file": "CalculatorTest.java",
+    "test_file": "testcases/vertex_ai/CalculatortestTest_82b2c1de.java",
+    "commit_hash": "82b2c1de"
+  },
+  "execution_summary": {
+    "status": "failed",
+    "duration_seconds": 0.002,
+    "duration_readable": "2ms",
+    "test_statistics": {
+      "total_unique_test_cases": 73,
+      "test_cases_passed": 0,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 73,
+      "test_cases_other_status": 0,
+      "test_cases_breakdown": {
+        "passed": 0,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 73,
+        "other": 0,
+        "_total": 73
+      },
+      "test_executions": {
+        "total_run": 3,
+        "passed": 0,
+        "failed": 0,
+        "errors": 3,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": false,
+      "output_length": 0,
+      "key_messages": []
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 0.0,
+      "lines_covered": 0,
+      "lines_total": 0,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": false
+  },
+  "test_results": {
+    "summary": {
+      "status": "failed",
+      "passed": 0,
+      "failed": 0,
+      "errors": 3,
+      "skipped": 0,
+      "duration_seconds": 0.002
+    },
+    "test_details": [],
+    "raw_output": ""
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "testAddNumbers_PositiveNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              5.0,
+              3.0
+            ]
+          },
+          "expected_output": "8.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_NegativeNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              -5.0,
+              -3.0
+            ]
+          },
+          "expected_output": "-8.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_MixedNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              5.0,
+              -3.0
+            ]
+          },
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_WithZero",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              5.0,
+              0.0
+            ]
+          },
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_NaN",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.addNumbers": [
+              5.0,
+              "Double.NaN"
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_PositiveNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.subtractNumbers": [
+              10.0,
+              3.0
+            ]
+          },
+          "expected_output": "7.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_NegativeResult",
+          "type": "method",
+          "inputs": {
+            "calculator.subtractNumbers": [
+              3.0,
+              10.0
+            ]
+          },
+          "expected_output": "-7.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_WithZero",
+          "type": "method",
+          "inputs": {
+            "calculator.subtractNumbers": [
+              5.0,
+              0.0
+            ]
+          },
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_ExceedsMaxResult",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.subtractNumbers": [
+              "-MAX_RESULT - 1",
+              "MAX_RESULT"
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_PositiveNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.multiplyNumbers": [
+              5.0,
+              3.0
+            ]
+          },
+          "expected_output": "15.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_NegativeNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.multiplyNumbers": [
+              -5.0,
+              -3.0
+            ]
+          },
+          "expected_output": "15.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_MixedNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.multiplyNumbers": [
+              -5.0,
+              3.0
+            ]
+          },
+          "expected_output": "-15.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_WithZero",
+          "type": "method",
+          "inputs": {
+            "calculator.multiplyNumbers": [
+              0.0,
+              5.0
+            ]
+          },
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_ExceedsMaxResult",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.multiplyNumbers": [
+              "MAX_RESULT + 1",
+              2.0
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testDivideNumbers_PositiveNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.divideNumbers": [
+              10.0,
+              2.0
+            ]
+          },
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testDivideNumbers_DecimalResult",
+          "type": "method",
+          "inputs": {
+            "calculator.divideNumbers": [
+              7.0,
+              2.0
+            ]
+          },
+          "expected_output": "3.5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testDivideNumbers_NegativeNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.divideNumbers": [
+              -10.0,
+              -2.0
+            ]
+          },
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testDivideNumbers_DivideByZero",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.divideNumbers": [
+              10.0,
+              0.0
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testDivideNumbers_ExceedsMaxResult",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.divideNumbers": [
+              "MAX_RESULT * 2",
+              0.5
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddThreeNumbers_PositiveNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.addThreeNumbers": [
+              1.0,
+              2.0,
+              3.0
+            ]
+          },
+          "expected_output": "6.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddThreeNumbers_MixedNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.addThreeNumbers": [
+              -1.0,
+              2.0,
+              -3.0
+            ]
+          },
+          "expected_output": "-2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddThreeNumbers_ExceedsMaxResult",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.addThreeNumbers": [
+              "MAX_RESULT",
+              "MAX_RESULT",
+              1.0
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testPowerNumbers_PositiveBaseAndExponent",
+          "type": "method",
+          "inputs": {
+            "calculator.powerNumbers": [
+              2.0,
+              3.0
+            ]
+          },
+          "expected_output": "8.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testPowerNumbers_BaseToZero",
+          "type": "method",
+          "inputs": {
+            "calculator.powerNumbers": [
+              5.0,
+              0.0
+            ]
+          },
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testPowerNumbers_ExceedsMaxResult",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.powerNumbers": [
+              1000.0,
+              10.0
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testModuloNumbers_PositiveNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.moduloNumbers": [
+              10.0,
+              3.0
+            ]
+          },
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testModuloNumbers_ExactDivision",
+          "type": "method",
+          "inputs": {
+            "calculator.moduloNumbers": [
+              10.0,
+              5.0
+            ]
+          },
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testModuloNumbers_DivideByZero",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.moduloNumbers": [
+              10.0,
+              0.0
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testModuloNumbers_NegativeNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.moduloNumbers": [
+              -10.0,
+              3.0
+            ]
+          },
+          "expected_output": "-1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSquareRoot_PositiveNumber",
+          "type": "method",
+          "inputs": {
+            "calculator.squareRoot": [
+              16.0
+            ]
+          },
+          "expected_output": "4.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSquareRoot_DecimalResult",
+          "type": "method",
+          "inputs": {
+            "calculator.squareRoot": [
+              2.0
+            ]
+          },
+          "expected_output": "Math.sqrt(2.0)",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSquareRoot_Zero",
+          "type": "method",
+          "inputs": {
+            "calculator.squareRoot": [
+              0.0
+            ]
+          },
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSquareRoot_NegativeNumber",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.squareRoot": [
+              -1.0
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testFactorial_Zero",
+          "type": "method",
+          "inputs": {
+            "calculator.factorial": [
+              0
+            ]
+          },
+          "expected_output": "1",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFactorial_One",
+          "type": "method",
+          "inputs": {
+            "calculator.factorial": [
+              1
+            ]
+          },
+          "expected_output": "1",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFactorial_SmallNumber",
+          "type": "method",
+          "inputs": {
+            "calculator.factorial": [
+              5
+            ]
+          },
+          "expected_output": "120",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFactorial_MediumNumber",
+          "type": "method",
+          "inputs": {
+            "calculator.factorial": [
+              7
+            ]
+          },
+          "expected_output": "5040",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFactorial_NegativeNumber",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.factorial": [
+              -1
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testFactorial_ExceedsMaxResult",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.factorial": [
+              100
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testGreatestCommonDivisor_PositiveNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.greatestCommonDivisor": [
+              48,
+              18
+            ]
+          },
+          "expected_output": "6",
+          "status": "not_executed"
+        },
+        {
+          "name": "testGreatestCommonDivisor_PrimeNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.greatestCommonDivisor": [
+              17,
+              13
+            ]
+          },
+          "expected_output": "1",
+          "status": "not_executed"
+        },
+        {
+          "name": "testGreatestCommonDivisor_OneIsZero",
+          "type": "method",
+          "inputs": {
+            "calculator.greatestCommonDivisor": [
+              0,
+              5
+            ]
+          },
+          "expected_output": "5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testGreatestCommonDivisor_NegativeNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.greatestCommonDivisor": [
+              -48,
+              -18
+            ]
+          },
+          "expected_output": "6",
+          "status": "not_executed"
+        },
+        {
+          "name": "testGreatestCommonDivisor_MixedSigns",
+          "type": "method",
+          "inputs": {
+            "calculator.greatestCommonDivisor": [
+              48,
+              -18
+            ]
+          },
+          "expected_output": "6",
+          "status": "not_executed"
+        },
+        {
+          "name": "testGreatestCommonDivisor_BothZero",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.greatestCommonDivisor": [
+              0,
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testGreatestCommonDivisor_SameNumber",
+          "type": "method",
+          "inputs": {
+            "calculator.greatestCommonDivisor": [
+              15,
+              15
+            ]
+          },
+          "expected_output": "15",
+          "status": "not_executed"
+        },
+        {
+          "name": "testLeastCommonMultiple_PositiveNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.leastCommonMultiple": [
+              12,
+              18
+            ]
+          },
+          "expected_output": "36",
+          "status": "not_executed"
+        },
+        {
+          "name": "testLeastCommonMultiple_PrimeNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.leastCommonMultiple": [
+              5,
+              7
+            ]
+          },
+          "expected_output": "35",
+          "status": "not_executed"
+        },
+        {
+          "name": "testLeastCommonMultiple_OneIsOne",
+          "type": "method",
+          "inputs": {
+            "calculator.leastCommonMultiple": [
+              1,
+              5
+            ]
+          },
+          "expected_output": "5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testLeastCommonMultiple_NegativeNumbers",
+          "type": "method",
+          "inputs": {
+            "numbers": [
+              "uses absolute values internally"
+            ],
+            "calculator.leastCommonMultiple": [
+              -12,
+              -18
+            ]
+          },
+          "expected_output": "36",
+          "status": "not_executed"
+        },
+        {
+          "name": "testLeastCommonMultiple_MixedSigns",
+          "type": "method",
+          "inputs": {
+            "signs": [
+              "uses absolute values internally"
+            ],
+            "calculator.leastCommonMultiple": [
+              -12,
+              18
+            ]
+          },
+          "expected_output": "36",
+          "status": "not_executed"
+        },
+        {
+          "name": "testLeastCommonMultiple_FirstIsZero",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.leastCommonMultiple": [
+              0,
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testLeastCommonMultiple_SecondIsZero",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.leastCommonMultiple": [
+              5,
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testLeastCommonMultiple_SameNumber",
+          "type": "method",
+          "inputs": {
+            "calculator.leastCommonMultiple": [
+              10,
+              10
+            ]
+          },
+          "expected_output": "10",
+          "status": "not_executed"
+        },
+        {
+          "name": "testIsPrime_SmallPrime",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "true",
+          "status": "not_executed"
+        },
+        {
+          "name": "testIsPrime_MediumPrime",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "true",
+          "status": "not_executed"
+        },
+        {
+          "name": "testIsPrime_LargePrime",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "true",
+          "status": "not_executed"
+        },
+        {
+          "name": "testIsPrime_EvenComposite",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "false",
+          "status": "not_executed"
+        },
+        {
+          "name": "testIsPrime_OddComposite",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "false",
+          "status": "not_executed"
+        },
+        {
+          "name": "testIsPrime_One",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.isPrime": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testIsPrime_Zero",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.isPrime": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testIsPrime_NegativeNumber",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.isPrime": [
+              -5
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testFibonacci_Zero",
+          "type": "method",
+          "inputs": {
+            "calculator.fibonacci": [
+              0
+            ]
+          },
+          "expected_output": "0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFibonacci_One",
+          "type": "method",
+          "inputs": {
+            "calculator.fibonacci": [
+              1
+            ]
+          },
+          "expected_output": "1",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFibonacci_SmallNumber",
+          "type": "method",
+          "inputs": {
+            "calculator.fibonacci": [
+              5
+            ]
+          },
+          "expected_output": "5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFibonacci_MediumNumber",
+          "type": "method",
+          "inputs": {
+            "calculator.fibonacci": [
+              10
+            ]
+          },
+          "expected_output": "55",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFibonacci_LargerNumber",
+          "type": "method",
+          "inputs": {
+            "calculator.fibonacci": [
+              20
+            ]
+          },
+          "expected_output": "6765",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFibonacci_NegativeNumber",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.fibonacci": [
+              -1
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testFibonacci_ExceedsMaxResult",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.fibonacci": [
+              100
+            ]
+          },
+          "expected_output": null,
+          "status": "not_executed"
+        },
+        {
+          "name": "testRoundToDecimal_ZeroDecimals",
+          "type": "method",
+          "inputs": {
+            "calculator.roundToDecimal": [
+              3.7,
+              0
+            ]
+          },
+          "expected_output": "4.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testRoundToDecimal_OneDecimal",
+          "type": "method",
+          "inputs": {
+            "calculator.roundToDecimal": [
+              3.14159,
+              1
+            ]
+          },
+          "expected_output": "3.1",
+          "status": "not_executed"
+        },
+        {
+          "name": "testRoundToDecimal_TwoDecimals",
+          "type": "method",
+          "inputs": {
+            "calculator.roundToDecimal": [
+              3.14159,
+              2
+            ]
+          },
+          "expected_output": "3.14",
+          "status": "not_executed"
+        },
+        {
+          "name": "testRoundToDecimal_ThreeDecimals",
+          "type": "method",
+          "inputs": {
+            "calculator.roundToDecimal": [
+              3.14159,
+              3
+            ]
+          },
+          "expected_output": "3.142",
+          "status": "not_executed"
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "testAddNumbers_PositiveNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            5.0,
+            3.0
+          ]
+        },
+        "expected_output": "8.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_NegativeNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            -5.0,
+            -3.0
+          ]
+        },
+        "expected_output": "-8.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_MixedNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            5.0,
+            -3.0
+          ]
+        },
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_WithZero",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            5.0,
+            0.0
+          ]
+        },
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_NaN",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.addNumbers": [
+            5.0,
+            "Double.NaN"
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_PositiveNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.subtractNumbers": [
+            10.0,
+            3.0
+          ]
+        },
+        "expected_output": "7.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_NegativeResult",
+        "type": "method",
+        "inputs": {
+          "calculator.subtractNumbers": [
+            3.0,
+            10.0
+          ]
+        },
+        "expected_output": "-7.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_WithZero",
+        "type": "method",
+        "inputs": {
+          "calculator.subtractNumbers": [
+            5.0,
+            0.0
+          ]
+        },
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_ExceedsMaxResult",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.subtractNumbers": [
+            "-MAX_RESULT - 1",
+            "MAX_RESULT"
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_PositiveNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.multiplyNumbers": [
+            5.0,
+            3.0
+          ]
+        },
+        "expected_output": "15.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_NegativeNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.multiplyNumbers": [
+            -5.0,
+            -3.0
+          ]
+        },
+        "expected_output": "15.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_MixedNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.multiplyNumbers": [
+            -5.0,
+            3.0
+          ]
+        },
+        "expected_output": "-15.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_WithZero",
+        "type": "method",
+        "inputs": {
+          "calculator.multiplyNumbers": [
+            0.0,
+            5.0
+          ]
+        },
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_ExceedsMaxResult",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.multiplyNumbers": [
+            "MAX_RESULT + 1",
+            2.0
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testDivideNumbers_PositiveNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.divideNumbers": [
+            10.0,
+            2.0
+          ]
+        },
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testDivideNumbers_DecimalResult",
+        "type": "method",
+        "inputs": {
+          "calculator.divideNumbers": [
+            7.0,
+            2.0
+          ]
+        },
+        "expected_output": "3.5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testDivideNumbers_NegativeNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.divideNumbers": [
+            -10.0,
+            -2.0
+          ]
+        },
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testDivideNumbers_DivideByZero",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.divideNumbers": [
+            10.0,
+            0.0
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testDivideNumbers_ExceedsMaxResult",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.divideNumbers": [
+            "MAX_RESULT * 2",
+            0.5
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddThreeNumbers_PositiveNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.addThreeNumbers": [
+            1.0,
+            2.0,
+            3.0
+          ]
+        },
+        "expected_output": "6.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddThreeNumbers_MixedNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.addThreeNumbers": [
+            -1.0,
+            2.0,
+            -3.0
+          ]
+        },
+        "expected_output": "-2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddThreeNumbers_ExceedsMaxResult",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.addThreeNumbers": [
+            "MAX_RESULT",
+            "MAX_RESULT",
+            1.0
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testPowerNumbers_PositiveBaseAndExponent",
+        "type": "method",
+        "inputs": {
+          "calculator.powerNumbers": [
+            2.0,
+            3.0
+          ]
+        },
+        "expected_output": "8.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testPowerNumbers_BaseToZero",
+        "type": "method",
+        "inputs": {
+          "calculator.powerNumbers": [
+            5.0,
+            0.0
+          ]
+        },
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testPowerNumbers_ExceedsMaxResult",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.powerNumbers": [
+            1000.0,
+            10.0
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testModuloNumbers_PositiveNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.moduloNumbers": [
+            10.0,
+            3.0
+          ]
+        },
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testModuloNumbers_ExactDivision",
+        "type": "method",
+        "inputs": {
+          "calculator.moduloNumbers": [
+            10.0,
+            5.0
+          ]
+        },
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testModuloNumbers_DivideByZero",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.moduloNumbers": [
+            10.0,
+            0.0
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testModuloNumbers_NegativeNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.moduloNumbers": [
+            -10.0,
+            3.0
+          ]
+        },
+        "expected_output": "-1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSquareRoot_PositiveNumber",
+        "type": "method",
+        "inputs": {
+          "calculator.squareRoot": [
+            16.0
+          ]
+        },
+        "expected_output": "4.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSquareRoot_DecimalResult",
+        "type": "method",
+        "inputs": {
+          "calculator.squareRoot": [
+            2.0
+          ]
+        },
+        "expected_output": "Math.sqrt(2.0)",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSquareRoot_Zero",
+        "type": "method",
+        "inputs": {
+          "calculator.squareRoot": [
+            0.0
+          ]
+        },
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSquareRoot_NegativeNumber",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.squareRoot": [
+            -1.0
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testFactorial_Zero",
+        "type": "method",
+        "inputs": {
+          "calculator.factorial": [
+            0
+          ]
+        },
+        "expected_output": "1",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFactorial_One",
+        "type": "method",
+        "inputs": {
+          "calculator.factorial": [
+            1
+          ]
+        },
+        "expected_output": "1",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFactorial_SmallNumber",
+        "type": "method",
+        "inputs": {
+          "calculator.factorial": [
+            5
+          ]
+        },
+        "expected_output": "120",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFactorial_MediumNumber",
+        "type": "method",
+        "inputs": {
+          "calculator.factorial": [
+            7
+          ]
+        },
+        "expected_output": "5040",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFactorial_NegativeNumber",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.factorial": [
+            -1
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testFactorial_ExceedsMaxResult",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.factorial": [
+            100
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testGreatestCommonDivisor_PositiveNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.greatestCommonDivisor": [
+            48,
+            18
+          ]
+        },
+        "expected_output": "6",
+        "status": "not_executed"
+      },
+      {
+        "name": "testGreatestCommonDivisor_PrimeNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.greatestCommonDivisor": [
+            17,
+            13
+          ]
+        },
+        "expected_output": "1",
+        "status": "not_executed"
+      },
+      {
+        "name": "testGreatestCommonDivisor_OneIsZero",
+        "type": "method",
+        "inputs": {
+          "calculator.greatestCommonDivisor": [
+            0,
+            5
+          ]
+        },
+        "expected_output": "5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testGreatestCommonDivisor_NegativeNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.greatestCommonDivisor": [
+            -48,
+            -18
+          ]
+        },
+        "expected_output": "6",
+        "status": "not_executed"
+      },
+      {
+        "name": "testGreatestCommonDivisor_MixedSigns",
+        "type": "method",
+        "inputs": {
+          "calculator.greatestCommonDivisor": [
+            48,
+            -18
+          ]
+        },
+        "expected_output": "6",
+        "status": "not_executed"
+      },
+      {
+        "name": "testGreatestCommonDivisor_BothZero",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.greatestCommonDivisor": [
+            0,
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testGreatestCommonDivisor_SameNumber",
+        "type": "method",
+        "inputs": {
+          "calculator.greatestCommonDivisor": [
+            15,
+            15
+          ]
+        },
+        "expected_output": "15",
+        "status": "not_executed"
+      },
+      {
+        "name": "testLeastCommonMultiple_PositiveNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.leastCommonMultiple": [
+            12,
+            18
+          ]
+        },
+        "expected_output": "36",
+        "status": "not_executed"
+      },
+      {
+        "name": "testLeastCommonMultiple_PrimeNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.leastCommonMultiple": [
+            5,
+            7
+          ]
+        },
+        "expected_output": "35",
+        "status": "not_executed"
+      },
+      {
+        "name": "testLeastCommonMultiple_OneIsOne",
+        "type": "method",
+        "inputs": {
+          "calculator.leastCommonMultiple": [
+            1,
+            5
+          ]
+        },
+        "expected_output": "5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testLeastCommonMultiple_NegativeNumbers",
+        "type": "method",
+        "inputs": {
+          "numbers": [
+            "uses absolute values internally"
+          ],
+          "calculator.leastCommonMultiple": [
+            -12,
+            -18
+          ]
+        },
+        "expected_output": "36",
+        "status": "not_executed"
+      },
+      {
+        "name": "testLeastCommonMultiple_MixedSigns",
+        "type": "method",
+        "inputs": {
+          "signs": [
+            "uses absolute values internally"
+          ],
+          "calculator.leastCommonMultiple": [
+            -12,
+            18
+          ]
+        },
+        "expected_output": "36",
+        "status": "not_executed"
+      },
+      {
+        "name": "testLeastCommonMultiple_FirstIsZero",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.leastCommonMultiple": [
+            0,
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testLeastCommonMultiple_SecondIsZero",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.leastCommonMultiple": [
+            5,
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testLeastCommonMultiple_SameNumber",
+        "type": "method",
+        "inputs": {
+          "calculator.leastCommonMultiple": [
+            10,
+            10
+          ]
+        },
+        "expected_output": "10",
+        "status": "not_executed"
+      },
+      {
+        "name": "testIsPrime_SmallPrime",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "true",
+        "status": "not_executed"
+      },
+      {
+        "name": "testIsPrime_MediumPrime",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "true",
+        "status": "not_executed"
+      },
+      {
+        "name": "testIsPrime_LargePrime",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "true",
+        "status": "not_executed"
+      },
+      {
+        "name": "testIsPrime_EvenComposite",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "false",
+        "status": "not_executed"
+      },
+      {
+        "name": "testIsPrime_OddComposite",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "false",
+        "status": "not_executed"
+      },
+      {
+        "name": "testIsPrime_One",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.isPrime": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testIsPrime_Zero",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.isPrime": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testIsPrime_NegativeNumber",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.isPrime": [
+            -5
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testFibonacci_Zero",
+        "type": "method",
+        "inputs": {
+          "calculator.fibonacci": [
+            0
+          ]
+        },
+        "expected_output": "0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFibonacci_One",
+        "type": "method",
+        "inputs": {
+          "calculator.fibonacci": [
+            1
+          ]
+        },
+        "expected_output": "1",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFibonacci_SmallNumber",
+        "type": "method",
+        "inputs": {
+          "calculator.fibonacci": [
+            5
+          ]
+        },
+        "expected_output": "5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFibonacci_MediumNumber",
+        "type": "method",
+        "inputs": {
+          "calculator.fibonacci": [
+            10
+          ]
+        },
+        "expected_output": "55",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFibonacci_LargerNumber",
+        "type": "method",
+        "inputs": {
+          "calculator.fibonacci": [
+            20
+          ]
+        },
+        "expected_output": "6765",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFibonacci_NegativeNumber",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.fibonacci": [
+            -1
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testFibonacci_ExceedsMaxResult",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.fibonacci": [
+            100
+          ]
+        },
+        "expected_output": null,
+        "status": "not_executed"
+      },
+      {
+        "name": "testRoundToDecimal_ZeroDecimals",
+        "type": "method",
+        "inputs": {
+          "calculator.roundToDecimal": [
+            3.7,
+            0
+          ]
+        },
+        "expected_output": "4.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testRoundToDecimal_OneDecimal",
+        "type": "method",
+        "inputs": {
+          "calculator.roundToDecimal": [
+            3.14159,
+            1
+          ]
+        },
+        "expected_output": "3.1",
+        "status": "not_executed"
+      },
+      {
+        "name": "testRoundToDecimal_TwoDecimals",
+        "type": "method",
+        "inputs": {
+          "calculator.roundToDecimal": [
+            3.14159,
+            2
+          ]
+        },
+        "expected_output": "3.14",
+        "status": "not_executed"
+      },
+      {
+        "name": "testRoundToDecimal_ThreeDecimals",
+        "type": "method",
+        "inputs": {
+          "calculator.roundToDecimal": [
+            3.14159,
+            3
+          ]
+        },
+        "expected_output": "3.142",
+        "status": "not_executed"
+      }
+    ]
+  }
+}
