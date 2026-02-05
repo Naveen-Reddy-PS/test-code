@@ -29,7 +29,7 @@ public class Calculator {
      * @param a First number (minuend)
      * @param b Second number (subtrahend)
      * @return Difference of a and b (a - b)
-     * @throws IllegalArgumentException if result exceeds maximum allowed value
+     * @throws IllegalArgumentException   if result exceeds maximum allowed value
      */
     public double subtractNumbers(double a, double b) {
         double result = a - b;
