@@ -1,0 +1,630 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "java",
+    "test_framework": "junit",
+    "execution_timestamp": "2026-02-05T13:05:26.502819",
+    "execution_timestamp_unix": 1770276926.5028212,
+    "source_file": "Calculator.java",
+    "test_file": "testcases/vertex_ai/CalculatorTest_4a67b47c.java",
+    "commit_hash": "4a67b47c"
+  },
+  "execution_summary": {
+    "status": "failed",
+    "duration_seconds": 2.441,
+    "duration_readable": "2.44s",
+    "test_statistics": {
+      "total_unique_test_cases": 27,
+      "test_cases_passed": 1,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 26,
+      "test_cases_other_status": 0,
+      "test_cases_breakdown": {
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 26,
+        "other": 0,
+        "_total": 27
+      },
+      "test_executions": {
+        "total_run": 31,
+        "passed": 29,
+        "failed": 1,
+        "errors": 1,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": true,
+      "output_length": 1874,
+      "key_messages": []
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 100.0,
+      "lines_covered": 3,
+      "lines_total": 3,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": false
+  },
+  "test_results": {
+    "summary": {
+      "status": "failed",
+      "passed": 29,
+      "failed": 1,
+      "errors": 1,
+      "skipped": 0,
+      "duration_seconds": 2.441
+    },
+    "test_details": [
+      {
+        "name": "testAddNumbers_MaxValue",
+        "status": "passed",
+        "inputs": {
+          "calculator.addNumbers": [
+            "Double.MAX_VALUE",
+            1
+          ]
+        },
+        "output": "true"
+      }
+    ],
+    "raw_output": "\nThanks for using JUnit! Support its development at https://junit.org/sponsoring\n\n\u001b[36m\u2577\u001b[0m\n\u001b[36m\u251c\u2500\u001b[0m \u001b[36mJUnit Jupiter\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u2514\u2500\u001b[0m \u001b[36mCalculatorTest\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34maddNumbers_nanArgumentA_throwsIllegalArgumentException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34maddNumbers_positiveNumbers_returnsCorrectSumPlusTwo()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34maddNumbers_positiveInfinityAndNumber_returnsInfinity()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34maddNumbers_negativeInfinityAndNumber_returnsInfinity()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34maddNumbers_negativeNumbers_returnsCorrectSumPlusTwo()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34maddNumbers_oneNegativeOnePositive_returnsCorrectSumPlusTwo()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34maddNumbers_largeNumbers_returnsCorrectSumPlusTwo()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34maddNumbers_nanArgumentB_throwsIllegalArgumentException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34maddNumbers_zeroAndPositive_returnsCorrectSumPlusTwo()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u2514\u2500\u001b[0m \u001b[34maddNumbers_nanArgumentsBoth_throwsIllegalArgumentException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u251c\u2500\u001b[0m \u001b[36mJUnit Vintage\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2514\u2500\u001b[0m \u001b[36mJUnit Platform Suite\u001b[0m \u001b[32m\u2714\u001b[0m\n\nTest run finished after 28 ms\n[         4 containers found      ]\n[         0 containers skipped    ]\n[         4 containers started    ]\n[         0 containers aborted    ]\n[         4 containers successful ]\n[         0 containers failed     ]\n[        10 tests found           ]\n[         0 tests skipped         ]\n[        10 tests started         ]\n[         0 tests aborted         ]\n[        10 tests successful      ]\n[         0 tests failed          ]\n\n\nWARNING: Delegated to the 'execute' command.\n         This behaviour has been deprecated and will be removed in a future release.\n         Please use the 'execute' command directly.\n"
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "addNumbers_positiveNumbers_returnsCorrectSumPlusTwo",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "7",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_negativeNumbers_returnsCorrectSumPlusTwo",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-1",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_oneNegativeOnePositive_returnsCorrectSumPlusTwo",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_zeroAndPositive_returnsCorrectSumPlusTwo",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_largeNumbers_returnsCorrectSumPlusTwo",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1000004",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_nanArgumentA_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.addNumbers": [
+              "Double.NaN",
+              5
+            ]
+          },
+          "expected_output": "Both arguments must be numbers",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_nanArgumentB_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.addNumbers": [
+              5,
+              "Double.NaN"
+            ]
+          },
+          "expected_output": "Both arguments must be numbers",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_nanArgumentsBoth_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.addNumbers": [
+              "Double.NaN",
+              "Double.NaN"
+            ]
+          },
+          "expected_output": "Both arguments must be numbers",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_positiveInfinityAndNumber_returnsInfinity",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "Double.POSITIVE_INFINITY",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_negativeInfinityAndNumber_returnsInfinity",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "Double.NEGATIVE_INFINITY",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_positiveNumbers_returnsCorrectSum",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_negativeNumbers_returnsCorrectSum",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_positiveAndNegativeNumbers_returnsCorrectSum",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_zeroAndPositiveNumber_returnsCorrectSum",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_largeNumbers_returnsCorrectSum",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2000005.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_decimalNumbers_returnsCorrectSum",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.5",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_isNaN_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.addNumbers": [
+              "Double.NaN",
+              2.0
+            ]
+          },
+          "expected_output": "Both arguments must be numbers",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_isNaNBothArguments_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.addNumbers": [
+              "Double.NaN",
+              "Double.NaN"
+            ]
+          },
+          "expected_output": "Both arguments must be numbers",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_isNegativeInfinity_returnsCorrectSum",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "Double.NEGATIVE_INFINITY",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_isPositiveInfinity_returnsCorrectSum",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "Double.POSITIVE_INFINITY",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_positiveNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              5,
+              3
+            ]
+          },
+          "expected_output": "10.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_negativeNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              -5,
+              -3
+            ]
+          },
+          "expected_output": "-6.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_mixedNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              5,
+              -3
+            ]
+          },
+          "expected_output": "4.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_zero",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              5,
+              0
+            ]
+          },
+          "expected_output": "7.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_largeNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              100000,
+              200000
+            ]
+          },
+          "expected_output": "300002.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_decimalNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              5.5,
+              3.3
+            ]
+          },
+          "expected_output": "10.8",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_MaxValue",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              "Double.MAX_VALUE",
+              1
+            ]
+          },
+          "expected_output": "true",
+          "status": "passed",
+          "error": null,
+          "actual_output": "true"
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "addNumbers_positiveNumbers_returnsCorrectSumPlusTwo",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "7",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_negativeNumbers_returnsCorrectSumPlusTwo",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-1",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_oneNegativeOnePositive_returnsCorrectSumPlusTwo",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_zeroAndPositive_returnsCorrectSumPlusTwo",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_largeNumbers_returnsCorrectSumPlusTwo",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1000004",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_nanArgumentA_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.addNumbers": [
+            "Double.NaN",
+            5
+          ]
+        },
+        "expected_output": "Both arguments must be numbers",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_nanArgumentB_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.addNumbers": [
+            5,
+            "Double.NaN"
+          ]
+        },
+        "expected_output": "Both arguments must be numbers",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_nanArgumentsBoth_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.addNumbers": [
+            "Double.NaN",
+            "Double.NaN"
+          ]
+        },
+        "expected_output": "Both arguments must be numbers",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_positiveInfinityAndNumber_returnsInfinity",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "Double.POSITIVE_INFINITY",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_negativeInfinityAndNumber_returnsInfinity",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "Double.NEGATIVE_INFINITY",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_positiveNumbers_returnsCorrectSum",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_negativeNumbers_returnsCorrectSum",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_positiveAndNegativeNumbers_returnsCorrectSum",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_zeroAndPositiveNumber_returnsCorrectSum",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_largeNumbers_returnsCorrectSum",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2000005.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_decimalNumbers_returnsCorrectSum",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.5",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_isNaN_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.addNumbers": [
+            "Double.NaN",
+            2.0
+          ]
+        },
+        "expected_output": "Both arguments must be numbers",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_isNaNBothArguments_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.addNumbers": [
+            "Double.NaN",
+            "Double.NaN"
+          ]
+        },
+        "expected_output": "Both arguments must be numbers",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_isNegativeInfinity_returnsCorrectSum",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "Double.NEGATIVE_INFINITY",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_isPositiveInfinity_returnsCorrectSum",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "Double.POSITIVE_INFINITY",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_positiveNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            5,
+            3
+          ]
+        },
+        "expected_output": "10.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_negativeNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            -5,
+            -3
+          ]
+        },
+        "expected_output": "-6.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_mixedNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            5,
+            -3
+          ]
+        },
+        "expected_output": "4.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_zero",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            5,
+            0
+          ]
+        },
+        "expected_output": "7.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_largeNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            100000,
+            200000
+          ]
+        },
+        "expected_output": "300002.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_decimalNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            5.5,
+            3.3
+          ]
+        },
+        "expected_output": "10.8",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_MaxValue",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            "Double.MAX_VALUE",
+            1
+          ]
+        },
+        "expected_output": "true",
+        "status": "passed",
+        "error": null,
+        "actual_output": "true"
+      }
+    ]
+  }
+}
