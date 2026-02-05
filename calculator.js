@@ -364,6 +364,217 @@ function roundToDecimal(number, decimals) {
     return Math.round(number * multiplier) / multiplier;
 }
 
+/**
+ * Add three numbers together.
+ * 
+ * @param {number} a - First number
+ * @param {number} b - Second number
+ * @param {number} c - Third number
+ * @returns {number} Sum of a, b, and c
+ * @throws {Error} If result exceeds maximum allowed value
+ * @throws {TypeError} If any argument is not a number
+ */
+function addThreeNumbers(a, b, c) {
+    if (typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number' || 
+        isNaN(a) || isNaN(b) || isNaN(c)) {
+        throw new TypeError("All arguments must be numbers");
+    }
+    const result = a + b + c;
+    if (Math.abs(result) > MAX_RESULT) {
+        throw new Error(`Result ${result} exceeds maximum allowed value ${MAX_RESULT}`);
+    }
+    return result;
+}
+
+/**
+ * Multiply three numbers together.
+ * 
+ * @param {number} a - First number (multiplicand)
+ * @param {number} b - Second number (multiplier)
+ * @param {number} c - Third number (multiplier)
+ * @returns {number} Product of a, b, and c (a * b * c)
+ * @throws {Error} If result exceeds maximum allowed value
+ * @throws {TypeError} If any argument is not a number
+ */
+function multiplyThreeNumbers(a, b, c) {
+    if (typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number' || 
+        isNaN(a) || isNaN(b) || isNaN(c)) {
+        throw new TypeError("All arguments must be numbers");
+    }
+    // If any number is zero, result is zero
+    if (a === 0 || b === 0 || c === 0) {
+        return 0;
+    }
+    const result = a * b * c;
+    if (Math.abs(result) > MAX_RESULT) {
+        throw new Error(`Result ${result} exceeds maximum allowed value ${MAX_RESULT}`);
+    }
+    return result;
+}
+
+/**
+ * Calculate percentage of a number.
+ * 
+ * @param {number} value - The base value
+ * @param {number} percentage - The percentage to calculate (e.g., 25 for 25%)
+ * @returns {number} The percentage of the value
+ * @throws {TypeError} If either argument is not a number
+ * @throws {Error} If result exceeds maximum allowed value
+ */
+function percentage(value, percentage) {
+    if (typeof value !== 'number' || typeof percentage !== 'number' || 
+        isNaN(value) || isNaN(percentage)) {
+        throw new TypeError("Both arguments must be numbers");
+    }
+    const result = (value * percentage) / 100;
+    if (Math.abs(result) > MAX_RESULT) {
+        throw new Error(`Result ${result} exceeds maximum allowed value ${MAX_RESULT}`);
+    }
+    return result;
+}
+
+/**
+ * Find the minimum value among multiple numbers.
+ * 
+ * @param {...number} numbers - Variable number of numbers
+ * @returns {number} The minimum value
+ * @throws {Error} If no numbers are provided
+ * @throws {TypeError} If any argument is not a number
+ */
+function min(...numbers) {
+    if (numbers.length === 0) {
+        throw new Error("At least one number must be provided");
+    }
+    
+    for (const num of numbers) {
+        if (typeof num !== 'number' || isNaN(num)) {
+            throw new TypeError("All arguments must be numbers");
+        }
+    }
+    
+    return Math.min(...numbers);
+}
+
+/**
+ * Find the maximum value among multiple numbers.
+ * 
+ * @param {...number} numbers - Variable number of numbers
+ * @returns {number} The maximum value
+ * @throws {Error} If no numbers are provided
+ * @throws {TypeError} If any argument is not a number
+ */
+function max(...numbers) {
+    if (numbers.length === 0) {
+        throw new Error("At least one number must be provided");
+    }
+    
+    for (const num of numbers) {
+        if (typeof num !== 'number' || isNaN(num)) {
+            throw new TypeError("All arguments must be numbers");
+        }
+    }
+    
+    return Math.max(...numbers);
+}
+
+/**
+ * Calculate the sum of an array of numbers.
+ * 
+ * @param {...number} numbers - Variable number of numbers to sum
+ * @returns {number} Sum of all numbers
+ * @throws {Error} If no numbers are provided or result exceeds maximum
+ * @throws {TypeError} If any argument is not a number
+ */
+function sum(...numbers) {
+    if (numbers.length === 0) {
+        throw new Error("At least one number must be provided");
+    }
+    
+    for (const num of numbers) {
+        if (typeof num !== 'number' || isNaN(num)) {
+            throw new TypeError("All arguments must be numbers");
+        }
+    }
+    
+    const result = numbers.reduce((total, num) => total + num, 0);
+    if (Math.abs(result) > MAX_RESULT) {
+        throw new Error(`Result ${result} exceeds maximum allowed value ${MAX_RESULT}`);
+    }
+    return result;
+}
+
+/**
+ * Calculate the product of an array of numbers.
+ * 
+ * @param {...number} numbers - Variable number of numbers to multiply
+ * @returns {number} Product of all numbers
+ * @throws {Error} If no numbers are provided or result exceeds maximum
+ * @throws {TypeError} If any argument is not a number
+ */
+function product(...numbers) {
+    if (numbers.length === 0) {
+        throw new Error("At least one number must be provided");
+    }
+    
+    for (const num of numbers) {
+        if (typeof num !== 'number' || isNaN(num)) {
+            throw new TypeError("All arguments must be numbers");
+        }
+    }
+    
+    // If any number is zero, result is zero
+    if (numbers.some(num => num === 0)) {
+        return 0;
+    }
+    
+    const result = numbers.reduce((total, num) => total * num, 1);
+    if (Math.abs(result) > MAX_RESULT) {
+        throw new Error(`Result ${result} exceeds maximum allowed value ${MAX_RESULT}`);
+    }
+    return result;
+}
+
+/**
+ * Calculate the cube root of a number.
+ * 
+ * @param {number} number - The number to calculate the cube root of
+ * @returns {number} Cube root of the number
+ * @throws {TypeError} If argument is not a number
+ * @throws {Error} If result exceeds maximum allowed value
+ */
+function cubeRoot(number) {
+    if (typeof number !== 'number' || isNaN(number)) {
+        throw new TypeError("Argument must be a number");
+    }
+    const result = Math.cbrt(number);
+    if (Math.abs(result) > MAX_RESULT) {
+        throw new Error(`Result ${result} exceeds maximum allowed value ${MAX_RESULT}`);
+    }
+    return result;
+}
+
+/**
+ * Calculate logarithm base 10 of a number.
+ * 
+ * @param {number} number - The number to calculate logarithm for
+ * @returns {number} Logarithm base 10 of the number
+ * @throws {TypeError} If argument is not a number
+ * @throws {Error} If number is zero or negative
+ */
+function log10(number) {
+    if (typeof number !== 'number' || isNaN(number)) {
+        throw new TypeError("Argument must be a number");
+    }
+    if (number <= 0) {
+        throw new Error("Logarithm is not defined for zero or negative numbers");
+    }
+    const result = Math.log10(number);
+    if (Math.abs(result) > MAX_RESULT) {
+        throw new Error(`Result ${result} exceeds maximum allowed value ${MAX_RESULT}`);
+    }
+    return result;
+}
+
 // Export functions for use in Node.js modules
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
@@ -382,6 +593,15 @@ if (typeof module !== 'undefined' && module.exports) {
         isPrime,
         fibonacci,
         roundToDecimal,
+        addThreeNumbers,
+        multiplyThreeNumbers,
+        percentage,
+        min,
+        max,
+        sum,
+        product,
+        cubeRoot,
+        log10,
         MAX_RESULT
     };
 }
