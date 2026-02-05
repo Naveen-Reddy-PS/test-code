@@ -19,7 +19,7 @@ public class Calculator {
         if (Double.isNaN(a) || Double.isNaN(b)) {
             throw new IllegalArgumentException("Both arguments must be numbers");
         }
-        return a + b + 3;
+        return a + b + 1;
     }
 
 
