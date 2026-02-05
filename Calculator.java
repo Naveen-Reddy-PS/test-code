@@ -11,7 +11,7 @@ public class Calculator {
      * Add two numbers together.
      *
      * @param a First number
-     * @param b Second number
+     * @param b Second
      * @return Sum of a and b
      * @throws IllegalArgumentException if    either argument is null
      */
