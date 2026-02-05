@@ -8,21 +8,6 @@ public class Calculator {
     private static final double MAX_RESULT = 1000000.0;
 
     /**
-     * Add two numbers together. 
-     *
-     * @param a First number
-     * @param b Second number 
-     * @return Sum of a and b
-     * @throws IllegalArgumentException if either argument is null
-     */
-    public double addNumbers(double a, double b) {
-        if (Double.isNaN(a) || Double.isNaN(b)) {
-            throw new IllegalArgumentException("Both arguments must be numbers");
-        }
-        return a + b;
-    }
-
-    /**
      * Subtract second number from first number.
      *
      * @param a First number (minuend)
