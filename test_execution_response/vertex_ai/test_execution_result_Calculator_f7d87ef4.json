@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "java",
+    "test_framework": "junit",
+    "execution_timestamp": "2026-02-05T12:22:00.860306",
+    "execution_timestamp_unix": 1770274320.860308,
+    "source_file": "Calculator.java",
+    "test_file": "testcases/vertex_ai/CalculatorTest_f7d87ef4.java",
+    "commit_hash": "f7d87ef4"
+  },
+  "execution_summary": {
+    "status": "failed",
+    "duration_seconds": 2.345,
+    "duration_readable": "2.35s",
+    "test_statistics": {
+      "total_unique_test_cases": 10,
+      "test_cases_passed": 1,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 9,
+      "test_cases_other_status": 0,
+      "test_cases_breakdown": {
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 9,
+        "other": 0,
+        "_total": 10
+      },
+      "test_executions": {
+        "total_run": 30,
+        "passed": 28,
+        "failed": 1,
+        "errors": 1,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": true,
+      "output_length": 1619,
+      "key_messages": []
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 7.0,
+      "lines_covered": 7,
+      "lines_total": 100,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": false
+  },
+  "test_results": {
+    "summary": {
+      "status": "failed",
+      "passed": 28,
+      "failed": 1,
+      "errors": 1,
+      "skipped": 0,
+      "duration_seconds": 2.345
+    },
+    "test_details": [
+      {
+        "name": "testAddNumbers_negativeNumbers",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      }
+    ],
+    "raw_output": "\nThanks for using JUnit! Support its development at https://junit.org/sponsoring\n\n\u001b[36m\u2577\u001b[0m\n\u001b[36m\u251c\u2500\u001b[0m \u001b[36mJUnit Jupiter\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u251c\u2500\u001b[0m \u001b[36mJUnit Vintage\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u2514\u2500\u001b[0m \u001b[36mCalculatorTest\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_NaN_firstArgument\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_negativeNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_mixedNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_largeNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_NaN_bothArguments\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_decimalNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_zero\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestSubtractNumbers_withinMaxResult\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_NaN_secondArgument\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u2514\u2500\u001b[0m \u001b[34mtestAddNumbers_positiveNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2514\u2500\u001b[0m \u001b[36mJUnit Platform Suite\u001b[0m \u001b[32m\u2714\u001b[0m\n\nTest run finished after 17 ms\n[         4 containers found      ]\n[         0 containers skipped    ]\n[         4 containers started    ]\n[         0 containers aborted    ]\n[         4 containers successful ]\n[         0 containers failed     ]\n[        10 tests found           ]\n[         0 tests skipped         ]\n[        10 tests started         ]\n[         0 tests aborted         ]\n[        10 tests successful      ]\n[         0 tests failed          ]\n\n\nWARNING: Delegated to the 'execute' command.\n         This behaviour has been deprecated and will be removed in a future release.\n         Please use the 'execute' command directly.\n"
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "testAddNumbers_positiveNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_negativeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-3.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "-3.0"
+        },
+        {
+          "name": "testAddNumbers_mixedNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_largeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1000001.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_zero",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_decimalNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "4.5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_withinMaxResult",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "500.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_positiveNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_positiveAndNegativeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_zeroAndPositiveNumber",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "testAddNumbers_positiveNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_negativeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-3.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "-3.0"
+      },
+      {
+        "name": "testAddNumbers_mixedNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_largeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1000001.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_zero",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_decimalNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "4.5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_withinMaxResult",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "500.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_positiveNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_positiveAndNegativeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_zeroAndPositiveNumber",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      }
+    ]
+  }
+}
