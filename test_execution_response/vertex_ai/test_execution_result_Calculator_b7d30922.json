@@ -1,0 +1,1747 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "java",
+    "test_framework": "junit",
+    "execution_timestamp": "2026-02-05T11:56:53.888162",
+    "execution_timestamp_unix": 1770272813.888166,
+    "source_file": "Calculator.java",
+    "test_file": "testcases/vertex_ai/CalculatorTest_b7d30922.java",
+    "commit_hash": "b7d30922"
+  },
+  "execution_summary": {
+    "status": "failed",
+    "duration_seconds": 2.667,
+    "duration_readable": "2.67s",
+    "test_statistics": {
+      "total_unique_test_cases": 95,
+      "test_cases_passed": 46,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 49,
+      "test_cases_other_status": 0,
+      "test_cases_breakdown": {
+        "passed": 46,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 49,
+        "other": 0,
+        "_total": 95
+      },
+      "test_executions": {
+        "total_run": 1,
+        "passed": 0,
+        "failed": 0,
+        "errors": 1,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": true,
+      "output_length": 15248,
+      "key_messages": [
+        "Error: TestEngine with ID 'junit-jupiter' failed to discover tests",
+        "Error: ClassSelector [className = 'execution.temp_test.CalculatorTest', classLoader = null] resolution fail",
+        "Error: Could not load class with name: execution.temp_test.CalculatorTest"
+      ]
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 0.0,
+      "lines_covered": 0,
+      "lines_total": 0,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": false
+  },
+  "test_results": {
+    "summary": {
+      "status": "failed",
+      "passed": 0,
+      "failed": 0,
+      "errors": 1,
+      "skipped": 0,
+      "duration_seconds": 2.667
+    },
+    "test_details": [
+      {
+        "name": "INDEX",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "output",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "discovery",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "cp",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "color",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "directory",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "discoverEngineRoot",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "discoverSafely",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "discover",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "execute",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "executeTests",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "1",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "replaceThreadContextClassLoaderAndInvoke",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "invoke",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "call",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "executeUserObject",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "1500",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "executeUserObjectOfLastSubcommandWithSameParent",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "handle",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "runCommand",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "run",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "main",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "selectorProcessed",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "resolveCompletely",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "resolve",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "resolveSelectors",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "0",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "getOrThrow",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "getJavaClass",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "2",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "accept",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "tryAdvance",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "forEachWithCancel",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "copyIntoWithCancel",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "copyInto",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "wrapAndCopyInto",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "evaluateSequential",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "evaluate",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "findFirst",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "findClass",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "loadClass",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "forName0",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "forName",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "9",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "of",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "tryToLoadClass",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      }
+    ],
+    "raw_output": "\nThanks for using JUnit! Support its development at https://junit.org/sponsoring\n\nUsage: execute [-h] [--disable-ansi-colors] [--disable-banner]\n               [--fail-if-no-tests] [--scan-modules] [--single-color]\n               [--scan-classpath[=PATH]]... [--color-palette=FILE]\n               [--details=MODE] [--details-theme=THEME] [--reports-dir=DIR]\n               [-c=CLASS]... [--config=KEY=VALUE]... [-cp=PATH]... [-d=DIR]...\n               [-e=ID]... [-E=ID]... [--exclude-package=PKG]... [-f=FILE]...\n               [-i=TYPE:VALUE[INDEX(..INDEX)?(,INDEX(..INDEX)?)*]]...\n               [--include-package=PKG]... [-m=NAME]... [-n=PATTERN]...\n               [-N=PATTERN]... [-o=NAME]... [-p=PKG]... [-r=RESOURCE]...\n               [-t=TAG]... [-T=TAG]... [-u=URI]...\nExecute tests\n      --disable-ansi-colors  Disable ANSI colors in output (not supported by\n                               all terminals).\n      --disable-banner       Disable print out of the welcome message.\n  -h, --help                 Display help information.\n\nSELECTORS\n\n  -c, --select-class=CLASS   Select a class for test discovery. This option can\n                               be repeated.\n  -d, --select-directory=DIR Select a directory for test discovery. This option\n                               can be repeated.\n  -f, --select-file=FILE     Select a file for test discovery. This option can\n                               be repeated.\n  -i, --select-iteration=TYPE:VALUE[INDEX(..INDEX)?(,INDEX(..INDEX)?)*]\n                             Select iterations for test discovery (e.g. method:\n                               com.acme.Foo#m()[1..2]). This option can be\n                               repeated.\n  -m, --select-method=NAME   Select a method for test discovery. This option\n                               can be repeated.\n  -o, --select-module=NAME   Select single module for test discovery. This\n                               option can be repeated.\n  -p, --select-package=PKG   Select a package for test discovery. This option\n                               can be repeated.\n  -r, --select-resource=RESOURCE\n                             Select a classpath resource for test discovery.\n                               This option can be repeated.\n      --scan-classpath, --scan-class-path[=PATH]\n                             Scan all directories on the classpath or explicit\n                               classpath roots. Without arguments, only\n                               directories on the system classpath as well as\n                               additional classpath entries supplied via -cp\n                               (directories and JAR files) are scanned.\n                               Explicit classpath roots that are not on the\n                               classpath will be silently ignored. This option\n                               can be repeated.\n      --scan-modules         Scan all resolved modules for test discovery.\n  -u, --select-uri=URI       Select a URI for test discovery. This option can\n                               be repeated.\n\nFILTERS\n\n  -e, --include-engine=ID    Provide the ID of an engine to be included in the\n                               test run. This option can be repeated.\n  -E, --exclude-engine=ID    Provide the ID of an engine to be excluded from\n                               the test run. This option can be repeated.\n      --exclude-package=PKG  Provide a package to be excluded from the test\n                               run. This option can be repeated.\n      --include-package=PKG  Provide a package to be included in the test run.\n                               This option can be repeated.\n  -n, --include-classname=PATTERN\n                             Provide a regular expression to include only\n                               classes whose fully qualified names match. To\n                               avoid loading classes unnecessarily, the default\n                               pattern only includes class names that begin\n                               with \"Test\" or end with \"Test\" or \"Tests\". When\n                               this option is repeated, all patterns will be\n                               combined using OR semantics. Default: ^(Test.*|.+\n                               [.$]Test.*|.*Tests?)$\n  -N, --exclude-classname=PATTERN\n                             Provide a regular expression to exclude those\n                               classes whose fully qualified names match. When\n                               this option is repeated, all patterns will be\n                               combined using OR semantics.\n  -t, --include-tag=TAG      Provide a tag or tag expression to include only\n                               tests whose tags match. When this option is\n                               repeated, all patterns will be combined using OR\n                               semantics.\n  -T, --exclude-tag=TAG      Provide a tag or tag expression to exclude those\n                          \n... (truncated, full output too long)"
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "testAddNumbers_validInput",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              5.0,
+              3.0
+            ]
+          },
+          "expected_output": "8.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_negativeNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              -5.0,
+              -3.0
+            ]
+          },
+          "expected_output": "-8.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_mixedNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              5.0,
+              -3.0
+            ]
+          },
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_zeroValue",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              5.0,
+              0.0
+            ]
+          },
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_largeNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              100000.0,
+              200000.0
+            ]
+          },
+          "expected_output": "300000.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_validInput",
+          "type": "method",
+          "inputs": {
+            "calculator.subtractNumbers": [
+              5.0,
+              3.0
+            ]
+          },
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_mixedPositiveNegative",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_zeroValues",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_largeValues",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2000000.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_success",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_positiveAndNegative",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_zero",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "3.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_decimalNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_smallNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.000005",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_success",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_maxResult",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1000000.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_negativeResult",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_subtractZero",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "3.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_fromZero",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-3.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_twoNegatives",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_success",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "6.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_maxResult",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1000000.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_multiplyByZero",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_zeroMultiplyBy",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_twoNegatives",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "6.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_positiveAndNegative",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-6.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_decimalNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "7.5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testDivideNumbers_success",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testDivideNumbers_maxResult",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1000000.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testDivideNumbers_negativeByPositive",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testDivideNumbers_positiveByNegative",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testDivideNumbers_twoNegatives",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testDivideNumbers_divideByOne",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testDivideNumbers_oneDivideBy",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.2",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddThreeNumbers_success",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "6.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddThreeNumbers_maxResult",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1000000.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddThreeNumbers_negativeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-6.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddThreeNumbers_mixedNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddThreeNumbers_withZero",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "3.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testPowerNumbers_success",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "8.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testPowerNumbers_maxResult",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1000000.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testPowerNumbers_exponentZero",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testPowerNumbers_baseZero",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testPowerNumbers_negativeBase",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-8.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testPowerNumbers_decimalExponent",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testModuloNumbers_success",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testModuloNumbers_negativeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSquareRoot_success",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSquareRoot_zero",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "INDEX",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "output",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "discovery",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "cp",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "color",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "directory",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "discoverEngineRoot",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "discoverSafely",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "discover",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "execute",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "executeTests",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "1",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "replaceThreadContextClassLoaderAndInvoke",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "invoke",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "call",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "executeUserObject",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "1500",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "executeUserObjectOfLastSubcommandWithSameParent",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "handle",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "runCommand",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "run",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "main",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "selectorProcessed",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "resolveCompletely",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "resolve",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "resolveSelectors",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "0",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "getOrThrow",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "getJavaClass",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "2",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "accept",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "tryAdvance",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "forEachWithCancel",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "copyIntoWithCancel",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "copyInto",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "wrapAndCopyInto",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "evaluateSequential",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "evaluate",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "findFirst",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "findClass",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "loadClass",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "forName0",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "forName",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "9",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "of",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "tryToLoadClass",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "testAddNumbers_validInput",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            5.0,
+            3.0
+          ]
+        },
+        "expected_output": "8.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_negativeNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            -5.0,
+            -3.0
+          ]
+        },
+        "expected_output": "-8.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_mixedNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            5.0,
+            -3.0
+          ]
+        },
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_zeroValue",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            5.0,
+            0.0
+          ]
+        },
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_largeNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            100000.0,
+            200000.0
+          ]
+        },
+        "expected_output": "300000.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_validInput",
+        "type": "method",
+        "inputs": {
+          "calculator.subtractNumbers": [
+            5.0,
+            3.0
+          ]
+        },
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_mixedPositiveNegative",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_zeroValues",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_largeValues",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2000000.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_success",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_positiveAndNegative",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_zero",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "3.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_decimalNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_smallNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.000005",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_success",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_maxResult",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1000000.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_negativeResult",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_subtractZero",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "3.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_fromZero",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-3.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_twoNegatives",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_success",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "6.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_maxResult",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1000000.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_multiplyByZero",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_zeroMultiplyBy",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_twoNegatives",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "6.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_positiveAndNegative",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-6.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_decimalNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "7.5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testDivideNumbers_success",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testDivideNumbers_maxResult",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1000000.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testDivideNumbers_negativeByPositive",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testDivideNumbers_positiveByNegative",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testDivideNumbers_twoNegatives",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testDivideNumbers_divideByOne",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testDivideNumbers_oneDivideBy",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.2",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddThreeNumbers_success",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "6.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddThreeNumbers_maxResult",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1000000.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddThreeNumbers_negativeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-6.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddThreeNumbers_mixedNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddThreeNumbers_withZero",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "3.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testPowerNumbers_success",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "8.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testPowerNumbers_maxResult",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1000000.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testPowerNumbers_exponentZero",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testPowerNumbers_baseZero",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testPowerNumbers_negativeBase",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-8.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testPowerNumbers_decimalExponent",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testModuloNumbers_success",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testModuloNumbers_negativeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSquareRoot_success",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSquareRoot_zero",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "INDEX",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "output",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "discovery",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "cp",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "color",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "directory",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "discoverEngineRoot",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "discoverSafely",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "discover",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "execute",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "executeTests",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "1",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "replaceThreadContextClassLoaderAndInvoke",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "invoke",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "call",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "executeUserObject",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "1500",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "executeUserObjectOfLastSubcommandWithSameParent",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "handle",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "runCommand",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "run",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "main",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "selectorProcessed",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "resolveCompletely",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "resolve",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "resolveSelectors",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "0",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "getOrThrow",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "getJavaClass",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "2",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "accept",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "tryAdvance",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "forEachWithCancel",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "copyIntoWithCancel",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "copyInto",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "wrapAndCopyInto",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "evaluateSequential",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "evaluate",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "findFirst",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "findClass",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "loadClass",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "forName0",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "forName",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "9",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "of",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "tryToLoadClass",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      }
+    ]
+  }
+}
