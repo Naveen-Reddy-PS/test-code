@@ -1,0 +1,1245 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "python",
+    "test_framework": "pytest",
+    "execution_timestamp": "2026-02-05T15:03:29.878658",
+    "execution_timestamp_unix": 1770284009.8786602,
+    "source_file": "calculator.py",
+    "test_file": "testcases/vertex_ai/test_calculator_b7ca7397.py",
+    "commit_hash": "b7ca7397"
+  },
+  "execution_summary": {
+    "status": "failed",
+    "duration_seconds": 0.757,
+    "duration_readable": "757ms",
+    "test_statistics": {
+      "total_unique_test_cases": 29,
+      "test_cases_passed": 28,
+      "test_cases_failed": 1,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 0,
+      "test_cases_other_status": 0,
+      "test_cases_breakdown": {
+        "passed": 28,
+        "failed": 1,
+        "skipped": 0,
+        "not_executed": 0,
+        "other": 0,
+        "_total": 29
+      },
+      "test_executions": {
+        "total_run": 52,
+        "passed": 50,
+        "failed": 2,
+        "errors": 0,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": true,
+      "output_length": 2561,
+      "key_messages": [
+        "Tests: 18 passed in 0.03s"
+      ]
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 100.0,
+      "lines_covered": 11,
+      "lines_total": 11,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": true
+  },
+  "test_results": {
+    "summary": {
+      "status": "failed",
+      "passed": 50,
+      "failed": 2,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.757
+    },
+    "test_details": [
+      {
+        "name": "test_add_numbers_positive",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            2,
+            3
+          ]
+        },
+        "output": "7"
+      },
+      {
+        "name": "test_add_numbers_negative",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            -2,
+            -3
+          ]
+        },
+        "output": "-3"
+      },
+      {
+        "name": "test_add_numbers_mixed",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            2,
+            -3
+          ]
+        },
+        "output": "1"
+      },
+      {
+        "name": "test_add_numbers_zero",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            5,
+            0
+          ]
+        },
+        "output": "7"
+      },
+      {
+        "name": "test_add_numbers_floats",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            2.5,
+            3.5
+          ]
+        },
+        "output": "8"
+      },
+      {
+        "name": "test_add_numbers_large_numbers",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            500000,
+            500000
+          ]
+        },
+        "output": "1000002"
+      },
+      {
+        "name": "test_add_numbers_type_error",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "add_numbers": [
+            2,
+            "b"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "test_add_numbers_max_result",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            "MAX_RESULT - 3",
+            1
+          ]
+        },
+        "output": "1000001"
+      },
+      {
+        "name": "test_calculate_percentage_positive",
+        "status": "passed",
+        "inputs": {
+          "calculate_percentage": [
+            100,
+            25
+          ]
+        },
+        "output": "25"
+      },
+      {
+        "name": "test_calculate_percentage_negative",
+        "status": "passed",
+        "inputs": {
+          "calculate_percentage": [
+            -100,
+            25
+          ]
+        },
+        "output": "-25"
+      },
+      {
+        "name": "test_calculate_percentage_zero",
+        "status": "passed",
+        "inputs": {
+          "calculate_percentage": [
+            100,
+            0
+          ]
+        },
+        "output": "0"
+      },
+      {
+        "name": "test_calculate_percentage_float",
+        "status": "passed",
+        "inputs": {
+          "calculate_percentage": [
+            50.5,
+            10
+          ]
+        },
+        "output": "5.05"
+      },
+      {
+        "name": "test_calculate_percentage_float_percentage",
+        "status": "passed",
+        "inputs": {
+          "calculate_percentage": [
+            100,
+            25.5
+          ]
+        },
+        "output": "25.5"
+      },
+      {
+        "name": "test_calculate_percentage_large_value",
+        "status": "passed",
+        "inputs": {
+          "calculate_percentage": [
+            100000,
+            50
+          ]
+        },
+        "output": "50000"
+      },
+      {
+        "name": "test_calculate_percentage_large_percentage",
+        "status": "passed",
+        "inputs": {
+          "calculate_percentage": [
+            100,
+            150
+          ]
+        },
+        "output": "150"
+      },
+      {
+        "name": "test_calculate_percentage_type_error",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_percentage": [
+            100,
+            "b"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "test_calculate_percentage_max_result",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_percentage": [
+            "MAX_RESULT",
+            200
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "test_calculate_percentage_close_to_max",
+        "status": "passed",
+        "inputs": {
+          "calculate_percentage": [
+            "value",
+            "percentage"
+          ]
+        },
+        "output": "value"
+      },
+      {
+        "name": "test_calculate_percentage_negative_value",
+        "status": "passed",
+        "inputs": {
+          "calculate_percentage": [
+            -100,
+            25
+          ]
+        },
+        "output": "-25"
+      },
+      {
+        "name": "test_calculate_percentage_negative_percentage",
+        "status": "passed",
+        "inputs": {
+          "calculate_percentage": [
+            100,
+            -25
+          ]
+        },
+        "output": "-25"
+      },
+      {
+        "name": "test_calculate_percentage_zero_value",
+        "status": "passed",
+        "inputs": {
+          "calculate_percentage": [
+            0,
+            25
+          ]
+        },
+        "output": "0"
+      },
+      {
+        "name": "test_calculate_percentage_zero_percentage",
+        "status": "passed",
+        "inputs": {
+          "calculate_percentage": [
+            100,
+            0
+          ]
+        },
+        "output": "0"
+      },
+      {
+        "name": "test_calculate_percentage_result_exceeds_max",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_percentage": [
+            "MAX_RESULT",
+            200
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "test_calculate_percentage_floats",
+        "status": "passed",
+        "inputs": {
+          "calculate_percentage": [
+            50.5,
+            10.5
+          ]
+        },
+        "output": "5.3025"
+      },
+      {
+        "name": "test_add_numbers_basic",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            1,
+            2
+          ]
+        },
+        "output": "5"
+      },
+      {
+        "name": "test_add_numbers_large",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            1000000,
+            1
+          ]
+        },
+        "output": "1000003"
+      },
+      {
+        "name": "test_calculate_percentage_basic",
+        "status": "passed",
+        "inputs": {
+          "calculate_percentage": [
+            100,
+            10
+          ]
+        },
+        "output": "10"
+      },
+      {
+        "name": "test_calculate_percentage_float_value",
+        "status": "passed",
+        "inputs": {
+          "calculate_percentage": [
+            50.5,
+            10
+          ]
+        },
+        "output": "5.05"
+      },
+      {
+        "name": "test_calculate_percentage_exceeds_max_result",
+        "status": "failed",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_percentage": [
+            "MAX_RESULT",
+            100
+          ]
+        },
+        "output": null
+      }
+    ],
+    "raw_output": "============================= test session starts ==============================\nplatform darwin -- Python 3.13.7, pytest-7.4.3, pluggy-1.6.0 -- /Users/naveen.kumar/python_projects/Git-to-Unit-test-code/JIRA-GIT-to-Code_Unit_testcase/venv/bin/python3\ncachedir: .pytest_cache\nrootdir: /Users/naveen.kumar/python_projects/Git-to-Unit-test-code/JIRA-GIT-to-Code_Unit_testcase/temp_repos/test-code_release_pr-check\nplugins: anyio-4.12.1, cov-4.1.0\ncollecting ... collected 18 items\n\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_add_numbers_positive PASSED [  5%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_add_numbers_negative PASSED [ 11%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_add_numbers_mixed PASSED [ 16%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_add_numbers_zero PASSED [ 22%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_add_numbers_floats PASSED [ 27%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_add_numbers_large_numbers PASSED [ 33%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_add_numbers_type_error PASSED [ 38%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_add_numbers_max_result PASSED [ 44%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_calculate_percentage_positive PASSED [ 50%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_calculate_percentage_negative PASSED [ 55%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_calculate_percentage_zero PASSED [ 61%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_calculate_percentage_float PASSED [ 66%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_calculate_percentage_float_percentage PASSED [ 72%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_calculate_percentage_large_value PASSED [ 77%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_calculate_percentage_large_percentage PASSED [ 83%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_calculate_percentage_type_error PASSED [ 88%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_calculate_percentage_max_result PASSED [ 94%]\n../../../testcases/vertex_ai/test_calculator_20260205_150328.py::test_calculate_percentage_close_to_max PASSED [100%]\n\n============================== 18 passed in 0.03s ==============================\n"
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "test_add_numbers_positive",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              2,
+              3
+            ]
+          },
+          "expected_output": "7",
+          "status": "passed",
+          "error": null,
+          "actual_output": "7"
+        },
+        {
+          "name": "test_add_numbers_negative",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              -2,
+              -3
+            ]
+          },
+          "expected_output": "-3",
+          "status": "passed",
+          "error": null,
+          "actual_output": "-3"
+        },
+        {
+          "name": "test_add_numbers_mixed",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              2,
+              -3
+            ]
+          },
+          "expected_output": "1",
+          "status": "passed",
+          "error": null,
+          "actual_output": "1"
+        },
+        {
+          "name": "test_add_numbers_zero",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              5,
+              0
+            ]
+          },
+          "expected_output": "7",
+          "status": "passed",
+          "error": null,
+          "actual_output": "7"
+        },
+        {
+          "name": "test_add_numbers_floats",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              2.5,
+              3.5
+            ]
+          },
+          "expected_output": "8.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "8"
+        },
+        {
+          "name": "test_add_numbers_large_numbers",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              500000,
+              500000
+            ]
+          },
+          "expected_output": "1000002",
+          "status": "passed",
+          "error": null,
+          "actual_output": "1000002"
+        },
+        {
+          "name": "test_add_numbers_type_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "add_numbers": [
+              2,
+              "b"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_add_numbers_max_result",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              "MAX_RESULT - 3",
+              1
+            ]
+          },
+          "expected_output": "MAX_RESULT",
+          "status": "passed",
+          "error": null,
+          "actual_output": "1000001"
+        },
+        {
+          "name": "test_calculate_percentage_positive",
+          "type": "function",
+          "inputs": {
+            "calculate_percentage": [
+              100,
+              25
+            ]
+          },
+          "expected_output": "25.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "25"
+        },
+        {
+          "name": "test_calculate_percentage_negative",
+          "type": "function",
+          "inputs": {
+            "calculate_percentage": [
+              -100,
+              25
+            ]
+          },
+          "expected_output": "-25.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "-25"
+        },
+        {
+          "name": "test_calculate_percentage_zero",
+          "type": "function",
+          "inputs": {
+            "calculate_percentage": [
+              100,
+              0
+            ]
+          },
+          "expected_output": "0.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "0"
+        },
+        {
+          "name": "test_calculate_percentage_float",
+          "type": "function",
+          "inputs": {
+            "calculate_percentage": [
+              50.5,
+              10
+            ]
+          },
+          "expected_output": "5.05",
+          "status": "passed",
+          "error": null,
+          "actual_output": "5.05"
+        },
+        {
+          "name": "test_calculate_percentage_float_percentage",
+          "type": "function",
+          "inputs": {
+            "calculate_percentage": [
+              100,
+              25.5
+            ]
+          },
+          "expected_output": "25.5",
+          "status": "passed",
+          "error": null,
+          "actual_output": "25.5"
+        },
+        {
+          "name": "test_calculate_percentage_large_value",
+          "type": "function",
+          "inputs": {
+            "calculate_percentage": [
+              100000,
+              50
+            ]
+          },
+          "expected_output": "50000.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "50000"
+        },
+        {
+          "name": "test_calculate_percentage_large_percentage",
+          "type": "function",
+          "inputs": {
+            "calculate_percentage": [
+              100,
+              150
+            ]
+          },
+          "expected_output": "150.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "150"
+        },
+        {
+          "name": "test_calculate_percentage_type_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_percentage": [
+              100,
+              "b"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_percentage_max_result",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "ValueError"
+            ],
+            "calculate_percentage": [
+              "MAX_RESULT",
+              200
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_percentage_close_to_max",
+          "type": "function",
+          "inputs": {
+            "calculate_percentage": [
+              "value",
+              "percentage"
+            ]
+          },
+          "expected_output": "value",
+          "status": "passed",
+          "error": null,
+          "actual_output": "value"
+        },
+        {
+          "name": "test_calculate_percentage_negative_value",
+          "type": "function",
+          "inputs": {
+            "calculate_percentage": [
+              -100,
+              25
+            ]
+          },
+          "expected_output": "-25.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "-25"
+        },
+        {
+          "name": "test_calculate_percentage_negative_percentage",
+          "type": "function",
+          "inputs": {
+            "calculate_percentage": [
+              100,
+              -25
+            ]
+          },
+          "expected_output": "-25.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "-25"
+        },
+        {
+          "name": "test_calculate_percentage_zero_value",
+          "type": "function",
+          "inputs": {
+            "calculate_percentage": [
+              0,
+              25
+            ]
+          },
+          "expected_output": "0.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "0"
+        },
+        {
+          "name": "test_calculate_percentage_zero_percentage",
+          "type": "function",
+          "inputs": {
+            "calculate_percentage": [
+              100,
+              0
+            ]
+          },
+          "expected_output": "0.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "0"
+        },
+        {
+          "name": "test_calculate_percentage_result_exceeds_max",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "ValueError"
+            ],
+            "calculate_percentage": [
+              "MAX_RESULT",
+              200
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_percentage_floats",
+          "type": "function",
+          "inputs": {
+            "calculate_percentage": [
+              50.5,
+              10.5
+            ]
+          },
+          "expected_output": "5.3025",
+          "status": "passed",
+          "error": null,
+          "actual_output": "5.3025"
+        },
+        {
+          "name": "test_add_numbers_basic",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              1,
+              2
+            ]
+          },
+          "expected_output": "5",
+          "status": "passed",
+          "error": null,
+          "actual_output": "5"
+        },
+        {
+          "name": "test_add_numbers_large",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              1000000,
+              1
+            ]
+          },
+          "expected_output": "1000003",
+          "status": "passed",
+          "error": null,
+          "actual_output": "1000003"
+        },
+        {
+          "name": "test_calculate_percentage_basic",
+          "type": "function",
+          "inputs": {
+            "calculate_percentage": [
+              100,
+              10
+            ]
+          },
+          "expected_output": "10.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "10"
+        },
+        {
+          "name": "test_calculate_percentage_float_value",
+          "type": "function",
+          "inputs": {
+            "calculate_percentage": [
+              50.5,
+              10
+            ]
+          },
+          "expected_output": "5.05",
+          "status": "passed",
+          "error": null,
+          "actual_output": "5.05"
+        },
+        {
+          "name": "test_calculate_percentage_exceeds_max_result",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "ValueError"
+            ],
+            "calculate_percentage": [
+              "MAX_RESULT",
+              100
+            ]
+          },
+          "expected_output": null,
+          "status": "failed",
+          "error": null
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "test_add_numbers_positive",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            2,
+            3
+          ]
+        },
+        "expected_output": "7",
+        "status": "passed",
+        "error": null,
+        "actual_output": "7"
+      },
+      {
+        "name": "test_add_numbers_negative",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            -2,
+            -3
+          ]
+        },
+        "expected_output": "-3",
+        "status": "passed",
+        "error": null,
+        "actual_output": "-3"
+      },
+      {
+        "name": "test_add_numbers_mixed",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            2,
+            -3
+          ]
+        },
+        "expected_output": "1",
+        "status": "passed",
+        "error": null,
+        "actual_output": "1"
+      },
+      {
+        "name": "test_add_numbers_zero",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            5,
+            0
+          ]
+        },
+        "expected_output": "7",
+        "status": "passed",
+        "error": null,
+        "actual_output": "7"
+      },
+      {
+        "name": "test_add_numbers_floats",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            2.5,
+            3.5
+          ]
+        },
+        "expected_output": "8.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "8"
+      },
+      {
+        "name": "test_add_numbers_large_numbers",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            500000,
+            500000
+          ]
+        },
+        "expected_output": "1000002",
+        "status": "passed",
+        "error": null,
+        "actual_output": "1000002"
+      },
+      {
+        "name": "test_add_numbers_type_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "add_numbers": [
+            2,
+            "b"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_add_numbers_max_result",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            "MAX_RESULT - 3",
+            1
+          ]
+        },
+        "expected_output": "MAX_RESULT",
+        "status": "passed",
+        "error": null,
+        "actual_output": "1000001"
+      },
+      {
+        "name": "test_calculate_percentage_positive",
+        "type": "function",
+        "inputs": {
+          "calculate_percentage": [
+            100,
+            25
+          ]
+        },
+        "expected_output": "25.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "25"
+      },
+      {
+        "name": "test_calculate_percentage_negative",
+        "type": "function",
+        "inputs": {
+          "calculate_percentage": [
+            -100,
+            25
+          ]
+        },
+        "expected_output": "-25.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "-25"
+      },
+      {
+        "name": "test_calculate_percentage_zero",
+        "type": "function",
+        "inputs": {
+          "calculate_percentage": [
+            100,
+            0
+          ]
+        },
+        "expected_output": "0.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "0"
+      },
+      {
+        "name": "test_calculate_percentage_float",
+        "type": "function",
+        "inputs": {
+          "calculate_percentage": [
+            50.5,
+            10
+          ]
+        },
+        "expected_output": "5.05",
+        "status": "passed",
+        "error": null,
+        "actual_output": "5.05"
+      },
+      {
+        "name": "test_calculate_percentage_float_percentage",
+        "type": "function",
+        "inputs": {
+          "calculate_percentage": [
+            100,
+            25.5
+          ]
+        },
+        "expected_output": "25.5",
+        "status": "passed",
+        "error": null,
+        "actual_output": "25.5"
+      },
+      {
+        "name": "test_calculate_percentage_large_value",
+        "type": "function",
+        "inputs": {
+          "calculate_percentage": [
+            100000,
+            50
+          ]
+        },
+        "expected_output": "50000.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "50000"
+      },
+      {
+        "name": "test_calculate_percentage_large_percentage",
+        "type": "function",
+        "inputs": {
+          "calculate_percentage": [
+            100,
+            150
+          ]
+        },
+        "expected_output": "150.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "150"
+      },
+      {
+        "name": "test_calculate_percentage_type_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_percentage": [
+            100,
+            "b"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_percentage_max_result",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_percentage": [
+            "MAX_RESULT",
+            200
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_percentage_close_to_max",
+        "type": "function",
+        "inputs": {
+          "calculate_percentage": [
+            "value",
+            "percentage"
+          ]
+        },
+        "expected_output": "value",
+        "status": "passed",
+        "error": null,
+        "actual_output": "value"
+      },
+      {
+        "name": "test_calculate_percentage_negative_value",
+        "type": "function",
+        "inputs": {
+          "calculate_percentage": [
+            -100,
+            25
+          ]
+        },
+        "expected_output": "-25.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "-25"
+      },
+      {
+        "name": "test_calculate_percentage_negative_percentage",
+        "type": "function",
+        "inputs": {
+          "calculate_percentage": [
+            100,
+            -25
+          ]
+        },
+        "expected_output": "-25.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "-25"
+      },
+      {
+        "name": "test_calculate_percentage_zero_value",
+        "type": "function",
+        "inputs": {
+          "calculate_percentage": [
+            0,
+            25
+          ]
+        },
+        "expected_output": "0.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "0"
+      },
+      {
+        "name": "test_calculate_percentage_zero_percentage",
+        "type": "function",
+        "inputs": {
+          "calculate_percentage": [
+            100,
+            0
+          ]
+        },
+        "expected_output": "0.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "0"
+      },
+      {
+        "name": "test_calculate_percentage_result_exceeds_max",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_percentage": [
+            "MAX_RESULT",
+            200
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_percentage_floats",
+        "type": "function",
+        "inputs": {
+          "calculate_percentage": [
+            50.5,
+            10.5
+          ]
+        },
+        "expected_output": "5.3025",
+        "status": "passed",
+        "error": null,
+        "actual_output": "5.3025"
+      },
+      {
+        "name": "test_add_numbers_basic",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            1,
+            2
+          ]
+        },
+        "expected_output": "5",
+        "status": "passed",
+        "error": null,
+        "actual_output": "5"
+      },
+      {
+        "name": "test_add_numbers_large",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            1000000,
+            1
+          ]
+        },
+        "expected_output": "1000003",
+        "status": "passed",
+        "error": null,
+        "actual_output": "1000003"
+      },
+      {
+        "name": "test_calculate_percentage_basic",
+        "type": "function",
+        "inputs": {
+          "calculate_percentage": [
+            100,
+            10
+          ]
+        },
+        "expected_output": "10.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "10"
+      },
+      {
+        "name": "test_calculate_percentage_float_value",
+        "type": "function",
+        "inputs": {
+          "calculate_percentage": [
+            50.5,
+            10
+          ]
+        },
+        "expected_output": "5.05",
+        "status": "passed",
+        "error": null,
+        "actual_output": "5.05"
+      },
+      {
+        "name": "test_calculate_percentage_exceeds_max_result",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_percentage": [
+            "MAX_RESULT",
+            100
+          ]
+        },
+        "expected_output": null,
+        "status": "failed",
+        "error": null
+      }
+    ]
+  }
+}
