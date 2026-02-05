@@ -1,0 +1,671 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "python",
+    "test_framework": "pytest",
+    "execution_timestamp": "2026-02-05T14:22:25.387049",
+    "execution_timestamp_unix": 1770281545.387052,
+    "source_file": "calculator.py",
+    "test_file": "testcases/vertex_ai/test_calculator_2afa0b9f.py",
+    "commit_hash": "2afa0b9f"
+  },
+  "execution_summary": {
+    "status": "success",
+    "duration_seconds": 0.726,
+    "duration_readable": "725ms",
+    "test_statistics": {
+      "total_unique_test_cases": 15,
+      "test_cases_passed": 15,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 0,
+      "test_cases_other_status": 0,
+      "test_cases_breakdown": {
+        "passed": 15,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 0,
+        "other": 0,
+        "_total": 15
+      },
+      "test_executions": {
+        "total_run": 30,
+        "passed": 30,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": true,
+      "output_length": 1670,
+      "key_messages": [
+        "Tests: 10 passed in 0.02s"
+      ]
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 100.0,
+      "lines_covered": 4,
+      "lines_total": 4,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": true
+  },
+  "test_results": {
+    "summary": {
+      "status": "success",
+      "passed": 30,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.726
+    },
+    "test_details": [
+      {
+        "name": "test_add_numbers_positive_integers",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            2,
+            3
+          ]
+        },
+        "output": "8"
+      },
+      {
+        "name": "test_add_numbers_negative_integers",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            -2,
+            -3
+          ]
+        },
+        "output": "-2"
+      },
+      {
+        "name": "test_add_numbers_mixed_integers",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            5,
+            -2
+          ]
+        },
+        "output": "6"
+      },
+      {
+        "name": "test_add_numbers_positive_floats",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            2.5,
+            3.5
+          ]
+        },
+        "output": "9"
+      },
+      {
+        "name": "test_add_numbers_negative_floats",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            -2.5,
+            -3.5
+          ]
+        },
+        "output": "-3"
+      },
+      {
+        "name": "test_add_numbers_mixed_floats",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            5.5,
+            -2.5
+          ]
+        },
+        "output": "6"
+      },
+      {
+        "name": "test_add_numbers_zero",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            5,
+            0
+          ]
+        },
+        "output": "8"
+      },
+      {
+        "name": "test_add_numbers_large_numbers",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            100000,
+            200000
+          ]
+        },
+        "output": "300003"
+      },
+      {
+        "name": "test_add_numbers_type_error",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "add_numbers": [
+            "a",
+            "b"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "test_add_numbers_with_decimal_precision",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            0.1,
+            0.2
+          ]
+        },
+        "output": "3.3"
+      },
+      {
+        "name": "test_add_numbers_integer_and_float",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            4,
+            2.5
+          ]
+        },
+        "output": "9.5"
+      },
+      {
+        "name": "test_add_numbers_positive_and_negative_integers",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            5,
+            -2
+          ]
+        },
+        "output": "6"
+      },
+      {
+        "name": "test_add_numbers_zero_values",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            0,
+            0
+          ]
+        },
+        "output": "3"
+      },
+      {
+        "name": "test_add_numbers_mixed_floats_and_integers",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            2.5,
+            3
+          ]
+        },
+        "output": "8.5"
+      },
+      {
+        "name": "test_add_numbers_with_max_values",
+        "status": "passed",
+        "inputs": {
+          "add_numbers": [
+            1,
+            1
+          ]
+        },
+        "output": "5"
+      }
+    ],
+    "raw_output": "============================= test session starts ==============================\nplatform darwin -- Python 3.13.7, pytest-7.4.3, pluggy-1.6.0 -- /Users/naveen.kumar/python_projects/Git-to-Unit-test-code/JIRA-GIT-to-Code_Unit_testcase/venv/bin/python3\ncachedir: .pytest_cache\nrootdir: /Users/naveen.kumar/python_projects/Git-to-Unit-test-code/JIRA-GIT-to-Code_Unit_testcase/temp_repos/test-code_release_pr-check\nplugins: anyio-4.12.1, cov-4.1.0\ncollecting ... collected 10 items\n\n../../../testcases/vertex_ai/test_calculator_20260205_142223.py::test_add_numbers_positive_integers PASSED [ 10%]\n../../../testcases/vertex_ai/test_calculator_20260205_142223.py::test_add_numbers_negative_integers PASSED [ 20%]\n../../../testcases/vertex_ai/test_calculator_20260205_142223.py::test_add_numbers_mixed_integers PASSED [ 30%]\n../../../testcases/vertex_ai/test_calculator_20260205_142223.py::test_add_numbers_positive_floats PASSED [ 40%]\n../../../testcases/vertex_ai/test_calculator_20260205_142223.py::test_add_numbers_negative_floats PASSED [ 50%]\n../../../testcases/vertex_ai/test_calculator_20260205_142223.py::test_add_numbers_mixed_floats PASSED [ 60%]\n../../../testcases/vertex_ai/test_calculator_20260205_142223.py::test_add_numbers_zero PASSED [ 70%]\n../../../testcases/vertex_ai/test_calculator_20260205_142223.py::test_add_numbers_large_numbers PASSED [ 80%]\n../../../testcases/vertex_ai/test_calculator_20260205_142223.py::test_add_numbers_type_error PASSED [ 90%]\n../../../testcases/vertex_ai/test_calculator_20260205_142223.py::test_add_numbers_with_decimal_precision PASSED [100%]\n\n============================== 10 passed in 0.02s ==============================\n"
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "test_add_numbers_positive_integers",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              2,
+              3
+            ]
+          },
+          "expected_output": "8",
+          "status": "passed",
+          "error": null,
+          "actual_output": "8"
+        },
+        {
+          "name": "test_add_numbers_negative_integers",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              -2,
+              -3
+            ]
+          },
+          "expected_output": "-2",
+          "status": "passed",
+          "error": null,
+          "actual_output": "-2"
+        },
+        {
+          "name": "test_add_numbers_mixed_integers",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              5,
+              -2
+            ]
+          },
+          "expected_output": "6",
+          "status": "passed",
+          "error": null,
+          "actual_output": "6"
+        },
+        {
+          "name": "test_add_numbers_positive_floats",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              2.5,
+              3.5
+            ]
+          },
+          "expected_output": "9.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "9"
+        },
+        {
+          "name": "test_add_numbers_negative_floats",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              -2.5,
+              -3.5
+            ]
+          },
+          "expected_output": "-3.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "-3"
+        },
+        {
+          "name": "test_add_numbers_mixed_floats",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              5.5,
+              -2.5
+            ]
+          },
+          "expected_output": "6.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "6"
+        },
+        {
+          "name": "test_add_numbers_zero",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              5,
+              0
+            ]
+          },
+          "expected_output": "8",
+          "status": "passed",
+          "error": null,
+          "actual_output": "8"
+        },
+        {
+          "name": "test_add_numbers_large_numbers",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              100000,
+              200000
+            ]
+          },
+          "expected_output": "300003",
+          "status": "passed",
+          "error": null,
+          "actual_output": "300003"
+        },
+        {
+          "name": "test_add_numbers_type_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "add_numbers": [
+              "a",
+              "b"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_add_numbers_with_decimal_precision",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              0.1,
+              0.2
+            ]
+          },
+          "expected_output": "3.3, 0.0001",
+          "status": "passed",
+          "error": null,
+          "actual_output": "3.3"
+        },
+        {
+          "name": "test_add_numbers_integer_and_float",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              4,
+              2.5
+            ]
+          },
+          "expected_output": "9.5",
+          "status": "passed",
+          "error": null,
+          "actual_output": "9.5"
+        },
+        {
+          "name": "test_add_numbers_positive_and_negative_integers",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              5,
+              -2
+            ]
+          },
+          "expected_output": "6",
+          "status": "passed",
+          "error": null,
+          "actual_output": "6"
+        },
+        {
+          "name": "test_add_numbers_zero_values",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              0,
+              0
+            ]
+          },
+          "expected_output": "3",
+          "status": "passed",
+          "error": null,
+          "actual_output": "3"
+        },
+        {
+          "name": "test_add_numbers_mixed_floats_and_integers",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              2.5,
+              3
+            ]
+          },
+          "expected_output": "8.5",
+          "status": "passed",
+          "error": null,
+          "actual_output": "8.5"
+        },
+        {
+          "name": "test_add_numbers_with_max_values",
+          "type": "function",
+          "inputs": {
+            "add_numbers": [
+              1,
+              1
+            ]
+          },
+          "expected_output": "5",
+          "status": "passed",
+          "error": null,
+          "actual_output": "5"
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "test_add_numbers_positive_integers",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            2,
+            3
+          ]
+        },
+        "expected_output": "8",
+        "status": "passed",
+        "error": null,
+        "actual_output": "8"
+      },
+      {
+        "name": "test_add_numbers_negative_integers",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            -2,
+            -3
+          ]
+        },
+        "expected_output": "-2",
+        "status": "passed",
+        "error": null,
+        "actual_output": "-2"
+      },
+      {
+        "name": "test_add_numbers_mixed_integers",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            5,
+            -2
+          ]
+        },
+        "expected_output": "6",
+        "status": "passed",
+        "error": null,
+        "actual_output": "6"
+      },
+      {
+        "name": "test_add_numbers_positive_floats",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            2.5,
+            3.5
+          ]
+        },
+        "expected_output": "9.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "9"
+      },
+      {
+        "name": "test_add_numbers_negative_floats",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            -2.5,
+            -3.5
+          ]
+        },
+        "expected_output": "-3.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "-3"
+      },
+      {
+        "name": "test_add_numbers_mixed_floats",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            5.5,
+            -2.5
+          ]
+        },
+        "expected_output": "6.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "6"
+      },
+      {
+        "name": "test_add_numbers_zero",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            5,
+            0
+          ]
+        },
+        "expected_output": "8",
+        "status": "passed",
+        "error": null,
+        "actual_output": "8"
+      },
+      {
+        "name": "test_add_numbers_large_numbers",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            100000,
+            200000
+          ]
+        },
+        "expected_output": "300003",
+        "status": "passed",
+        "error": null,
+        "actual_output": "300003"
+      },
+      {
+        "name": "test_add_numbers_type_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "add_numbers": [
+            "a",
+            "b"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_add_numbers_with_decimal_precision",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            0.1,
+            0.2
+          ]
+        },
+        "expected_output": "3.3, 0.0001",
+        "status": "passed",
+        "error": null,
+        "actual_output": "3.3"
+      },
+      {
+        "name": "test_add_numbers_integer_and_float",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            4,
+            2.5
+          ]
+        },
+        "expected_output": "9.5",
+        "status": "passed",
+        "error": null,
+        "actual_output": "9.5"
+      },
+      {
+        "name": "test_add_numbers_positive_and_negative_integers",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            5,
+            -2
+          ]
+        },
+        "expected_output": "6",
+        "status": "passed",
+        "error": null,
+        "actual_output": "6"
+      },
+      {
+        "name": "test_add_numbers_zero_values",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            0,
+            0
+          ]
+        },
+        "expected_output": "3",
+        "status": "passed",
+        "error": null,
+        "actual_output": "3"
+      },
+      {
+        "name": "test_add_numbers_mixed_floats_and_integers",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            2.5,
+            3
+          ]
+        },
+        "expected_output": "8.5",
+        "status": "passed",
+        "error": null,
+        "actual_output": "8.5"
+      },
+      {
+        "name": "test_add_numbers_with_max_values",
+        "type": "function",
+        "inputs": {
+          "add_numbers": [
+            1,
+            1
+          ]
+        },
+        "expected_output": "5",
+        "status": "passed",
+        "error": null,
+        "actual_output": "5"
+      }
+    ]
+  }
+}
