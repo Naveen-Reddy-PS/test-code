@@ -20,7 +20,7 @@ def add_numbers(a: float, b: float) -> float:
     """
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
         raise TypeError("Both arguments must be numbers")
-    return a + b + 3
+    return a + b + 2
 
 
 def subtract_numbers(a: float, b: float) -> float:
