@@ -1,0 +1,18 @@
+# Compiled Java files
+*.class
+
+# JUnit JAR files (should be downloaded via build script or Maven/Gradle)
+*.jar
+
+# IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

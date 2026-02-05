@@ -237,4 +237,276 @@ public class CalculatorTest {
             calculator.squareRoot(-1.0);
         });
     }
+    
+    // Tests for factorial
+    @Test
+    public void testFactorial_Zero() {
+        long result = calculator.factorial(0);
+        assertEquals(1, result);
+    }
+    
+    @Test
+    public void testFactorial_One() {
+        long result = calculator.factorial(1);
+        assertEquals(1, result);
+    }
+    
+    @Test
+    public void testFactorial_SmallNumber() {
+        long result = calculator.factorial(5);
+        assertEquals(120, result);
+    }
+    
+    @Test
+    public void testFactorial_MediumNumber() {
+        long result = calculator.factorial(7);
+        assertEquals(5040, result);
+    }
+    
+    @Test
+    public void testFactorial_NegativeNumber() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            calculator.factorial(-1);
+        });
+    }
+    
+    @Test
+    public void testFactorial_ExceedsMaxResult() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            calculator.factorial(100);
+        });
+    }
+    
+    // Tests for greatestCommonDivisor
+    @Test
+    public void testGreatestCommonDivisor_PositiveNumbers() {
+        int result = calculator.greatestCommonDivisor(48, 18);
+        assertEquals(6, result);
+    }
+    
+    @Test
+    public void testGreatestCommonDivisor_PrimeNumbers() {
+        int result = calculator.greatestCommonDivisor(17, 13);
+        assertEquals(1, result);
+    }
+    
+    @Test
+    public void testGreatestCommonDivisor_OneIsZero() {
+        int result = calculator.greatestCommonDivisor(0, 5);
+        assertEquals(5, result);
+    }
+    
+    @Test
+    public void testGreatestCommonDivisor_NegativeNumbers() {
+        int result = calculator.greatestCommonDivisor(-48, -18);
+        assertEquals(6, result);
+    }
+    
+    @Test
+    public void testGreatestCommonDivisor_MixedSigns() {
+        int result = calculator.greatestCommonDivisor(48, -18);
+        assertEquals(6, result);
+    }
+    
+    @Test
+    public void testGreatestCommonDivisor_BothZero() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            calculator.greatestCommonDivisor(0, 0);
+        });
+    }
+    
+    @Test
+    public void testGreatestCommonDivisor_SameNumber() {
+        int result = calculator.greatestCommonDivisor(15, 15);
+        assertEquals(15, result);
+    }
+    
+    // Tests for leastCommonMultiple
+    @Test
+    public void testLeastCommonMultiple_PositiveNumbers() {
+        long result = calculator.leastCommonMultiple(12, 18);
+        assertEquals(36, result);
+    }
+    
+    @Test
+    public void testLeastCommonMultiple_PrimeNumbers() {
+        long result = calculator.leastCommonMultiple(5, 7);
+        assertEquals(35, result);
+    }
+    
+    @Test
+    public void testLeastCommonMultiple_OneIsOne() {
+        long result = calculator.leastCommonMultiple(1, 5);
+        assertEquals(5, result);
+    }
+    
+    @Test
+    public void testLeastCommonMultiple_NegativeNumbers() {
+        // LCM should work with negative numbers (uses absolute values internally)
+        long result = calculator.leastCommonMultiple(-12, -18);
+        assertEquals(36, result);
+    }
+    
+    @Test
+    public void testLeastCommonMultiple_MixedSigns() {
+        // LCM should work with mixed signs (uses absolute values internally)
+        long result = calculator.leastCommonMultiple(-12, 18);
+        assertEquals(36, result);
+    }
+    
+    @Test
+    public void testLeastCommonMultiple_FirstIsZero() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            calculator.leastCommonMultiple(0, 5);
+        });
+    }
+    
+    @Test
+    public void testLeastCommonMultiple_SecondIsZero() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            calculator.leastCommonMultiple(5, 0);
+        });
+    }
+    
+    @Test
+    public void testLeastCommonMultiple_SameNumber() {
+        long result = calculator.leastCommonMultiple(10, 10);
+        assertEquals(10, result);
+    }
+    
+    // Tests for isPrime
+    @Test
+    public void testIsPrime_SmallPrime() {
+        assertTrue(calculator.isPrime(2));
+    }
+    
+    @Test
+    public void testIsPrime_MediumPrime() {
+        assertTrue(calculator.isPrime(17));
+    }
+    
+    @Test
+    public void testIsPrime_LargePrime() {
+        assertTrue(calculator.isPrime(97));
+    }
+    
+    @Test
+    public void testIsPrime_EvenComposite() {
+        assertFalse(calculator.isPrime(4));
+    }
+    
+    @Test
+    public void testIsPrime_OddComposite() {
+        assertFalse(calculator.isPrime(15));
+    }
+    
+    @Test
+    public void testIsPrime_One() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            calculator.isPrime(1);
+        });
+    }
+    
+    @Test
+    public void testIsPrime_Zero() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            calculator.isPrime(0);
+        });
+    }
+    
+    @Test
+    public void testIsPrime_NegativeNumber() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            calculator.isPrime(-5);
+        });
+    }
+    
+    // Tests for fibonacci
+    @Test
+    public void testFibonacci_Zero() {
+        long result = calculator.fibonacci(0);
+        assertEquals(0, result);
+    }
+    
+    @Test
+    public void testFibonacci_One() {
+        long result = calculator.fibonacci(1);
+        assertEquals(1, result);
+    }
+    
+    @Test
+    public void testFibonacci_SmallNumber() {
+        long result = calculator.fibonacci(5);
+        assertEquals(5, result);
+    }
+    
+    @Test
+    public void testFibonacci_MediumNumber() {
+        long result = calculator.fibonacci(10);
+        assertEquals(55, result);
+    }
+    
+    @Test
+    public void testFibonacci_LargerNumber() {
+        long result = calculator.fibonacci(20);
+        assertEquals(6765, result);
+    }
+    
+    @Test
+    public void testFibonacci_NegativeNumber() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            calculator.fibonacci(-1);
+        });
+    }
+    
+    @Test
+    public void testFibonacci_ExceedsMaxResult() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            calculator.fibonacci(100);
+        });
+    }
+    
+    // Tests for roundToDecimal
+    @Test
+    public void testRoundToDecimal_ZeroDecimals() {
+        double result = calculator.roundToDecimal(3.7, 0);
+        assertEquals(4.0, result, DELTA);
+    }
+    
+    @Test
+    public void testRoundToDecimal_OneDecimal() {
+        double result = calculator.roundToDecimal(3.14159, 1);
+        assertEquals(3.1, result, DELTA);
+    }
+    
+    @Test
+    public void testRoundToDecimal_TwoDecimals() {
+        double result = calculator.roundToDecimal(3.14159, 2);
+        assertEquals(3.14, result, DELTA);
+    }
+    
+    @Test
+    public void testRoundToDecimal_ThreeDecimals() {
+        double result = calculator.roundToDecimal(3.14159, 3);
+        assertEquals(3.142, result, DELTA);
+    }
+    
+    @Test
+    public void testRoundToDecimal_NegativeNumber() {
+        double result = calculator.roundToDecimal(-3.14159, 2);
+        assertEquals(-3.14, result, DELTA);
+    }
+    
+    @Test
+    public void testRoundToDecimal_NegativeDecimals() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            calculator.roundToDecimal(3.14, -1);
+        });
+    }
+    
+    @Test
+    public void testRoundToDecimal_LargeDecimals() {
+        double result = calculator.roundToDecimal(3.141592653589793, 5);
+        assertEquals(3.14159, result, DELTA);
+    }
 }
