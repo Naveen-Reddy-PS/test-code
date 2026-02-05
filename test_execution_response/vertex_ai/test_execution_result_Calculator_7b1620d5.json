@@ -1,0 +1,975 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "java",
+    "test_framework": "junit",
+    "execution_timestamp": "2026-02-05T12:09:08.097919",
+    "execution_timestamp_unix": 1770273548.097922,
+    "source_file": "Calculator.java",
+    "test_file": "testcases/vertex_ai/CalculatorTest_7b1620d5.java",
+    "commit_hash": "7b1620d5"
+  },
+  "execution_summary": {
+    "status": "failed",
+    "duration_seconds": 1.99,
+    "duration_readable": "1.99s",
+    "test_statistics": {
+      "total_unique_test_cases": 49,
+      "test_cases_passed": 1,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 48,
+      "test_cases_other_status": 0,
+      "test_cases_breakdown": {
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 48,
+        "other": 0,
+        "_total": 49
+      },
+      "test_executions": {
+        "total_run": 22,
+        "passed": 19,
+        "failed": 1,
+        "errors": 2,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": true,
+      "output_length": 1595,
+      "key_messages": []
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 0.0,
+      "lines_covered": 0,
+      "lines_total": 0,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": false
+  },
+  "test_results": {
+    "summary": {
+      "status": "failed",
+      "passed": 19,
+      "failed": 1,
+      "errors": 2,
+      "skipped": 0,
+      "duration_seconds": 1.99
+    },
+    "test_details": [
+      {
+        "name": "testAddNumbers_negativeNumbers",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      }
+    ],
+    "raw_output": "\nThanks for using JUnit! Support its development at https://junit.org/sponsoring\n\n\u001b[36m\u2577\u001b[0m\n\u001b[36m\u251c\u2500\u001b[0m \u001b[36mJUnit Jupiter\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u251c\u2500\u001b[0m \u001b[36mJUnit Vintage\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u2514\u2500\u001b[0m \u001b[36mCalculatorTest\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_largeNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_negativeInput\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_validInput\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_decimalNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_mixedInput\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_zeroInput\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_nanInputBoth\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_nanInputA\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_nanInputB\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u2514\u2500\u001b[0m \u001b[34mtestAddNumbers_negativeDecimalNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2514\u2500\u001b[0m \u001b[36mJUnit Platform Suite\u001b[0m \u001b[32m\u2714\u001b[0m\n\nTest run finished after 16 ms\n[         4 containers found      ]\n[         0 containers skipped    ]\n[         4 containers started    ]\n[         0 containers aborted    ]\n[         4 containers successful ]\n[         0 containers failed     ]\n[        10 tests found           ]\n[         0 tests skipped         ]\n[        10 tests started         ]\n[         0 tests aborted         ]\n[        10 tests successful      ]\n[         0 tests failed          ]\n\n\nWARNING: Delegated to the 'execute' command.\n         This behaviour has been deprecated and will be removed in a future release.\n         Please use the 'execute' command directly.\n"
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "testAddNumbers_validInput",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              5.0,
+              3.0
+            ]
+          },
+          "expected_output": "10.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_negativeInput",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              -5.0,
+              -3.0
+            ]
+          },
+          "expected_output": "-6.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_mixedInput",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              5.0,
+              -3.0
+            ]
+          },
+          "expected_output": "4.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_zeroInput",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              0.0,
+              0.0
+            ]
+          },
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_largeNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              100000.0,
+              200000.0
+            ]
+          },
+          "expected_output": "300002.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_decimalNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              2.5,
+              3.7
+            ]
+          },
+          "expected_output": "8.2",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_negativeDecimalNumbers",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              -2.5,
+              -3.7
+            ]
+          },
+          "expected_output": "-4.2",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_largeNumbers_returnsCorrectSumPlusTwo",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1000004.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "addNumbers_zeroValues_returnsTwo",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "subtractNumbers_validInput_returnsDifference",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "subtractNumbers_negativeNumbers_returnsCorrectDifference",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "subtractNumbers_positiveAndNegative_returnsCorrectDifference",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "10.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "multiplyNumbers_validInput_returnsProduct",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "6.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "multiplyNumbers_negativeNumbers_returnsCorrectProduct",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "6.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "multiplyNumbers_positiveAndNegative_returnsCorrectProduct",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-15.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "divideNumbers_validInput_returnsQuotient",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "divideNumbers_negativeNumbers_returnsCorrectQuotient",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "divideNumbers_divisorZero_throwsException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.divideNumbers": [
+              5.0,
+              0.0
+            ]
+          },
+          "expected_output": "Cannot divide by zero",
+          "status": "not_executed"
+        },
+        {
+          "name": "addThreeNumbers_validInput_returnsSum",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "6.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "addThreeNumbers_negativeNumbers_returnsCorrectSum",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-6.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "addThreeNumbers_positiveAndNegative_returnsCorrectSum",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "powerNumbers_validInput_returnsPower",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "8.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "powerNumbers_negativeNumbers_returnsCorrectPower",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.25",
+          "status": "not_executed"
+        },
+        {
+          "name": "powerNumbers_positiveAndNegative_returnsCorrectPower",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.1111111111111111",
+          "status": "not_executed"
+        },
+        {
+          "name": "moduloNumbers_validInput_returnsRemainder",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "moduloNumbers_negativeNumbers_returnsCorrectRemainder",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "moduloNumbers_divisorZero_throwsException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.moduloNumbers": [
+              5.0,
+              0.0
+            ]
+          },
+          "expected_output": "Cannot calculate modulo with zero divisor",
+          "status": "not_executed"
+        },
+        {
+          "name": "squareRoot_largeNumber_returnsCorrectSquareRoot",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1000.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "squareRoot_negativeNumber_throwsException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.squareRoot": [
+              -4.0
+            ]
+          },
+          "expected_output": "Cannot calculate square root of negative number",
+          "status": "not_executed"
+        },
+        {
+          "name": "factorial_zeroValue_returnsOne",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1",
+          "status": "not_executed"
+        },
+        {
+          "name": "factorial_largeValue_throwsException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.factorial": [
+              13
+            ],
+            "contains": [
+              "exceeds maximum allowed value"
+            ]
+          },
+          "expected_output": "true",
+          "status": "not_executed"
+        },
+        {
+          "name": "greatestCommonDivisor_validInput_returnsGCD",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "6",
+          "status": "not_executed"
+        },
+        {
+          "name": "greatestCommonDivisor_negativeNumbers_returnsCorrectGCD",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "6",
+          "status": "not_executed"
+        },
+        {
+          "name": "greatestCommonDivisor_bothNumbersZero_throwsException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.greatestCommonDivisor": [
+              0,
+              0
+            ]
+          },
+          "expected_output": "GCD is undefined when both numbers are zero",
+          "status": "not_executed"
+        },
+        {
+          "name": "leastCommonMultiple_largeNumbers_returnsCorrectLCM",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1000000",
+          "status": "not_executed"
+        },
+        {
+          "name": "leastCommonMultiple_oneNumberOne_returnsOtherNumber",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5",
+          "status": "not_executed"
+        },
+        {
+          "name": "leastCommonMultiple_resultExceedsMax_throwsException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.leastCommonMultiple": [
+              100000,
+              100
+            ],
+            "contains": [
+              "exceeds maximum allowed value"
+            ]
+          },
+          "expected_output": "true",
+          "status": "not_executed"
+        },
+        {
+          "name": "isPrime_validInput_returnsFalseForNonPrime",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "false",
+          "status": "not_executed"
+        },
+        {
+          "name": "isPrime_numberTwo_returnsTrue",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "true",
+          "status": "not_executed"
+        },
+        {
+          "name": "fibonacci_validInput_returnsFibonacciNumber",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "55",
+          "status": "not_executed"
+        },
+        {
+          "name": "fibonacci_oneValue_returnsOne",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1",
+          "status": "not_executed"
+        },
+        {
+          "name": "fibonacci_negativeValue_throwsException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.fibonacci": [
+              -5
+            ]
+          },
+          "expected_output": "Fibonacci sequence index must be non-negative",
+          "status": "not_executed"
+        },
+        {
+          "name": "roundToDecimal_zeroDecimals_returnsRoundedInteger",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "3.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_positiveNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_negativeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-1.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "-1.0"
+        },
+        {
+          "name": "testAddNumbers_mixedNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_zeroValues",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_positiveAndNegative",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "3.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_decimalValues",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.5",
+          "status": "not_executed"
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "testAddNumbers_validInput",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            5.0,
+            3.0
+          ]
+        },
+        "expected_output": "10.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_negativeInput",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            -5.0,
+            -3.0
+          ]
+        },
+        "expected_output": "-6.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_mixedInput",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            5.0,
+            -3.0
+          ]
+        },
+        "expected_output": "4.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_zeroInput",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            0.0,
+            0.0
+          ]
+        },
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_largeNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            100000.0,
+            200000.0
+          ]
+        },
+        "expected_output": "300002.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_decimalNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            2.5,
+            3.7
+          ]
+        },
+        "expected_output": "8.2",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_negativeDecimalNumbers",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            -2.5,
+            -3.7
+          ]
+        },
+        "expected_output": "-4.2",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_largeNumbers_returnsCorrectSumPlusTwo",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1000004.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "addNumbers_zeroValues_returnsTwo",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "subtractNumbers_validInput_returnsDifference",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "subtractNumbers_negativeNumbers_returnsCorrectDifference",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "subtractNumbers_positiveAndNegative_returnsCorrectDifference",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "10.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "multiplyNumbers_validInput_returnsProduct",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "6.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "multiplyNumbers_negativeNumbers_returnsCorrectProduct",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "6.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "multiplyNumbers_positiveAndNegative_returnsCorrectProduct",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-15.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "divideNumbers_validInput_returnsQuotient",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "divideNumbers_negativeNumbers_returnsCorrectQuotient",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "divideNumbers_divisorZero_throwsException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.divideNumbers": [
+            5.0,
+            0.0
+          ]
+        },
+        "expected_output": "Cannot divide by zero",
+        "status": "not_executed"
+      },
+      {
+        "name": "addThreeNumbers_validInput_returnsSum",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "6.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "addThreeNumbers_negativeNumbers_returnsCorrectSum",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-6.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "addThreeNumbers_positiveAndNegative_returnsCorrectSum",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "powerNumbers_validInput_returnsPower",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "8.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "powerNumbers_negativeNumbers_returnsCorrectPower",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.25",
+        "status": "not_executed"
+      },
+      {
+        "name": "powerNumbers_positiveAndNegative_returnsCorrectPower",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.1111111111111111",
+        "status": "not_executed"
+      },
+      {
+        "name": "moduloNumbers_validInput_returnsRemainder",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "moduloNumbers_negativeNumbers_returnsCorrectRemainder",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "moduloNumbers_divisorZero_throwsException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.moduloNumbers": [
+            5.0,
+            0.0
+          ]
+        },
+        "expected_output": "Cannot calculate modulo with zero divisor",
+        "status": "not_executed"
+      },
+      {
+        "name": "squareRoot_largeNumber_returnsCorrectSquareRoot",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1000.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "squareRoot_negativeNumber_throwsException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.squareRoot": [
+            -4.0
+          ]
+        },
+        "expected_output": "Cannot calculate square root of negative number",
+        "status": "not_executed"
+      },
+      {
+        "name": "factorial_zeroValue_returnsOne",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1",
+        "status": "not_executed"
+      },
+      {
+        "name": "factorial_largeValue_throwsException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.factorial": [
+            13
+          ],
+          "contains": [
+            "exceeds maximum allowed value"
+          ]
+        },
+        "expected_output": "true",
+        "status": "not_executed"
+      },
+      {
+        "name": "greatestCommonDivisor_validInput_returnsGCD",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "6",
+        "status": "not_executed"
+      },
+      {
+        "name": "greatestCommonDivisor_negativeNumbers_returnsCorrectGCD",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "6",
+        "status": "not_executed"
+      },
+      {
+        "name": "greatestCommonDivisor_bothNumbersZero_throwsException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.greatestCommonDivisor": [
+            0,
+            0
+          ]
+        },
+        "expected_output": "GCD is undefined when both numbers are zero",
+        "status": "not_executed"
+      },
+      {
+        "name": "leastCommonMultiple_largeNumbers_returnsCorrectLCM",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1000000",
+        "status": "not_executed"
+      },
+      {
+        "name": "leastCommonMultiple_oneNumberOne_returnsOtherNumber",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5",
+        "status": "not_executed"
+      },
+      {
+        "name": "leastCommonMultiple_resultExceedsMax_throwsException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.leastCommonMultiple": [
+            100000,
+            100
+          ],
+          "contains": [
+            "exceeds maximum allowed value"
+          ]
+        },
+        "expected_output": "true",
+        "status": "not_executed"
+      },
+      {
+        "name": "isPrime_validInput_returnsFalseForNonPrime",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "false",
+        "status": "not_executed"
+      },
+      {
+        "name": "isPrime_numberTwo_returnsTrue",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "true",
+        "status": "not_executed"
+      },
+      {
+        "name": "fibonacci_validInput_returnsFibonacciNumber",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "55",
+        "status": "not_executed"
+      },
+      {
+        "name": "fibonacci_oneValue_returnsOne",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1",
+        "status": "not_executed"
+      },
+      {
+        "name": "fibonacci_negativeValue_throwsException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.fibonacci": [
+            -5
+          ]
+        },
+        "expected_output": "Fibonacci sequence index must be non-negative",
+        "status": "not_executed"
+      },
+      {
+        "name": "roundToDecimal_zeroDecimals_returnsRoundedInteger",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "3.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_positiveNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_negativeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-1.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "-1.0"
+      },
+      {
+        "name": "testAddNumbers_mixedNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_zeroValues",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_positiveAndNegative",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "3.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_decimalValues",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.5",
+        "status": "not_executed"
+      }
+    ]
+  }
+}
