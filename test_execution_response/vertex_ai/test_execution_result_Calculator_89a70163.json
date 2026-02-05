@@ -1,0 +1,328 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "java",
+    "test_framework": "junit",
+    "execution_timestamp": "2026-02-05T11:51:06.032182",
+    "execution_timestamp_unix": 1770272466.032185,
+    "source_file": "Calculator.java",
+    "test_file": "testcases/vertex_ai/CalculatorTest_89a70163.java",
+    "commit_hash": "89a70163"
+  },
+  "execution_summary": {
+    "status": "failed",
+    "duration_seconds": 2.142,
+    "duration_readable": "2.14s",
+    "test_statistics": {
+      "total_unique_test_cases": 18,
+      "test_cases_passed": 0,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 18,
+      "test_cases_other_status": 0,
+      "test_cases_breakdown": {
+        "passed": 0,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 18,
+        "other": 0,
+        "_total": 18
+      },
+      "test_executions": {
+        "total_run": 3,
+        "passed": 0,
+        "failed": 0,
+        "errors": 3,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": false,
+      "output_length": 0,
+      "key_messages": []
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 0.0,
+      "lines_covered": 0,
+      "lines_total": 0,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": false
+  },
+  "test_results": {
+    "summary": {
+      "status": "failed",
+      "passed": 0,
+      "failed": 0,
+      "errors": 3,
+      "skipped": 0,
+      "duration_seconds": 2.142
+    },
+    "test_details": [],
+    "raw_output": ""
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "testAddNumbers_positiveNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_negativeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_positiveAndNegative",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_zero",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_largeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1000000.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_decimalNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_sameNumber",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "10.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_smallNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.000002",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_validInputs",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_negativeInputs",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_mixedInputs",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_zeroInput",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_largeInputs",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2000000.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_positiveInfinity",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "Double.POSITIVE_INFINITY",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_negativeInfinity",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "Double.NEGATIVE_INFINITY",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_zeroInputs",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_oneZeroInput",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_validInputs",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "testAddNumbers_positiveNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_negativeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_positiveAndNegative",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_zero",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_largeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1000000.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_decimalNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_sameNumber",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "10.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_smallNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.000002",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_validInputs",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_negativeInputs",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_mixedInputs",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_zeroInput",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_largeInputs",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2000000.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_positiveInfinity",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "Double.POSITIVE_INFINITY",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_negativeInfinity",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "Double.NEGATIVE_INFINITY",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_zeroInputs",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_oneZeroInput",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_validInputs",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      }
+    ]
+  }
+}
