@@ -1,0 +1,2278 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "java",
+    "test_framework": "junit",
+    "execution_timestamp": "2026-02-05T16:15:47.782976",
+    "execution_timestamp_unix": 1770288347.782979,
+    "source_file": "Geometry.java",
+    "test_file": "testcases/vertex_ai/GeometryTest_9779b4dd.java",
+    "commit_hash": "9779b4dd"
+  },
+  "execution_summary": {
+    "status": "success",
+    "duration_seconds": 2.445,
+    "duration_readable": "2.45s",
+    "test_statistics": {
+      "total_unique_test_cases": 67,
+      "test_cases_passed": 67,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 0,
+      "test_cases_other_status": 0,
+      "test_cases_breakdown": {
+        "passed": 67,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 0,
+        "other": 0,
+        "_total": 67
+      },
+      "test_executions": {
+        "total_run": 126,
+        "passed": 126,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": true,
+      "output_length": 5662,
+      "key_messages": []
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 100.0,
+      "lines_covered": 11,
+      "lines_total": 11,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": false
+  },
+  "test_results": {
+    "summary": {
+      "status": "success",
+      "passed": 126,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 2.445
+    },
+    "test_details": [
+      {
+        "name": "calculateCircleArea_positiveRadius_returnsCorrectArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateCircleArea_zeroRadius_returnsZeroArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateCircleArea_largeRadius_returnsCorrectArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateCircleArea_decimalRadius_returnsCorrectArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateCircleArea_negativeRadius_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateCircleArea": [
+            "radius"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculateRectangleArea_positiveLengthWidth_returnsCorrectArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectangleArea_zeroLengthWidth_returnsZeroArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectangleArea_oneZeroDimension_returnsZeroArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectangleArea_largeLengthWidth_returnsCorrectArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectangleArea_decimalLengthWidth_returnsCorrectArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectangleArea_negativeLength_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectangleArea": [
+            "length",
+            "width"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculateRectangleArea_negativeWidth_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectangleArea": [
+            "length",
+            "width"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculateRectangleArea_negativeLengthWidth_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectangleArea": [
+            "length",
+            "width"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculateTriangleArea_positiveBaseHeight_returnsCorrectArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateTriangleArea_zeroBaseHeight_returnsZeroArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateTriangleArea_oneZeroDimension_returnsZeroArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateTriangleArea_largeBaseHeight_returnsCorrectArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateTriangleArea_decimalBaseHeight_returnsCorrectArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateTriangleArea_negativeBase_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateTriangleArea": [
+            "base",
+            "height"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculateTriangleArea_negativeHeight_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateTriangleArea": [
+            "base",
+            "height"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculateTriangleArea_negativeBaseHeight_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateTriangleArea": [
+            "base",
+            "height"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculateCirclePerimeter_positiveRadius_returnsCorrectPerimeter",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateCirclePerimeter_zeroRadius_returnsZeroPerimeter",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateCirclePerimeter_largeRadius_returnsCorrectPerimeter",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateCirclePerimeter_decimalRadius_returnsCorrectPerimeter",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateCirclePerimeter_negativeRadius_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateCirclePerimeter": [
+            "radius"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculateRectanglePerimeter_positiveLengthWidth_returnsCorrectPerimeter",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectanglePerimeter_zeroLengthWidth_returnsZeroPerimeter",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectanglePerimeter_largeLengthWidth_returnsCorrectPerimeter",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectanglePerimeter_decimalLengthWidth_returnsCorrectPerimeter",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectanglePerimeter_negativeLength_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectanglePerimeter": [
+            "length",
+            "width"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculateRectanglePerimeter_negativeWidth_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectanglePerimeter": [
+            "length",
+            "width"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculateRectanglePerimeter_negativeLengthWidth_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectanglePerimeter": [
+            "length",
+            "width"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculateDistance_positiveCoordinates_returnsCorrectDistance",
+        "status": "passed",
+        "inputs": {
+          "Math.sqrt": [
+            "Math.pow(x2 - x1, 2"
+          ],
+          "Math.pow": [
+            "y2 - y1",
+            2
+          ]
+        },
+        "output": "expectedDistance"
+      },
+      {
+        "name": "calculateDistance_negativeCoordinates_returnsCorrectDistance",
+        "status": "passed",
+        "inputs": {
+          "Math.sqrt": [
+            "Math.pow(x2 - x1, 2"
+          ],
+          "Math.pow": [
+            "y2 - y1",
+            2
+          ]
+        },
+        "output": "expectedDistance"
+      },
+      {
+        "name": "calculateDistance_mixedCoordinates_returnsCorrectDistance",
+        "status": "passed",
+        "inputs": {
+          "Math.sqrt": [
+            "Math.pow(x2 - x1, 2"
+          ],
+          "Math.pow": [
+            "y2 - y1",
+            2
+          ]
+        },
+        "output": "expectedDistance"
+      },
+      {
+        "name": "calculateDistance_sameCoordinates_returnsZeroDistance",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateDistance_zeroCoordinates_returnsCorrectDistance",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateCircleArea_smallPositiveRadius_returnsCorrectArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectangleArea_positiveDimensions_returnsCorrectArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectangleArea_zeroLength_returnsZeroArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectangleArea_zeroWidth_returnsZeroArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectangleArea_bothDimensionsNegative_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectangleArea": [
+            "length",
+            "width"
+          ]
+        },
+        "output": "Dimensions cannot be negative"
+      },
+      {
+        "name": "calculateTriangleArea_positiveDimensions_returnsCorrectArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateTriangleArea_zeroBase_returnsZeroArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateTriangleArea_zeroHeight_returnsZeroArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateTriangleArea_bothDimensionsNegative_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateTriangleArea": [
+            "base",
+            "height"
+          ]
+        },
+        "output": "Dimensions cannot be negative"
+      },
+      {
+        "name": "calculateCirclePerimeter_smallPositiveRadius_returnsCorrectPerimeter",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectanglePerimeter_positiveDimensions_returnsCorrectPerimeter",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectanglePerimeter_zeroLength_returnsCorrectPerimeter",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectanglePerimeter_zeroWidth_returnsCorrectPerimeter",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectanglePerimeter_bothDimensionsNegative_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectanglePerimeter": [
+            "length",
+            "width"
+          ]
+        },
+        "output": "Dimensions cannot be negative"
+      },
+      {
+        "name": "calculateDistance_zeroDistance_returnsZero",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateDistance_largeCoordinates_returnsCorrectDistance",
+        "status": "passed",
+        "inputs": {
+          "Math.sqrt": [
+            "Math.pow(3000 - 1000, 2"
+          ],
+          "Math.pow": [
+            "4000 - 2000",
+            2
+          ]
+        },
+        "output": "expectedDistance"
+      },
+      {
+        "name": "calculateRectangleArea_zeroDimensions_returnsZeroArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectangleArea_largeDimensions_returnsCorrectArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectangleArea_decimalDimensions_returnsCorrectArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateRectangleArea_negativeDimensions_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectangleArea": [
+            -5,
+            -10
+          ]
+        },
+        "output": "Dimensions cannot be negative"
+      },
+      {
+        "name": "calculateTriangleArea_zeroDimensions_returnsZeroArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateTriangleArea_largeDimensions_returnsCorrectArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateTriangleArea_decimalDimensions_returnsCorrectArea",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculateTriangleArea_negativeDimensions_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateTriangleArea": [
+            -5,
+            -10
+          ]
+        },
+        "output": "Dimensions cannot be negative"
+      },
+      {
+        "name": "calculateRectanglePerimeter_zeroDimensions_returnsCorrectPerimeter",
+        "status": "passed",
+        "inputs": {
+          "geometry.calculateRectanglePerimeter": [
+            0,
+            0
+          ]
+        },
+        "output": "2 * (0 + 5)"
+      },
+      {
+        "name": "calculateRectanglePerimeter_largeDimensions_returnsCorrectPerimeter",
+        "status": "passed",
+        "inputs": {
+          "geometry.calculateRectanglePerimeter": [
+            1000,
+            500
+          ]
+        },
+        "output": "2 * (1000 + 500)"
+      },
+      {
+        "name": "calculateRectanglePerimeter_decimalDimensions_returnsCorrectPerimeter",
+        "status": "passed",
+        "inputs": {
+          "geometry.calculateRectanglePerimeter": [
+            2.5,
+            3.5
+          ]
+        },
+        "output": "2 * (2.5 + 3.5)"
+      },
+      {
+        "name": "calculateRectanglePerimeter_negativeDimensions_throwsIllegalArgumentException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectanglePerimeter": [
+            -5,
+            -10
+          ]
+        },
+        "output": "Dimensions cannot be negative"
+      },
+      {
+        "name": "calculateDistance_decimalCoordinates_returnsCorrectDistance",
+        "status": "passed",
+        "inputs": {
+          "geometry.calculateDistance": [
+            0,
+            0,
+            0.5,
+            0.5
+          ]
+        },
+        "output": "Math.sqrt(0.5)"
+      }
+    ],
+    "raw_output": "\nThanks for using JUnit! Support its development at https://junit.org/sponsoring\n\n\u001b[36m\u2577\u001b[0m\n\u001b[36m\u251c\u2500\u001b[0m \u001b[36mJUnit Jupiter\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u251c\u2500\u001b[0m \u001b[36mCalculatorTest\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u2502  \u251c\u2500\u001b[0m \u001b[34mcalculatePercentage_largeValueAndPercentage_returnsCorrectPercentage()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u2502  \u251c\u2500\u001b[0m \u001b[34mcalculatePercentage_zeroValue_returnsZero()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u2502  \u251c\u2500\u001b[0m \u001b[34mcalculatePercentage_resultExceedsMax_throwsException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u2502  \u251c\u2500\u001b[0m \u001b[34mcalculatePercentage_largePercentage_returnsCorrectPercentage()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u2502  \u251c\u2500\u001b[0m \u001b[34mcalculatePercentage_negativeValue_returnsCorrectPercentage()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u2502  \u251c\u2500\u001b[0m \u001b[34mcalculatePercentage_validInput_returnsCorrectPercentage()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u2502  \u251c\u2500\u001b[0m \u001b[34mcalculatePercentage_fractionalPercentage_returnsCorrectPercentage()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u2502  \u2514\u2500\u001b[0m \u001b[34mcalculatePercentage_resultEqualsMax_doesNotThrowException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u2514\u2500\u001b[0m \u001b[36mGeometryTest\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateTriangleArea_negativeHeight_throwsIllegalArgumentException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateCircleArea_zeroRadius_returnsZeroArea()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateRectanglePerimeter_largeLengthWidth_returnsCorrectPerimeter()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateRectanglePerimeter_positiveLengthWidth_returnsCorrectPerimeter()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateRectanglePerimeter_zeroLengthWidth_returnsZeroPerimeter()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateDistance_positiveCoordinates_returnsCorrectDistance()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateCirclePerimeter_largeRadius_returnsCorrectPerimeter()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateTriangleArea_zeroBaseHeight_returnsZeroArea()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateCircleArea_decimalRadius_returnsCorrectArea()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateRectangleArea_negativeWidth_throwsIllegalArgumentException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateRectanglePerimeter_negativeLengthWidth_throwsIllegalArgumentException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateDistance_negativeCoordinates_returnsCorrectDistance()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateTriangleArea_negativeBaseHeight_throwsIllegalArgumentException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateCirclePerimeter_decimalRadius_returnsCorrectPerimeter()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateTriangleArea_decimalBaseHeight_returnsCorrectArea()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateRectangleArea_largeLengthWidth_returnsCorrectArea()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateCircleArea_positiveRadius_returnsCorrectArea()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateCirclePerimeter_zeroRadius_returnsZeroPerimeter()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateCircleArea_largeRadius_returnsCorrectArea()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateRectanglePerimeter_decimalLengthWidth_returnsCorrectPerimeter()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateTriangleArea_largeBaseHeight_returnsCorrectArea()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateTriangleArea_negativeBase_throwsIllegalArgumentException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateTriangleArea_positiveBaseHeight_returnsCorrectArea()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateDistance_mixedCoordinates_returnsCorrectDistance()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateRectanglePerimeter_negativeWidth_throwsIllegalArgumentException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateRectangleArea_positiveLengthWidth_returnsCorrectArea()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateRectangleArea_oneZeroDimension_returnsZeroArea()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateCircleArea_negativeRadius_throwsIllegalArgumentException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateDistance_zeroCoordinates_returnsCorrectDistance()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateRectangleArea_zeroLengthWidth_returnsZeroArea()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateRectangleArea_negativeLengthWidth_throwsIllegalArgumentException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateTriangleArea_oneZeroDimension_returnsZeroArea()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateDistance_sameCoordinates_returnsZeroDistance()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateRectanglePerimeter_negativeLength_throwsIllegalArgumentException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateCirclePerimeter_positiveRadius_returnsCorrectPerimeter()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateRectangleArea_negativeLength_throwsIllegalArgumentException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculateCirclePerimeter_negativeRadius_throwsIllegalArgumentException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u2514\u2500\u001b[0m \u001b[34mcalculateRectangleArea_decimalLengthWidth_returnsCorrectArea()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u251c\u2500\u001b[0m \u001b[36mJUnit Vintage\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2514\u2500\u001b[0m \u001b[36mJUnit Platform Suite\u001b\n... (truncated, full output too long)"
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "calculateCircleArea_positiveRadius_returnsCorrectArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateCircleArea_zeroRadius_returnsZeroArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateCircleArea_largeRadius_returnsCorrectArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateCircleArea_decimalRadius_returnsCorrectArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateCircleArea_negativeRadius_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateCircleArea": [
+              "radius"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculateRectangleArea_positiveLengthWidth_returnsCorrectArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateRectangleArea_zeroLengthWidth_returnsZeroArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateRectangleArea_oneZeroDimension_returnsZeroArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateRectangleArea_largeLengthWidth_returnsCorrectArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateRectangleArea_decimalLengthWidth_returnsCorrectArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateRectangleArea_negativeLength_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateRectangleArea": [
+              "length",
+              "width"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculateRectangleArea_negativeWidth_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateRectangleArea": [
+              "length",
+              "width"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculateRectangleArea_negativeLengthWidth_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateRectangleArea": [
+              "length",
+              "width"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculateTriangleArea_positiveBaseHeight_returnsCorrectArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateTriangleArea_zeroBaseHeight_returnsZeroArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateTriangleArea_oneZeroDimension_returnsZeroArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateTriangleArea_largeBaseHeight_returnsCorrectArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateTriangleArea_decimalBaseHeight_returnsCorrectArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateTriangleArea_negativeBase_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateTriangleArea": [
+              "base",
+              "height"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculateTriangleArea_negativeHeight_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateTriangleArea": [
+              "base",
+              "height"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculateTriangleArea_negativeBaseHeight_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateTriangleArea": [
+              "base",
+              "height"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculateCirclePerimeter_positiveRadius_returnsCorrectPerimeter",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedPerimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedPerimeter"
+        },
+        {
+          "name": "calculateCirclePerimeter_zeroRadius_returnsZeroPerimeter",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedPerimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedPerimeter"
+        },
+        {
+          "name": "calculateCirclePerimeter_largeRadius_returnsCorrectPerimeter",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedPerimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedPerimeter"
+        },
+        {
+          "name": "calculateCirclePerimeter_decimalRadius_returnsCorrectPerimeter",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedPerimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedPerimeter"
+        },
+        {
+          "name": "calculateCirclePerimeter_negativeRadius_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateCirclePerimeter": [
+              "radius"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculateRectanglePerimeter_positiveLengthWidth_returnsCorrectPerimeter",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedPerimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedPerimeter"
+        },
+        {
+          "name": "calculateRectanglePerimeter_zeroLengthWidth_returnsZeroPerimeter",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedPerimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedPerimeter"
+        },
+        {
+          "name": "calculateRectanglePerimeter_largeLengthWidth_returnsCorrectPerimeter",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedPerimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedPerimeter"
+        },
+        {
+          "name": "calculateRectanglePerimeter_decimalLengthWidth_returnsCorrectPerimeter",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedPerimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedPerimeter"
+        },
+        {
+          "name": "calculateRectanglePerimeter_negativeLength_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateRectanglePerimeter": [
+              "length",
+              "width"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculateRectanglePerimeter_negativeWidth_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateRectanglePerimeter": [
+              "length",
+              "width"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculateRectanglePerimeter_negativeLengthWidth_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateRectanglePerimeter": [
+              "length",
+              "width"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculateDistance_positiveCoordinates_returnsCorrectDistance",
+          "type": "method",
+          "inputs": {
+            "Math.sqrt": [
+              "Math.pow(x2 - x1, 2"
+            ],
+            "Math.pow": [
+              "y2 - y1",
+              2
+            ]
+          },
+          "expected_output": "expectedDistance",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedDistance"
+        },
+        {
+          "name": "calculateDistance_negativeCoordinates_returnsCorrectDistance",
+          "type": "method",
+          "inputs": {
+            "Math.sqrt": [
+              "Math.pow(x2 - x1, 2"
+            ],
+            "Math.pow": [
+              "y2 - y1",
+              2
+            ]
+          },
+          "expected_output": "expectedDistance",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedDistance"
+        },
+        {
+          "name": "calculateDistance_mixedCoordinates_returnsCorrectDistance",
+          "type": "method",
+          "inputs": {
+            "Math.sqrt": [
+              "Math.pow(x2 - x1, 2"
+            ],
+            "Math.pow": [
+              "y2 - y1",
+              2
+            ]
+          },
+          "expected_output": "expectedDistance",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedDistance"
+        },
+        {
+          "name": "calculateDistance_sameCoordinates_returnsZeroDistance",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedDistance",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedDistance"
+        },
+        {
+          "name": "calculateDistance_zeroCoordinates_returnsCorrectDistance",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedDistance",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedDistance"
+        },
+        {
+          "name": "calculateCircleArea_smallPositiveRadius_returnsCorrectArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateRectangleArea_positiveDimensions_returnsCorrectArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateRectangleArea_zeroLength_returnsZeroArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateRectangleArea_zeroWidth_returnsZeroArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateRectangleArea_bothDimensionsNegative_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateRectangleArea": [
+              "length",
+              "width"
+            ]
+          },
+          "expected_output": "Dimensions cannot be negative",
+          "status": "passed",
+          "error": null,
+          "actual_output": "Dimensions cannot be negative"
+        },
+        {
+          "name": "calculateTriangleArea_positiveDimensions_returnsCorrectArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateTriangleArea_zeroBase_returnsZeroArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateTriangleArea_zeroHeight_returnsZeroArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedArea",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedArea"
+        },
+        {
+          "name": "calculateTriangleArea_bothDimensionsNegative_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateTriangleArea": [
+              "base",
+              "height"
+            ]
+          },
+          "expected_output": "Dimensions cannot be negative",
+          "status": "passed",
+          "error": null,
+          "actual_output": "Dimensions cannot be negative"
+        },
+        {
+          "name": "calculateCirclePerimeter_smallPositiveRadius_returnsCorrectPerimeter",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedPerimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedPerimeter"
+        },
+        {
+          "name": "calculateRectanglePerimeter_positiveDimensions_returnsCorrectPerimeter",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedPerimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedPerimeter"
+        },
+        {
+          "name": "calculateRectanglePerimeter_zeroLength_returnsCorrectPerimeter",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedPerimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedPerimeter"
+        },
+        {
+          "name": "calculateRectanglePerimeter_zeroWidth_returnsCorrectPerimeter",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedPerimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedPerimeter"
+        },
+        {
+          "name": "calculateRectanglePerimeter_bothDimensionsNegative_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateRectanglePerimeter": [
+              "length",
+              "width"
+            ]
+          },
+          "expected_output": "Dimensions cannot be negative",
+          "status": "passed",
+          "error": null,
+          "actual_output": "Dimensions cannot be negative"
+        },
+        {
+          "name": "calculateDistance_zeroDistance_returnsZero",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "expectedDistance",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedDistance"
+        },
+        {
+          "name": "calculateDistance_largeCoordinates_returnsCorrectDistance",
+          "type": "method",
+          "inputs": {
+            "Math.sqrt": [
+              "Math.pow(3000 - 1000, 2"
+            ],
+            "Math.pow": [
+              "4000 - 2000",
+              2
+            ]
+          },
+          "expected_output": "expectedDistance",
+          "status": "passed",
+          "error": null,
+          "actual_output": "expectedDistance"
+        },
+        {
+          "name": "calculateRectangleArea_zeroDimensions_returnsZeroArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "0"
+        },
+        {
+          "name": "calculateRectangleArea_largeDimensions_returnsCorrectArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1000 * 500",
+          "status": "passed",
+          "error": null,
+          "actual_output": "1000 * 500"
+        },
+        {
+          "name": "calculateRectangleArea_decimalDimensions_returnsCorrectArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.5 * 3.5",
+          "status": "passed",
+          "error": null,
+          "actual_output": "2.5 * 3.5"
+        },
+        {
+          "name": "calculateRectangleArea_negativeDimensions_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateRectangleArea": [
+              -5,
+              -10
+            ]
+          },
+          "expected_output": "Dimensions cannot be negative",
+          "status": "passed",
+          "error": null,
+          "actual_output": "Dimensions cannot be negative"
+        },
+        {
+          "name": "calculateTriangleArea_zeroDimensions_returnsZeroArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "0"
+        },
+        {
+          "name": "calculateTriangleArea_largeDimensions_returnsCorrectArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.5 * 1000 * 500",
+          "status": "passed",
+          "error": null,
+          "actual_output": "0.5 * 1000 * 500"
+        },
+        {
+          "name": "calculateTriangleArea_decimalDimensions_returnsCorrectArea",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.5 * 2.5 * 3.5",
+          "status": "passed",
+          "error": null,
+          "actual_output": "0.5 * 2.5 * 3.5"
+        },
+        {
+          "name": "calculateTriangleArea_negativeDimensions_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateTriangleArea": [
+              -5,
+              -10
+            ]
+          },
+          "expected_output": "Dimensions cannot be negative",
+          "status": "passed",
+          "error": null,
+          "actual_output": "Dimensions cannot be negative"
+        },
+        {
+          "name": "calculateRectanglePerimeter_zeroDimensions_returnsCorrectPerimeter",
+          "type": "method",
+          "inputs": {
+            "geometry.calculateRectanglePerimeter": [
+              0,
+              0
+            ]
+          },
+          "expected_output": "2 * (0 + 5)",
+          "status": "passed",
+          "error": null,
+          "actual_output": "2 * (0 + 5)"
+        },
+        {
+          "name": "calculateRectanglePerimeter_largeDimensions_returnsCorrectPerimeter",
+          "type": "method",
+          "inputs": {
+            "geometry.calculateRectanglePerimeter": [
+              1000,
+              500
+            ]
+          },
+          "expected_output": "2 * (1000 + 500)",
+          "status": "passed",
+          "error": null,
+          "actual_output": "2 * (1000 + 500)"
+        },
+        {
+          "name": "calculateRectanglePerimeter_decimalDimensions_returnsCorrectPerimeter",
+          "type": "method",
+          "inputs": {
+            "geometry.calculateRectanglePerimeter": [
+              2.5,
+              3.5
+            ]
+          },
+          "expected_output": "2 * (2.5 + 3.5)",
+          "status": "passed",
+          "error": null,
+          "actual_output": "2 * (2.5 + 3.5)"
+        },
+        {
+          "name": "calculateRectanglePerimeter_negativeDimensions_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "geometry.calculateRectanglePerimeter": [
+              -5,
+              -10
+            ]
+          },
+          "expected_output": "Dimensions cannot be negative",
+          "status": "passed",
+          "error": null,
+          "actual_output": "Dimensions cannot be negative"
+        },
+        {
+          "name": "calculateDistance_decimalCoordinates_returnsCorrectDistance",
+          "type": "method",
+          "inputs": {
+            "geometry.calculateDistance": [
+              0,
+              0,
+              0.5,
+              0.5
+            ]
+          },
+          "expected_output": "Math.sqrt(0.5)",
+          "status": "passed",
+          "error": null,
+          "actual_output": "Math.sqrt(0.5)"
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "calculateCircleArea_positiveRadius_returnsCorrectArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateCircleArea_zeroRadius_returnsZeroArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateCircleArea_largeRadius_returnsCorrectArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateCircleArea_decimalRadius_returnsCorrectArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateCircleArea_negativeRadius_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateCircleArea": [
+            "radius"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculateRectangleArea_positiveLengthWidth_returnsCorrectArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateRectangleArea_zeroLengthWidth_returnsZeroArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateRectangleArea_oneZeroDimension_returnsZeroArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateRectangleArea_largeLengthWidth_returnsCorrectArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateRectangleArea_decimalLengthWidth_returnsCorrectArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateRectangleArea_negativeLength_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectangleArea": [
+            "length",
+            "width"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculateRectangleArea_negativeWidth_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectangleArea": [
+            "length",
+            "width"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculateRectangleArea_negativeLengthWidth_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectangleArea": [
+            "length",
+            "width"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculateTriangleArea_positiveBaseHeight_returnsCorrectArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateTriangleArea_zeroBaseHeight_returnsZeroArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateTriangleArea_oneZeroDimension_returnsZeroArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateTriangleArea_largeBaseHeight_returnsCorrectArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateTriangleArea_decimalBaseHeight_returnsCorrectArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateTriangleArea_negativeBase_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateTriangleArea": [
+            "base",
+            "height"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculateTriangleArea_negativeHeight_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateTriangleArea": [
+            "base",
+            "height"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculateTriangleArea_negativeBaseHeight_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateTriangleArea": [
+            "base",
+            "height"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculateCirclePerimeter_positiveRadius_returnsCorrectPerimeter",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedPerimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedPerimeter"
+      },
+      {
+        "name": "calculateCirclePerimeter_zeroRadius_returnsZeroPerimeter",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedPerimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedPerimeter"
+      },
+      {
+        "name": "calculateCirclePerimeter_largeRadius_returnsCorrectPerimeter",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedPerimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedPerimeter"
+      },
+      {
+        "name": "calculateCirclePerimeter_decimalRadius_returnsCorrectPerimeter",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedPerimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedPerimeter"
+      },
+      {
+        "name": "calculateCirclePerimeter_negativeRadius_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateCirclePerimeter": [
+            "radius"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculateRectanglePerimeter_positiveLengthWidth_returnsCorrectPerimeter",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedPerimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedPerimeter"
+      },
+      {
+        "name": "calculateRectanglePerimeter_zeroLengthWidth_returnsZeroPerimeter",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedPerimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedPerimeter"
+      },
+      {
+        "name": "calculateRectanglePerimeter_largeLengthWidth_returnsCorrectPerimeter",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedPerimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedPerimeter"
+      },
+      {
+        "name": "calculateRectanglePerimeter_decimalLengthWidth_returnsCorrectPerimeter",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedPerimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedPerimeter"
+      },
+      {
+        "name": "calculateRectanglePerimeter_negativeLength_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectanglePerimeter": [
+            "length",
+            "width"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculateRectanglePerimeter_negativeWidth_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectanglePerimeter": [
+            "length",
+            "width"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculateRectanglePerimeter_negativeLengthWidth_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectanglePerimeter": [
+            "length",
+            "width"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculateDistance_positiveCoordinates_returnsCorrectDistance",
+        "type": "method",
+        "inputs": {
+          "Math.sqrt": [
+            "Math.pow(x2 - x1, 2"
+          ],
+          "Math.pow": [
+            "y2 - y1",
+            2
+          ]
+        },
+        "expected_output": "expectedDistance",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedDistance"
+      },
+      {
+        "name": "calculateDistance_negativeCoordinates_returnsCorrectDistance",
+        "type": "method",
+        "inputs": {
+          "Math.sqrt": [
+            "Math.pow(x2 - x1, 2"
+          ],
+          "Math.pow": [
+            "y2 - y1",
+            2
+          ]
+        },
+        "expected_output": "expectedDistance",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedDistance"
+      },
+      {
+        "name": "calculateDistance_mixedCoordinates_returnsCorrectDistance",
+        "type": "method",
+        "inputs": {
+          "Math.sqrt": [
+            "Math.pow(x2 - x1, 2"
+          ],
+          "Math.pow": [
+            "y2 - y1",
+            2
+          ]
+        },
+        "expected_output": "expectedDistance",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedDistance"
+      },
+      {
+        "name": "calculateDistance_sameCoordinates_returnsZeroDistance",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedDistance",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedDistance"
+      },
+      {
+        "name": "calculateDistance_zeroCoordinates_returnsCorrectDistance",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedDistance",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedDistance"
+      },
+      {
+        "name": "calculateCircleArea_smallPositiveRadius_returnsCorrectArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateRectangleArea_positiveDimensions_returnsCorrectArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateRectangleArea_zeroLength_returnsZeroArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateRectangleArea_zeroWidth_returnsZeroArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateRectangleArea_bothDimensionsNegative_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectangleArea": [
+            "length",
+            "width"
+          ]
+        },
+        "expected_output": "Dimensions cannot be negative",
+        "status": "passed",
+        "error": null,
+        "actual_output": "Dimensions cannot be negative"
+      },
+      {
+        "name": "calculateTriangleArea_positiveDimensions_returnsCorrectArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateTriangleArea_zeroBase_returnsZeroArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateTriangleArea_zeroHeight_returnsZeroArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedArea",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedArea"
+      },
+      {
+        "name": "calculateTriangleArea_bothDimensionsNegative_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateTriangleArea": [
+            "base",
+            "height"
+          ]
+        },
+        "expected_output": "Dimensions cannot be negative",
+        "status": "passed",
+        "error": null,
+        "actual_output": "Dimensions cannot be negative"
+      },
+      {
+        "name": "calculateCirclePerimeter_smallPositiveRadius_returnsCorrectPerimeter",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedPerimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedPerimeter"
+      },
+      {
+        "name": "calculateRectanglePerimeter_positiveDimensions_returnsCorrectPerimeter",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedPerimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedPerimeter"
+      },
+      {
+        "name": "calculateRectanglePerimeter_zeroLength_returnsCorrectPerimeter",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedPerimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedPerimeter"
+      },
+      {
+        "name": "calculateRectanglePerimeter_zeroWidth_returnsCorrectPerimeter",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedPerimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedPerimeter"
+      },
+      {
+        "name": "calculateRectanglePerimeter_bothDimensionsNegative_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectanglePerimeter": [
+            "length",
+            "width"
+          ]
+        },
+        "expected_output": "Dimensions cannot be negative",
+        "status": "passed",
+        "error": null,
+        "actual_output": "Dimensions cannot be negative"
+      },
+      {
+        "name": "calculateDistance_zeroDistance_returnsZero",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "expectedDistance",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedDistance"
+      },
+      {
+        "name": "calculateDistance_largeCoordinates_returnsCorrectDistance",
+        "type": "method",
+        "inputs": {
+          "Math.sqrt": [
+            "Math.pow(3000 - 1000, 2"
+          ],
+          "Math.pow": [
+            "4000 - 2000",
+            2
+          ]
+        },
+        "expected_output": "expectedDistance",
+        "status": "passed",
+        "error": null,
+        "actual_output": "expectedDistance"
+      },
+      {
+        "name": "calculateRectangleArea_zeroDimensions_returnsZeroArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "0"
+      },
+      {
+        "name": "calculateRectangleArea_largeDimensions_returnsCorrectArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1000 * 500",
+        "status": "passed",
+        "error": null,
+        "actual_output": "1000 * 500"
+      },
+      {
+        "name": "calculateRectangleArea_decimalDimensions_returnsCorrectArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.5 * 3.5",
+        "status": "passed",
+        "error": null,
+        "actual_output": "2.5 * 3.5"
+      },
+      {
+        "name": "calculateRectangleArea_negativeDimensions_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectangleArea": [
+            -5,
+            -10
+          ]
+        },
+        "expected_output": "Dimensions cannot be negative",
+        "status": "passed",
+        "error": null,
+        "actual_output": "Dimensions cannot be negative"
+      },
+      {
+        "name": "calculateTriangleArea_zeroDimensions_returnsZeroArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "0"
+      },
+      {
+        "name": "calculateTriangleArea_largeDimensions_returnsCorrectArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.5 * 1000 * 500",
+        "status": "passed",
+        "error": null,
+        "actual_output": "0.5 * 1000 * 500"
+      },
+      {
+        "name": "calculateTriangleArea_decimalDimensions_returnsCorrectArea",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.5 * 2.5 * 3.5",
+        "status": "passed",
+        "error": null,
+        "actual_output": "0.5 * 2.5 * 3.5"
+      },
+      {
+        "name": "calculateTriangleArea_negativeDimensions_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateTriangleArea": [
+            -5,
+            -10
+          ]
+        },
+        "expected_output": "Dimensions cannot be negative",
+        "status": "passed",
+        "error": null,
+        "actual_output": "Dimensions cannot be negative"
+      },
+      {
+        "name": "calculateRectanglePerimeter_zeroDimensions_returnsCorrectPerimeter",
+        "type": "method",
+        "inputs": {
+          "geometry.calculateRectanglePerimeter": [
+            0,
+            0
+          ]
+        },
+        "expected_output": "2 * (0 + 5)",
+        "status": "passed",
+        "error": null,
+        "actual_output": "2 * (0 + 5)"
+      },
+      {
+        "name": "calculateRectanglePerimeter_largeDimensions_returnsCorrectPerimeter",
+        "type": "method",
+        "inputs": {
+          "geometry.calculateRectanglePerimeter": [
+            1000,
+            500
+          ]
+        },
+        "expected_output": "2 * (1000 + 500)",
+        "status": "passed",
+        "error": null,
+        "actual_output": "2 * (1000 + 500)"
+      },
+      {
+        "name": "calculateRectanglePerimeter_decimalDimensions_returnsCorrectPerimeter",
+        "type": "method",
+        "inputs": {
+          "geometry.calculateRectanglePerimeter": [
+            2.5,
+            3.5
+          ]
+        },
+        "expected_output": "2 * (2.5 + 3.5)",
+        "status": "passed",
+        "error": null,
+        "actual_output": "2 * (2.5 + 3.5)"
+      },
+      {
+        "name": "calculateRectanglePerimeter_negativeDimensions_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "geometry.calculateRectanglePerimeter": [
+            -5,
+            -10
+          ]
+        },
+        "expected_output": "Dimensions cannot be negative",
+        "status": "passed",
+        "error": null,
+        "actual_output": "Dimensions cannot be negative"
+      },
+      {
+        "name": "calculateDistance_decimalCoordinates_returnsCorrectDistance",
+        "type": "method",
+        "inputs": {
+          "geometry.calculateDistance": [
+            0,
+            0,
+            0.5,
+            0.5
+          ]
+        },
+        "expected_output": "Math.sqrt(0.5)",
+        "status": "passed",
+        "error": null,
+        "actual_output": "Math.sqrt(0.5)"
+      }
+    ]
+  }
+}
