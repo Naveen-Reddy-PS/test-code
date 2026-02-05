@@ -1,0 +1,563 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "java",
+    "test_framework": "junit",
+    "execution_timestamp": "2026-02-05T14:47:10.695341",
+    "execution_timestamp_unix": 1770283030.6953442,
+    "source_file": "Calculator.java",
+    "test_file": "testcases/vertex_ai/CalculatorTest_7463a22b.java",
+    "commit_hash": "7463a22b"
+  },
+  "execution_summary": {
+    "status": "failed",
+    "duration_seconds": 2.611,
+    "duration_readable": "2.61s",
+    "test_statistics": {
+      "total_unique_test_cases": 15,
+      "test_cases_passed": 10,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 0,
+      "test_cases_other_status": 5,
+      "test_cases_breakdown": {
+        "passed": 10,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 0,
+        "other": 5,
+        "_total": 15
+      },
+      "test_executions": {
+        "total_run": 33,
+        "passed": 27,
+        "failed": 3,
+        "errors": 3,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": true,
+      "output_length": 1920,
+      "key_messages": []
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 100.0,
+      "lines_covered": 5,
+      "lines_total": 5,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": false
+  },
+  "test_results": {
+    "summary": {
+      "status": "failed",
+      "passed": 27,
+      "failed": 3,
+      "errors": 3,
+      "skipped": 0,
+      "duration_seconds": 2.611
+    },
+    "test_details": [
+      {
+        "name": "calculatePercentage_validInput_returnsCorrectPercentage",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculatePercentage_zeroValue_returnsZero",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculatePercentage_zeroPercentage_returnsZero",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculatePercentage_largeValueAndPercentage_throwsException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.calculatePercentage": [
+            1000000,
+            101
+          ],
+          "contains": [
+            "exceeds maximum allowed value"
+          ]
+        },
+        "output": "true"
+      },
+      {
+        "name": "calculatePercentage_negativeValue_returnsNegativePercentage",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculatePercentage_negativePercentage_returnsNegativePercentage",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculatePercentage_negativeValueAndPercentage_returnsPositivePercentage",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculatePercentage_decimalValueAndPercentage_returnsCorrectPercentage",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculatePercentage_maxResultBoundary_noException",
+        "status": "passed",
+        "inputs": {
+          "assertDoesNotThrow": [
+            "("
+          ],
+          "calculator.calculatePercentage": [
+            1000000,
+            100
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculatePercentage_exceedsMaxResultByLittle_throwsException",
+        "status": "passed",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.calculatePercentage": [
+            1000001,
+            100
+          ],
+          "contains": [
+            "exceeds maximum allowed value"
+          ]
+        },
+        "output": "true"
+      },
+      {
+        "name": "calculatePercentage_valueCloseToMax_noException",
+        "status": "unknown",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculatePercentage_percentageGreaterThan100_returnsCorrectPercentage",
+        "status": "unknown",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculatePercentage_largeValueAndPercentage_throwsIllegalArgumentException",
+        "status": "unknown",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.calculatePercentage": [
+            "MAX_RESULT",
+            2.0
+          ],
+          "String.format": [
+            "Result %.2f exceeds maximum allowed value %.2f",
+            "MAX_RESULT * 2 / 100",
+            "MAX_RESULT"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculatePercentage_boundaryValue_returnsCorrectPercentage",
+        "status": "unknown",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "calculatePercentage_maxPercentage_returnsCorrectPercentage",
+        "status": "unknown",
+        "inputs": {},
+        "output": null
+      }
+    ],
+    "raw_output": "\nThanks for using JUnit! Support its development at https://junit.org/sponsoring\n\n\u001b[36m\u2577\u001b[0m\n\u001b[36m\u251c\u2500\u001b[0m \u001b[36mJUnit Jupiter\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u2514\u2500\u001b[0m \u001b[36mCalculatorTest\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculatePercentage_zeroPercentage_returnsZero()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculatePercentage_zeroValue_returnsZero()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculatePercentage_decimalValueAndPercentage_returnsCorrectPercentage()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculatePercentage_negativeValueAndPercentage_returnsPositivePercentage()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculatePercentage_negativePercentage_returnsNegativePercentage()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculatePercentage_largeValueAndPercentage_throwsException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculatePercentage_validInput_returnsCorrectPercentage()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculatePercentage_maxResultBoundary_noException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mcalculatePercentage_exceedsMaxResultByLittle_throwsException()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u2514\u2500\u001b[0m \u001b[34mcalculatePercentage_negativeValue_returnsNegativePercentage()\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u251c\u2500\u001b[0m \u001b[36mJUnit Vintage\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2514\u2500\u001b[0m \u001b[36mJUnit Platform Suite\u001b[0m \u001b[32m\u2714\u001b[0m\n\nTest run finished after 34 ms\n[         4 containers found      ]\n[         0 containers skipped    ]\n[         4 containers started    ]\n[         0 containers aborted    ]\n[         4 containers successful ]\n[         0 containers failed     ]\n[        10 tests found           ]\n[         0 tests skipped         ]\n[        10 tests started         ]\n[         0 tests aborted         ]\n[        10 tests successful      ]\n[         0 tests failed          ]\n\n\nWARNING: Delegated to the 'execute' command.\n         This behaviour has been deprecated and will be removed in a future release.\n         Please use the 'execute' command directly.\n"
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "calculatePercentage_validInput_returnsCorrectPercentage",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "25.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "25.0"
+        },
+        {
+          "name": "calculatePercentage_zeroValue_returnsZero",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "0.0"
+        },
+        {
+          "name": "calculatePercentage_zeroPercentage_returnsZero",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "0.0"
+        },
+        {
+          "name": "calculatePercentage_largeValueAndPercentage_throwsException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.calculatePercentage": [
+              1000000,
+              101
+            ],
+            "contains": [
+              "exceeds maximum allowed value"
+            ]
+          },
+          "expected_output": "true",
+          "status": "passed",
+          "error": null,
+          "actual_output": "true"
+        },
+        {
+          "name": "calculatePercentage_negativeValue_returnsNegativePercentage",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-25.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "-25.0"
+        },
+        {
+          "name": "calculatePercentage_negativePercentage_returnsNegativePercentage",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-25.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "-25.0"
+        },
+        {
+          "name": "calculatePercentage_negativeValueAndPercentage_returnsPositivePercentage",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "25.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "25.0"
+        },
+        {
+          "name": "calculatePercentage_decimalValueAndPercentage_returnsCorrectPercentage",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "12.625",
+          "status": "passed",
+          "error": null,
+          "actual_output": "12.625"
+        },
+        {
+          "name": "calculatePercentage_maxResultBoundary_noException",
+          "type": "method",
+          "inputs": {
+            "assertDoesNotThrow": [
+              "("
+            ],
+            "calculator.calculatePercentage": [
+              1000000,
+              100
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculatePercentage_exceedsMaxResultByLittle_throwsException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.calculatePercentage": [
+              1000001,
+              100
+            ],
+            "contains": [
+              "exceeds maximum allowed value"
+            ]
+          },
+          "expected_output": "true",
+          "status": "passed",
+          "error": null,
+          "actual_output": "true"
+        },
+        {
+          "name": "calculatePercentage_valueCloseToMax_noException",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "value",
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculatePercentage_percentageGreaterThan100_returnsCorrectPercentage",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "200.0",
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculatePercentage_largeValueAndPercentage_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "assertThrows": [
+              "IllegalArgumentException.class",
+              "("
+            ],
+            "calculator.calculatePercentage": [
+              "MAX_RESULT",
+              2.0
+            ],
+            "String.format": [
+              "Result %.2f exceeds maximum allowed value %.2f",
+              "MAX_RESULT * 2 / 100",
+              "MAX_RESULT"
+            ]
+          },
+          "expected_output": "expectedMessage",
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculatePercentage_boundaryValue_returnsCorrectPercentage",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "10000.0",
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculatePercentage_maxPercentage_returnsCorrectPercentage",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "100000000.0",
+          "status": "unknown",
+          "error": null
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "calculatePercentage_validInput_returnsCorrectPercentage",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "25.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "25.0"
+      },
+      {
+        "name": "calculatePercentage_zeroValue_returnsZero",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "0.0"
+      },
+      {
+        "name": "calculatePercentage_zeroPercentage_returnsZero",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "0.0"
+      },
+      {
+        "name": "calculatePercentage_largeValueAndPercentage_throwsException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.calculatePercentage": [
+            1000000,
+            101
+          ],
+          "contains": [
+            "exceeds maximum allowed value"
+          ]
+        },
+        "expected_output": "true",
+        "status": "passed",
+        "error": null,
+        "actual_output": "true"
+      },
+      {
+        "name": "calculatePercentage_negativeValue_returnsNegativePercentage",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-25.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "-25.0"
+      },
+      {
+        "name": "calculatePercentage_negativePercentage_returnsNegativePercentage",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-25.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "-25.0"
+      },
+      {
+        "name": "calculatePercentage_negativeValueAndPercentage_returnsPositivePercentage",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "25.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "25.0"
+      },
+      {
+        "name": "calculatePercentage_decimalValueAndPercentage_returnsCorrectPercentage",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "12.625",
+        "status": "passed",
+        "error": null,
+        "actual_output": "12.625"
+      },
+      {
+        "name": "calculatePercentage_maxResultBoundary_noException",
+        "type": "method",
+        "inputs": {
+          "assertDoesNotThrow": [
+            "("
+          ],
+          "calculator.calculatePercentage": [
+            1000000,
+            100
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculatePercentage_exceedsMaxResultByLittle_throwsException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.calculatePercentage": [
+            1000001,
+            100
+          ],
+          "contains": [
+            "exceeds maximum allowed value"
+          ]
+        },
+        "expected_output": "true",
+        "status": "passed",
+        "error": null,
+        "actual_output": "true"
+      },
+      {
+        "name": "calculatePercentage_valueCloseToMax_noException",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "value",
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculatePercentage_percentageGreaterThan100_returnsCorrectPercentage",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "200.0",
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculatePercentage_largeValueAndPercentage_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "assertThrows": [
+            "IllegalArgumentException.class",
+            "("
+          ],
+          "calculator.calculatePercentage": [
+            "MAX_RESULT",
+            2.0
+          ],
+          "String.format": [
+            "Result %.2f exceeds maximum allowed value %.2f",
+            "MAX_RESULT * 2 / 100",
+            "MAX_RESULT"
+          ]
+        },
+        "expected_output": "expectedMessage",
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculatePercentage_boundaryValue_returnsCorrectPercentage",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "10000.0",
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculatePercentage_maxPercentage_returnsCorrectPercentage",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "100000000.0",
+        "status": "unknown",
+        "error": null
+      }
+    ]
+  }
+}

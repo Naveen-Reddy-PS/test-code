@@ -1,0 +1,3401 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "python",
+    "test_framework": "pytest",
+    "execution_timestamp": "2026-02-05T14:49:10.970667",
+    "execution_timestamp_unix": 1770283150.970669,
+    "source_file": "geometry.py",
+    "test_file": "testcases/vertex_ai/test_geometry_7463a22b.py",
+    "commit_hash": "7463a22b"
+  },
+  "execution_summary": {
+    "status": "failed",
+    "duration_seconds": 0.834,
+    "duration_readable": "833ms",
+    "test_statistics": {
+      "total_unique_test_cases": 67,
+      "test_cases_passed": 67,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 0,
+      "test_cases_other_status": 0,
+      "test_cases_breakdown": {
+        "passed": 67,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 0,
+        "other": 0,
+        "_total": 67
+      },
+      "test_executions": {
+        "total_run": 91,
+        "passed": 89,
+        "failed": 2,
+        "errors": 0,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": true,
+      "output_length": 6254,
+      "key_messages": [
+        "Tests: 39 passed in 0.06s"
+      ]
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 100.0,
+      "lines_covered": 34,
+      "lines_total": 34,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": true
+  },
+  "test_results": {
+    "summary": {
+      "status": "failed",
+      "passed": 89,
+      "failed": 2,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.834
+    },
+    "test_details": [
+      {
+        "name": "test_calculate_circle_area_positive_radius",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_circle_area": [
+            "radius"
+          ]
+        },
+        "output": "12.5663706144",
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_area_zero_radius",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_circle_area": [
+            "radius"
+          ]
+        },
+        "output": "12.5663706144",
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_area_large_radius",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_circle_area": [
+            "radius"
+          ]
+        },
+        "output": "12.5663706144",
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_area_negative_radius_raises_value_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_circle_area": [
+            "radius"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_area_invalid_radius_type_raises_type_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_circle_area": [
+            "radius"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_positive_dimensions",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ]
+        },
+        "output": "15",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_zero_length",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ]
+        },
+        "output": "15",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_zero_width",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ]
+        },
+        "output": "15",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_negative_length_raises_value_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_negative_width_raises_value_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_invalid_length_type_raises_type_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_invalid_width_type_raises_type_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_positive_dimensions",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ]
+        },
+        "output": "6",
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_zero_base",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ]
+        },
+        "output": "6",
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_zero_height",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ]
+        },
+        "output": "6",
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_negative_base_raises_value_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_negative_height_raises_value_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_invalid_base_type_raises_type_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_invalid_height_type_raises_type_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_perimeter_positive_radius",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_circle_perimeter": [
+            "radius"
+          ]
+        },
+        "output": "12.5663706144",
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_perimeter_zero_radius",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_circle_perimeter": [
+            "radius"
+          ]
+        },
+        "output": "12.5663706144",
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_perimeter_large_radius",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_circle_perimeter": [
+            "radius"
+          ]
+        },
+        "output": "12.5663706144",
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_perimeter_negative_radius_raises_value_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_circle_perimeter": [
+            "radius"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_perimeter_invalid_radius_type_raises_type_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_circle_perimeter": [
+            "radius"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_positive_dimensions",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ]
+        },
+        "output": "16",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_zero_length",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ]
+        },
+        "output": "16",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_zero_width",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ]
+        },
+        "output": "16",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_negative_length_raises_value_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_negative_width_raises_value_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_invalid_length_type_raises_type_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_invalid_width_type_raises_type_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_positive_coordinates",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "sqrt": [
+            "(x2 - x1"
+          ],
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ]
+        },
+        "output": "5",
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_zero_coordinates",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ]
+        },
+        "output": "5",
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_negative_coordinates",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "sqrt": [
+            "(x2 - x1"
+          ],
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ]
+        },
+        "output": "5",
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_mixed_coordinates",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "sqrt": [
+            "(x2 - x1"
+          ],
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ]
+        },
+        "output": "5",
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_invalid_x1_type_raises_type_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_invalid_y1_type_raises_type_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_invalid_x2_type_raises_type_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_invalid_y2_type_raises_type_error",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_area_negative_radius",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_circle_area": [
+            "radius"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_area_invalid_radius_type",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_circle_area": [
+            "radius"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_zero_dimensions",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ]
+        },
+        "output": "15",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_negative_dimensions",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_invalid_dimension_types",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_zero_dimensions",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ]
+        },
+        "output": "6",
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_negative_dimensions",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_invalid_dimension_types",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_perimeter_negative_radius",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_circle_perimeter": [
+            "radius"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_perimeter_invalid_radius_type",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_circle_perimeter": [
+            "radius"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_zero_dimensions",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ]
+        },
+        "output": "16",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_negative_dimensions",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_invalid_dimension_types",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_invalid_coordinate_types",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_area_positive",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_circle_area": [
+            0
+          ]
+        },
+        "output": "0",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_positive",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_rectangle_area": [
+            5,
+            0
+          ]
+        },
+        "output": "0",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_invalid_dimension_type",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_rectangle_area": [
+            "5",
+            "10"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_large_dimensions",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_rectangle_area": [
+            1000,
+            2000
+          ]
+        },
+        "output": "2000000",
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_positive",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_triangle_area": [
+            5,
+            0
+          ]
+        },
+        "output": "0",
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_invalid_dimension_type",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_triangle_area": [
+            "5",
+            "10"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_large_dimensions",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_triangle_area": [
+            1000,
+            2000
+          ]
+        },
+        "output": "1000000",
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_perimeter_positive",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_circle_perimeter": [
+            0
+          ]
+        },
+        "output": "0",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_positive",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_rectangle_perimeter": [
+            5,
+            0
+          ]
+        },
+        "output": "10",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_invalid_dimension_type",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_rectangle_perimeter": [
+            "5",
+            "10"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_large_dimensions",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_rectangle_perimeter": [
+            1000,
+            2000
+          ]
+        },
+        "output": "6000",
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_positive",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_distance": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "output": "0",
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_invalid_coordinate_type",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_distance": [
+            "0",
+            "0",
+            "3",
+            "4"
+          ]
+        },
+        "output": null,
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_float_coordinates",
+        "class": "TestGeometry",
+        "status": "passed",
+        "inputs": {
+          "calculate_distance": [
+            1.5,
+            2.5,
+            4.5,
+            6.5
+          ]
+        },
+        "output": "5",
+        "error": null
+      }
+    ],
+    "raw_output": "============================= test session starts ==============================\nplatform darwin -- Python 3.13.7, pytest-7.4.3, pluggy-1.6.0 -- /Users/naveen.kumar/python_projects/Git-to-Unit-test-code/JIRA-GIT-to-Code_Unit_testcase/venv/bin/python3\ncachedir: .pytest_cache\nrootdir: /Users/naveen.kumar/python_projects/Git-to-Unit-test-code/JIRA-GIT-to-Code_Unit_testcase/temp_repos/test-code_release_pr-check\nplugins: anyio-4.12.1, cov-4.1.0\ncollecting ... collected 39 items\n\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_circle_area_positive_radius PASSED [  2%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_circle_area_zero_radius PASSED [  5%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_circle_area_large_radius PASSED [  7%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_circle_area_negative_radius_raises_value_error PASSED [ 10%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_circle_area_invalid_radius_type_raises_type_error PASSED [ 12%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_rectangle_area_positive_dimensions PASSED [ 15%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_rectangle_area_zero_length PASSED [ 17%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_rectangle_area_zero_width PASSED [ 20%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_rectangle_area_negative_length_raises_value_error PASSED [ 23%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_rectangle_area_negative_width_raises_value_error PASSED [ 25%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_rectangle_area_invalid_length_type_raises_type_error PASSED [ 28%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_rectangle_area_invalid_width_type_raises_type_error PASSED [ 30%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_triangle_area_positive_dimensions PASSED [ 33%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_triangle_area_zero_base PASSED [ 35%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_triangle_area_zero_height PASSED [ 38%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_triangle_area_negative_base_raises_value_error PASSED [ 41%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_triangle_area_negative_height_raises_value_error PASSED [ 43%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_triangle_area_invalid_base_type_raises_type_error PASSED [ 46%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_triangle_area_invalid_height_type_raises_type_error PASSED [ 48%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_circle_perimeter_positive_radius PASSED [ 51%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_circle_perimeter_zero_radius PASSED [ 53%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_circle_perimeter_large_radius PASSED [ 56%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_circle_perimeter_negative_radius_raises_value_error PASSED [ 58%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_circle_perimeter_invalid_radius_type_raises_type_error PASSED [ 61%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_rectangle_perimeter_positive_dimensions PASSED [ 64%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_rectangle_perimeter_zero_length PASSED [ 66%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_rectangle_perimeter_zero_width PASSED [ 69%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_rectangle_perimeter_negative_length_raises_value_error PASSED [ 71%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_rectangle_perimeter_negative_width_raises_value_error PASSED [ 74%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_rectangle_perimeter_invalid_length_type_raises_type_error PASSED [ 76%]\n../../../testcases/vertex_ai/test_geometry_20260205_144910.py::TestGeometry::test_calculate_rectangle_perimeter_invalid_widt\n... (truncated, full output too long)"
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "test_calculate_circle_area_positive_radius",
+          "type": "function",
+          "inputs": {
+            "calculate_circle_area": [
+              "radius"
+            ]
+          },
+          "expected_output": "expected_area",
+          "status": "passed",
+          "error": null,
+          "actual_output": "12.5663706144"
+        },
+        {
+          "name": "test_calculate_circle_area_zero_radius",
+          "type": "function",
+          "inputs": {
+            "calculate_circle_area": [
+              "radius"
+            ]
+          },
+          "expected_output": "expected_area",
+          "status": "passed",
+          "error": null,
+          "actual_output": "12.5663706144"
+        },
+        {
+          "name": "test_calculate_circle_area_large_radius",
+          "type": "function",
+          "inputs": {
+            "calculate_circle_area": [
+              "radius"
+            ]
+          },
+          "expected_output": "expected_area",
+          "status": "passed",
+          "error": null,
+          "actual_output": "12.5663706144"
+        },
+        {
+          "name": "test_calculate_circle_area_negative_radius_raises_value_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "ValueError"
+            ],
+            "calculate_circle_area": [
+              "radius"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_circle_area_invalid_radius_type_raises_type_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_circle_area": [
+              "radius"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_rectangle_area_positive_dimensions",
+          "type": "function",
+          "inputs": {
+            "calculate_rectangle_area": [
+              "length",
+              "width"
+            ]
+          },
+          "expected_output": "expected_area",
+          "status": "passed",
+          "error": null,
+          "actual_output": "15"
+        },
+        {
+          "name": "test_calculate_rectangle_area_zero_length",
+          "type": "function",
+          "inputs": {
+            "calculate_rectangle_area": [
+              "length",
+              "width"
+            ]
+          },
+          "expected_output": "expected_area",
+          "status": "passed",
+          "error": null,
+          "actual_output": "15"
+        },
+        {
+          "name": "test_calculate_rectangle_area_zero_width",
+          "type": "function",
+          "inputs": {
+            "calculate_rectangle_area": [
+              "length",
+              "width"
+            ]
+          },
+          "expected_output": "expected_area",
+          "status": "passed",
+          "error": null,
+          "actual_output": "15"
+        },
+        {
+          "name": "test_calculate_rectangle_area_negative_length_raises_value_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "ValueError"
+            ],
+            "calculate_rectangle_area": [
+              "length",
+              "width"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_rectangle_area_negative_width_raises_value_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "ValueError"
+            ],
+            "calculate_rectangle_area": [
+              "length",
+              "width"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_rectangle_area_invalid_length_type_raises_type_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_rectangle_area": [
+              "length",
+              "width"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_rectangle_area_invalid_width_type_raises_type_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_rectangle_area": [
+              "length",
+              "width"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_triangle_area_positive_dimensions",
+          "type": "function",
+          "inputs": {
+            "calculate_triangle_area": [
+              "base",
+              "height"
+            ]
+          },
+          "expected_output": "expected_area",
+          "status": "passed",
+          "error": null,
+          "actual_output": "6"
+        },
+        {
+          "name": "test_calculate_triangle_area_zero_base",
+          "type": "function",
+          "inputs": {
+            "calculate_triangle_area": [
+              "base",
+              "height"
+            ]
+          },
+          "expected_output": "expected_area",
+          "status": "passed",
+          "error": null,
+          "actual_output": "6"
+        },
+        {
+          "name": "test_calculate_triangle_area_zero_height",
+          "type": "function",
+          "inputs": {
+            "calculate_triangle_area": [
+              "base",
+              "height"
+            ]
+          },
+          "expected_output": "expected_area",
+          "status": "passed",
+          "error": null,
+          "actual_output": "6"
+        },
+        {
+          "name": "test_calculate_triangle_area_negative_base_raises_value_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "ValueError"
+            ],
+            "calculate_triangle_area": [
+              "base",
+              "height"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_triangle_area_negative_height_raises_value_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "ValueError"
+            ],
+            "calculate_triangle_area": [
+              "base",
+              "height"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_triangle_area_invalid_base_type_raises_type_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_triangle_area": [
+              "base",
+              "height"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_triangle_area_invalid_height_type_raises_type_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_triangle_area": [
+              "base",
+              "height"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_circle_perimeter_positive_radius",
+          "type": "function",
+          "inputs": {
+            "calculate_circle_perimeter": [
+              "radius"
+            ]
+          },
+          "expected_output": "expected_perimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "12.5663706144"
+        },
+        {
+          "name": "test_calculate_circle_perimeter_zero_radius",
+          "type": "function",
+          "inputs": {
+            "calculate_circle_perimeter": [
+              "radius"
+            ]
+          },
+          "expected_output": "expected_perimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "12.5663706144"
+        },
+        {
+          "name": "test_calculate_circle_perimeter_large_radius",
+          "type": "function",
+          "inputs": {
+            "calculate_circle_perimeter": [
+              "radius"
+            ]
+          },
+          "expected_output": "expected_perimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "12.5663706144"
+        },
+        {
+          "name": "test_calculate_circle_perimeter_negative_radius_raises_value_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "ValueError"
+            ],
+            "calculate_circle_perimeter": [
+              "radius"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_circle_perimeter_invalid_radius_type_raises_type_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_circle_perimeter": [
+              "radius"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_rectangle_perimeter_positive_dimensions",
+          "type": "function",
+          "inputs": {
+            "calculate_rectangle_perimeter": [
+              "length",
+              "width"
+            ]
+          },
+          "expected_output": "expected_perimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "16"
+        },
+        {
+          "name": "test_calculate_rectangle_perimeter_zero_length",
+          "type": "function",
+          "inputs": {
+            "calculate_rectangle_perimeter": [
+              "length",
+              "width"
+            ]
+          },
+          "expected_output": "expected_perimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "16"
+        },
+        {
+          "name": "test_calculate_rectangle_perimeter_zero_width",
+          "type": "function",
+          "inputs": {
+            "calculate_rectangle_perimeter": [
+              "length",
+              "width"
+            ]
+          },
+          "expected_output": "expected_perimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "16"
+        },
+        {
+          "name": "test_calculate_rectangle_perimeter_negative_length_raises_value_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "ValueError"
+            ],
+            "calculate_rectangle_perimeter": [
+              "length",
+              "width"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_rectangle_perimeter_negative_width_raises_value_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "ValueError"
+            ],
+            "calculate_rectangle_perimeter": [
+              "length",
+              "width"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_rectangle_perimeter_invalid_length_type_raises_type_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_rectangle_perimeter": [
+              "length",
+              "width"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_rectangle_perimeter_invalid_width_type_raises_type_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_rectangle_perimeter": [
+              "length",
+              "width"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_distance_positive_coordinates",
+          "type": "function",
+          "inputs": {
+            "sqrt": [
+              "(x2 - x1"
+            ],
+            "calculate_distance": [
+              "x1",
+              "y1",
+              "x2",
+              "y2"
+            ]
+          },
+          "expected_output": "expected_distance",
+          "status": "passed",
+          "error": null,
+          "actual_output": "5"
+        },
+        {
+          "name": "test_calculate_distance_zero_coordinates",
+          "type": "function",
+          "inputs": {
+            "calculate_distance": [
+              "x1",
+              "y1",
+              "x2",
+              "y2"
+            ]
+          },
+          "expected_output": "expected_distance",
+          "status": "passed",
+          "error": null,
+          "actual_output": "5"
+        },
+        {
+          "name": "test_calculate_distance_negative_coordinates",
+          "type": "function",
+          "inputs": {
+            "sqrt": [
+              "(x2 - x1"
+            ],
+            "calculate_distance": [
+              "x1",
+              "y1",
+              "x2",
+              "y2"
+            ]
+          },
+          "expected_output": "expected_distance",
+          "status": "passed",
+          "error": null,
+          "actual_output": "5"
+        },
+        {
+          "name": "test_calculate_distance_mixed_coordinates",
+          "type": "function",
+          "inputs": {
+            "sqrt": [
+              "(x2 - x1"
+            ],
+            "calculate_distance": [
+              "x1",
+              "y1",
+              "x2",
+              "y2"
+            ]
+          },
+          "expected_output": "expected_distance",
+          "status": "passed",
+          "error": null,
+          "actual_output": "5"
+        },
+        {
+          "name": "test_calculate_distance_invalid_x1_type_raises_type_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_distance": [
+              "x1",
+              "y1",
+              "x2",
+              "y2"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_distance_invalid_y1_type_raises_type_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_distance": [
+              "x1",
+              "y1",
+              "x2",
+              "y2"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_distance_invalid_x2_type_raises_type_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_distance": [
+              "x1",
+              "y1",
+              "x2",
+              "y2"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_distance_invalid_y2_type_raises_type_error",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_distance": [
+              "x1",
+              "y1",
+              "x2",
+              "y2"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_circle_area_negative_radius",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "ValueError"
+            ],
+            "calculate_circle_area": [
+              "radius"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_circle_area_invalid_radius_type",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_circle_area": [
+              "radius"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_rectangle_area_zero_dimensions",
+          "type": "function",
+          "inputs": {
+            "calculate_rectangle_area": [
+              "length",
+              "width"
+            ]
+          },
+          "expected_output": "expected_area",
+          "status": "passed",
+          "error": null,
+          "actual_output": "15"
+        },
+        {
+          "name": "test_calculate_rectangle_area_negative_dimensions",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "ValueError"
+            ],
+            "calculate_rectangle_area": [
+              "length",
+              "width"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_rectangle_area_invalid_dimension_types",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_rectangle_area": [
+              "length",
+              "width"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_triangle_area_zero_dimensions",
+          "type": "function",
+          "inputs": {
+            "calculate_triangle_area": [
+              "base",
+              "height"
+            ]
+          },
+          "expected_output": "expected_area",
+          "status": "passed",
+          "error": null,
+          "actual_output": "6"
+        },
+        {
+          "name": "test_calculate_triangle_area_negative_dimensions",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "ValueError"
+            ],
+            "calculate_triangle_area": [
+              "base",
+              "height"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_triangle_area_invalid_dimension_types",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_triangle_area": [
+              "base",
+              "height"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_circle_perimeter_negative_radius",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "ValueError"
+            ],
+            "calculate_circle_perimeter": [
+              "radius"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_circle_perimeter_invalid_radius_type",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_circle_perimeter": [
+              "radius"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_rectangle_perimeter_zero_dimensions",
+          "type": "function",
+          "inputs": {
+            "calculate_rectangle_perimeter": [
+              "length",
+              "width"
+            ]
+          },
+          "expected_output": "expected_perimeter",
+          "status": "passed",
+          "error": null,
+          "actual_output": "16"
+        },
+        {
+          "name": "test_calculate_rectangle_perimeter_negative_dimensions",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "ValueError"
+            ],
+            "calculate_rectangle_perimeter": [
+              "length",
+              "width"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_rectangle_perimeter_invalid_dimension_types",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_rectangle_perimeter": [
+              "length",
+              "width"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_distance_invalid_coordinate_types",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_distance": [
+              "x1",
+              "y1",
+              "x2",
+              "y2"
+            ],
+            "str": [
+              "excinfo.value"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_circle_area_positive",
+          "type": "function",
+          "inputs": {
+            "calculate_circle_area": [
+              0
+            ]
+          },
+          "expected_output": "math.pi * 25",
+          "status": "passed",
+          "error": null,
+          "actual_output": "0"
+        },
+        {
+          "name": "test_calculate_rectangle_area_positive",
+          "type": "function",
+          "inputs": {
+            "calculate_rectangle_area": [
+              5,
+              0
+            ]
+          },
+          "expected_output": "50",
+          "status": "passed",
+          "error": null,
+          "actual_output": "0"
+        },
+        {
+          "name": "test_calculate_rectangle_area_invalid_dimension_type",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_rectangle_area": [
+              "5",
+              "10"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_rectangle_area_large_dimensions",
+          "type": "function",
+          "inputs": {
+            "calculate_rectangle_area": [
+              1000,
+              2000
+            ]
+          },
+          "expected_output": "2000000",
+          "status": "passed",
+          "error": null,
+          "actual_output": "2000000"
+        },
+        {
+          "name": "test_calculate_triangle_area_positive",
+          "type": "function",
+          "inputs": {
+            "calculate_triangle_area": [
+              5,
+              0
+            ]
+          },
+          "expected_output": "25",
+          "status": "passed",
+          "error": null,
+          "actual_output": "0"
+        },
+        {
+          "name": "test_calculate_triangle_area_invalid_dimension_type",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_triangle_area": [
+              "5",
+              "10"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_triangle_area_large_dimensions",
+          "type": "function",
+          "inputs": {
+            "calculate_triangle_area": [
+              1000,
+              2000
+            ]
+          },
+          "expected_output": "1000000",
+          "status": "passed",
+          "error": null,
+          "actual_output": "1000000"
+        },
+        {
+          "name": "test_calculate_circle_perimeter_positive",
+          "type": "function",
+          "inputs": {
+            "calculate_circle_perimeter": [
+              0
+            ]
+          },
+          "expected_output": "2 * math.pi * 5",
+          "status": "passed",
+          "error": null,
+          "actual_output": "0"
+        },
+        {
+          "name": "test_calculate_rectangle_perimeter_positive",
+          "type": "function",
+          "inputs": {
+            "calculate_rectangle_perimeter": [
+              5,
+              0
+            ]
+          },
+          "expected_output": "30",
+          "status": "passed",
+          "error": null,
+          "actual_output": "10"
+        },
+        {
+          "name": "test_calculate_rectangle_perimeter_invalid_dimension_type",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_rectangle_perimeter": [
+              "5",
+              "10"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_rectangle_perimeter_large_dimensions",
+          "type": "function",
+          "inputs": {
+            "calculate_rectangle_perimeter": [
+              1000,
+              2000
+            ]
+          },
+          "expected_output": "6000",
+          "status": "passed",
+          "error": null,
+          "actual_output": "6000"
+        },
+        {
+          "name": "test_calculate_distance_positive",
+          "type": "function",
+          "inputs": {
+            "calculate_distance": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "expected_output": "5",
+          "status": "passed",
+          "error": null,
+          "actual_output": "0"
+        },
+        {
+          "name": "test_calculate_distance_invalid_coordinate_type",
+          "type": "function",
+          "inputs": {
+            "raises": [
+              "TypeError"
+            ],
+            "calculate_distance": [
+              "0",
+              "0",
+              "3",
+              "4"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "test_calculate_distance_float_coordinates",
+          "type": "function",
+          "inputs": {
+            "calculate_distance": [
+              1.5,
+              2.5,
+              4.5,
+              6.5
+            ]
+          },
+          "expected_output": "5.0",
+          "status": "passed",
+          "error": null,
+          "actual_output": "5"
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "test_calculate_circle_area_positive_radius",
+        "type": "function",
+        "inputs": {
+          "calculate_circle_area": [
+            "radius"
+          ]
+        },
+        "expected_output": "expected_area",
+        "status": "passed",
+        "error": null,
+        "actual_output": "12.5663706144"
+      },
+      {
+        "name": "test_calculate_circle_area_zero_radius",
+        "type": "function",
+        "inputs": {
+          "calculate_circle_area": [
+            "radius"
+          ]
+        },
+        "expected_output": "expected_area",
+        "status": "passed",
+        "error": null,
+        "actual_output": "12.5663706144"
+      },
+      {
+        "name": "test_calculate_circle_area_large_radius",
+        "type": "function",
+        "inputs": {
+          "calculate_circle_area": [
+            "radius"
+          ]
+        },
+        "expected_output": "expected_area",
+        "status": "passed",
+        "error": null,
+        "actual_output": "12.5663706144"
+      },
+      {
+        "name": "test_calculate_circle_area_negative_radius_raises_value_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_circle_area": [
+            "radius"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_area_invalid_radius_type_raises_type_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_circle_area": [
+            "radius"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_positive_dimensions",
+        "type": "function",
+        "inputs": {
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ]
+        },
+        "expected_output": "expected_area",
+        "status": "passed",
+        "error": null,
+        "actual_output": "15"
+      },
+      {
+        "name": "test_calculate_rectangle_area_zero_length",
+        "type": "function",
+        "inputs": {
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ]
+        },
+        "expected_output": "expected_area",
+        "status": "passed",
+        "error": null,
+        "actual_output": "15"
+      },
+      {
+        "name": "test_calculate_rectangle_area_zero_width",
+        "type": "function",
+        "inputs": {
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ]
+        },
+        "expected_output": "expected_area",
+        "status": "passed",
+        "error": null,
+        "actual_output": "15"
+      },
+      {
+        "name": "test_calculate_rectangle_area_negative_length_raises_value_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_negative_width_raises_value_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_invalid_length_type_raises_type_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_invalid_width_type_raises_type_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_positive_dimensions",
+        "type": "function",
+        "inputs": {
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ]
+        },
+        "expected_output": "expected_area",
+        "status": "passed",
+        "error": null,
+        "actual_output": "6"
+      },
+      {
+        "name": "test_calculate_triangle_area_zero_base",
+        "type": "function",
+        "inputs": {
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ]
+        },
+        "expected_output": "expected_area",
+        "status": "passed",
+        "error": null,
+        "actual_output": "6"
+      },
+      {
+        "name": "test_calculate_triangle_area_zero_height",
+        "type": "function",
+        "inputs": {
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ]
+        },
+        "expected_output": "expected_area",
+        "status": "passed",
+        "error": null,
+        "actual_output": "6"
+      },
+      {
+        "name": "test_calculate_triangle_area_negative_base_raises_value_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_negative_height_raises_value_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_invalid_base_type_raises_type_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_invalid_height_type_raises_type_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_perimeter_positive_radius",
+        "type": "function",
+        "inputs": {
+          "calculate_circle_perimeter": [
+            "radius"
+          ]
+        },
+        "expected_output": "expected_perimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "12.5663706144"
+      },
+      {
+        "name": "test_calculate_circle_perimeter_zero_radius",
+        "type": "function",
+        "inputs": {
+          "calculate_circle_perimeter": [
+            "radius"
+          ]
+        },
+        "expected_output": "expected_perimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "12.5663706144"
+      },
+      {
+        "name": "test_calculate_circle_perimeter_large_radius",
+        "type": "function",
+        "inputs": {
+          "calculate_circle_perimeter": [
+            "radius"
+          ]
+        },
+        "expected_output": "expected_perimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "12.5663706144"
+      },
+      {
+        "name": "test_calculate_circle_perimeter_negative_radius_raises_value_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_circle_perimeter": [
+            "radius"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_perimeter_invalid_radius_type_raises_type_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_circle_perimeter": [
+            "radius"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_positive_dimensions",
+        "type": "function",
+        "inputs": {
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ]
+        },
+        "expected_output": "expected_perimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "16"
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_zero_length",
+        "type": "function",
+        "inputs": {
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ]
+        },
+        "expected_output": "expected_perimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "16"
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_zero_width",
+        "type": "function",
+        "inputs": {
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ]
+        },
+        "expected_output": "expected_perimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "16"
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_negative_length_raises_value_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_negative_width_raises_value_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_invalid_length_type_raises_type_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_invalid_width_type_raises_type_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_positive_coordinates",
+        "type": "function",
+        "inputs": {
+          "sqrt": [
+            "(x2 - x1"
+          ],
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ]
+        },
+        "expected_output": "expected_distance",
+        "status": "passed",
+        "error": null,
+        "actual_output": "5"
+      },
+      {
+        "name": "test_calculate_distance_zero_coordinates",
+        "type": "function",
+        "inputs": {
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ]
+        },
+        "expected_output": "expected_distance",
+        "status": "passed",
+        "error": null,
+        "actual_output": "5"
+      },
+      {
+        "name": "test_calculate_distance_negative_coordinates",
+        "type": "function",
+        "inputs": {
+          "sqrt": [
+            "(x2 - x1"
+          ],
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ]
+        },
+        "expected_output": "expected_distance",
+        "status": "passed",
+        "error": null,
+        "actual_output": "5"
+      },
+      {
+        "name": "test_calculate_distance_mixed_coordinates",
+        "type": "function",
+        "inputs": {
+          "sqrt": [
+            "(x2 - x1"
+          ],
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ]
+        },
+        "expected_output": "expected_distance",
+        "status": "passed",
+        "error": null,
+        "actual_output": "5"
+      },
+      {
+        "name": "test_calculate_distance_invalid_x1_type_raises_type_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_invalid_y1_type_raises_type_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_invalid_x2_type_raises_type_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_invalid_y2_type_raises_type_error",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_area_negative_radius",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_circle_area": [
+            "radius"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_area_invalid_radius_type",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_circle_area": [
+            "radius"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_zero_dimensions",
+        "type": "function",
+        "inputs": {
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ]
+        },
+        "expected_output": "expected_area",
+        "status": "passed",
+        "error": null,
+        "actual_output": "15"
+      },
+      {
+        "name": "test_calculate_rectangle_area_negative_dimensions",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_invalid_dimension_types",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_rectangle_area": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_zero_dimensions",
+        "type": "function",
+        "inputs": {
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ]
+        },
+        "expected_output": "expected_area",
+        "status": "passed",
+        "error": null,
+        "actual_output": "6"
+      },
+      {
+        "name": "test_calculate_triangle_area_negative_dimensions",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_invalid_dimension_types",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_triangle_area": [
+            "base",
+            "height"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_perimeter_negative_radius",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_circle_perimeter": [
+            "radius"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_perimeter_invalid_radius_type",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_circle_perimeter": [
+            "radius"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_zero_dimensions",
+        "type": "function",
+        "inputs": {
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ]
+        },
+        "expected_output": "expected_perimeter",
+        "status": "passed",
+        "error": null,
+        "actual_output": "16"
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_negative_dimensions",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "ValueError"
+          ],
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_invalid_dimension_types",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_rectangle_perimeter": [
+            "length",
+            "width"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_invalid_coordinate_types",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_distance": [
+            "x1",
+            "y1",
+            "x2",
+            "y2"
+          ],
+          "str": [
+            "excinfo.value"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_circle_area_positive",
+        "type": "function",
+        "inputs": {
+          "calculate_circle_area": [
+            0
+          ]
+        },
+        "expected_output": "math.pi * 25",
+        "status": "passed",
+        "error": null,
+        "actual_output": "0"
+      },
+      {
+        "name": "test_calculate_rectangle_area_positive",
+        "type": "function",
+        "inputs": {
+          "calculate_rectangle_area": [
+            5,
+            0
+          ]
+        },
+        "expected_output": "50",
+        "status": "passed",
+        "error": null,
+        "actual_output": "0"
+      },
+      {
+        "name": "test_calculate_rectangle_area_invalid_dimension_type",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_rectangle_area": [
+            "5",
+            "10"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_area_large_dimensions",
+        "type": "function",
+        "inputs": {
+          "calculate_rectangle_area": [
+            1000,
+            2000
+          ]
+        },
+        "expected_output": "2000000",
+        "status": "passed",
+        "error": null,
+        "actual_output": "2000000"
+      },
+      {
+        "name": "test_calculate_triangle_area_positive",
+        "type": "function",
+        "inputs": {
+          "calculate_triangle_area": [
+            5,
+            0
+          ]
+        },
+        "expected_output": "25",
+        "status": "passed",
+        "error": null,
+        "actual_output": "0"
+      },
+      {
+        "name": "test_calculate_triangle_area_invalid_dimension_type",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_triangle_area": [
+            "5",
+            "10"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_triangle_area_large_dimensions",
+        "type": "function",
+        "inputs": {
+          "calculate_triangle_area": [
+            1000,
+            2000
+          ]
+        },
+        "expected_output": "1000000",
+        "status": "passed",
+        "error": null,
+        "actual_output": "1000000"
+      },
+      {
+        "name": "test_calculate_circle_perimeter_positive",
+        "type": "function",
+        "inputs": {
+          "calculate_circle_perimeter": [
+            0
+          ]
+        },
+        "expected_output": "2 * math.pi * 5",
+        "status": "passed",
+        "error": null,
+        "actual_output": "0"
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_positive",
+        "type": "function",
+        "inputs": {
+          "calculate_rectangle_perimeter": [
+            5,
+            0
+          ]
+        },
+        "expected_output": "30",
+        "status": "passed",
+        "error": null,
+        "actual_output": "10"
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_invalid_dimension_type",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_rectangle_perimeter": [
+            "5",
+            "10"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_rectangle_perimeter_large_dimensions",
+        "type": "function",
+        "inputs": {
+          "calculate_rectangle_perimeter": [
+            1000,
+            2000
+          ]
+        },
+        "expected_output": "6000",
+        "status": "passed",
+        "error": null,
+        "actual_output": "6000"
+      },
+      {
+        "name": "test_calculate_distance_positive",
+        "type": "function",
+        "inputs": {
+          "calculate_distance": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "expected_output": "5",
+        "status": "passed",
+        "error": null,
+        "actual_output": "0"
+      },
+      {
+        "name": "test_calculate_distance_invalid_coordinate_type",
+        "type": "function",
+        "inputs": {
+          "raises": [
+            "TypeError"
+          ],
+          "calculate_distance": [
+            "0",
+            "0",
+            "3",
+            "4"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "test_calculate_distance_float_coordinates",
+        "type": "function",
+        "inputs": {
+          "calculate_distance": [
+            1.5,
+            2.5,
+            4.5,
+            6.5
+          ]
+        },
+        "expected_output": "5.0",
+        "status": "passed",
+        "error": null,
+        "actual_output": "5"
+      }
+    ]
+  }
+}

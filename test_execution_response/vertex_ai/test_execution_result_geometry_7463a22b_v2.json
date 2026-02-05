@@ -1,0 +1,5165 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "javascript",
+    "test_framework": "jest",
+    "execution_timestamp": "2026-02-05T14:48:43.466882",
+    "execution_timestamp_unix": 1770283123.466885,
+    "source_file": "geometry.js",
+    "test_file": "testcases/vertex_ai/geometry.test_7463a22b.js",
+    "commit_hash": "7463a22b"
+  },
+  "execution_summary": {
+    "status": "success",
+    "duration_seconds": 2.082,
+    "duration_readable": "2.08s",
+    "test_statistics": {
+      "total_unique_test_cases": 139,
+      "test_cases_passed": 139,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 0,
+      "test_cases_other_status": 0,
+      "test_cases_breakdown": {
+        "passed": 139,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 0,
+        "other": 0,
+        "_total": 139
+      },
+      "test_executions": {
+        "total_run": 162,
+        "passed": 162,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": true,
+      "output_length": 3897,
+      "key_messages": []
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 100.0,
+      "lines_covered": 28,
+      "lines_total": 28,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": false
+  },
+  "test_results": {
+    "summary": {
+      "status": "success",
+      "passed": 162,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 2.082
+    },
+    "test_details": [
+      {
+        "name": "should throw an error when the radius is negative",
+        "status": "passed",
+        "duration": 3,
+        "inputs": {
+          "calculateCircleArea": [
+            -5
+          ],
+          "toThrow": [
+            "Radius cannot be negative"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError when the radius is not a number",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "calculateCircleArea": [
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should calculate circle perimeter with a positive radius",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBeCloseTo": [
+            "2 * Math.PI * 5"
+          ]
+        }
+      },
+      {
+        "name": "should calculate rectangle perimeter with zero length and zero width",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError when x1 is not a number",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "calculateDistance": [
+            null,
+            0,
+            0,
+            0
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should calculate circle area with a positive radius",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            "Math.PI * 5 * 5"
+          ]
+        }
+      },
+      {
+        "name": "should calculate circle area with a zero radius",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should throw an error when the radius is negative (3 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should throw a TypeError when the radius is not a number (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should calculate circle area with a large positive radius",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            "Math.PI * 1000 * 1000"
+          ]
+        }
+      },
+      {
+        "name": "should calculate circle area with a decimal radius",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            "Math.PI * 2.5 * 2.5"
+          ]
+        }
+      },
+      {
+        "name": "should calculate rectangle area with positive length and width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            50
+          ]
+        }
+      },
+      {
+        "name": "should calculate rectangle area with zero length and positive width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should calculate rectangle area with positive length and zero width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should calculate rectangle area with zero length and zero width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should throw an error when the length is negative",
+        "status": "passed",
+        "inputs": {
+          "calculateRectangleArea": [
+            -5,
+            10
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        }
+      },
+      {
+        "name": "should throw an error when the width is negative",
+        "status": "passed",
+        "inputs": {
+          "calculateRectangleArea": [
+            5,
+            -10
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError when the length is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculateRectangleArea": [
+            null,
+            10
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError when the width is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculateRectangleArea": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should calculate rectangle area with large positive length and width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            2000000
+          ]
+        }
+      },
+      {
+        "name": "should calculate rectangle area with decimal length and width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            8.75
+          ]
+        }
+      },
+      {
+        "name": "should calculate triangle area with positive base and height",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            25
+          ]
+        }
+      },
+      {
+        "name": "should calculate triangle area with zero base and positive height",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should calculate triangle area with positive base and zero height",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should calculate triangle area with zero base and zero height",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should throw an error when the base is negative",
+        "status": "passed",
+        "inputs": {
+          "calculateTriangleArea": [
+            -5,
+            10
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        }
+      },
+      {
+        "name": "should throw an error when the height is negative",
+        "status": "passed",
+        "inputs": {
+          "calculateTriangleArea": [
+            5,
+            -10
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError when the base is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculateTriangleArea": [
+            null,
+            10
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError when the height is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculateTriangleArea": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should calculate triangle area with large positive base and height",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1000000
+          ]
+        }
+      },
+      {
+        "name": "should calculate triangle area with decimal base and height",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            4.375
+          ]
+        }
+      },
+      {
+        "name": "should calculate circle perimeter with a positive radius (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should calculate circle perimeter with a zero radius",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should calculate circle perimeter with a large positive radius",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            "2 * Math.PI * 1000"
+          ]
+        }
+      },
+      {
+        "name": "should calculate circle perimeter with a decimal radius",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            "2 * Math.PI * 2.5"
+          ]
+        }
+      },
+      {
+        "name": "should calculate rectangle perimeter with positive length and width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            30
+          ]
+        }
+      },
+      {
+        "name": "should calculate rectangle perimeter with zero length and positive width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            20
+          ]
+        }
+      },
+      {
+        "name": "should calculate rectangle perimeter with positive length and zero width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            10
+          ]
+        }
+      },
+      {
+        "name": "should calculate rectangle perimeter with zero length and zero width (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should calculate rectangle perimeter with large positive length and width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            6000
+          ]
+        }
+      },
+      {
+        "name": "should calculate rectangle perimeter with decimal length and width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            12
+          ]
+        }
+      },
+      {
+        "name": "should calculate distance between two points",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        }
+      },
+      {
+        "name": "should calculate distance between the same point",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should calculate distance with negative coordinates",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        }
+      },
+      {
+        "name": "should calculate distance with mixed positive and negative coordinates",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            2.828
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError when x1 is not a number (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should throw a TypeError when y1 is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculateDistance": [
+            0,
+            null,
+            0,
+            0
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError when x2 is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculateDistance": [
+            0,
+            0,
+            null,
+            0
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError when y2 is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculateDistance": [
+            0,
+            0,
+            0,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should calculate distance with large coordinates",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            1414.21
+          ]
+        }
+      },
+      {
+        "name": "should calculate distance with decimal coordinates",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            2.828
+          ]
+        }
+      },
+      {
+        "name": "calculateCircleArea",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            "Math.PI * 2.5 * 2.5"
+          ],
+          "toBe": [
+            0
+          ],
+          "calculateCircleArea": [
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculateRectangleArea",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            8.75
+          ],
+          "calculateRectangleArea": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculateTriangleArea",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            4.375
+          ],
+          "calculateTriangleArea": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculateCirclePerimeter",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            "2 * Math.PI * 2.5"
+          ],
+          "toBe": [
+            0
+          ],
+          "calculateCirclePerimeter": [
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculateRectanglePerimeter",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            12
+          ],
+          "calculateRectanglePerimeter": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculateDistance",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5
+          ],
+          "toBeCloseTo": [
+            2.828
+          ],
+          "calculateDistance": [
+            0,
+            0,
+            0,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate area with valid radius",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBeCloseTo": [
+            "Math.PI * 5 * 5"
+          ]
+        }
+      },
+      {
+        "name": "should throw an error if radius is negative",
+        "status": "passed",
+        "duration": 4,
+        "inputs": {
+          "calculateCircleArea": [
+            -1
+          ],
+          "toThrow": [
+            "Radius cannot be negative"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if radius is not a number",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "calculateCircleArea": [
+            "123"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should calculate area with a large radius",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBeCloseTo": [
+            "Math.PI * 1000 * 1000"
+          ]
+        }
+      },
+      {
+        "name": "should throw an error if base is negative",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "calculateTriangleArea": [
+            -1,
+            5
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if base or height is undefined",
+        "status": "passed",
+        "duration": 2,
+        "inputs": {
+          "calculateTriangleArea": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if length or width is undefined",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "calculateRectangleArea": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if any coordinate is null",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "calculateDistance": [
+            0,
+            0,
+            0,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should calculate area with valid radius (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should calculate area with zero radius",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should throw an error if radius is negative (4 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should throw a TypeError if radius is not a number (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should throw a TypeError if radius is null",
+        "status": "passed",
+        "inputs": {
+          "calculateCircleArea": [
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if radius is undefined",
+        "status": "passed",
+        "inputs": {
+          "calculateCircleArea": [
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if radius is NaN",
+        "status": "passed",
+        "inputs": {
+          "calculateCircleArea": [
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should calculate area with a large radius (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should calculate area with a decimal radius",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            "Math.PI * 2.5 * 2.5"
+          ]
+        }
+      },
+      {
+        "name": "should calculate area with valid length and width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            50
+          ]
+        }
+      },
+      {
+        "name": "should calculate area with zero length and width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should throw an error if length is negative",
+        "status": "passed",
+        "inputs": {
+          "calculateRectangleArea": [
+            -1,
+            5
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        }
+      },
+      {
+        "name": "should throw an error if width is negative",
+        "status": "passed",
+        "inputs": {
+          "calculateRectangleArea": [
+            5,
+            -1
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if length is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculateRectangleArea": [
+            "abc",
+            5
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if width is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculateRectangleArea": [
+            5,
+            "abc"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if length or width is null",
+        "status": "passed",
+        "inputs": {
+          "calculateRectangleArea": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should calculate area with large length and width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            2000000
+          ]
+        }
+      },
+      {
+        "name": "should calculate area with decimal length and width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            8.75
+          ]
+        }
+      },
+      {
+        "name": "should calculate area with valid base and height",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            25
+          ]
+        }
+      },
+      {
+        "name": "should calculate area with zero base and height",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should throw an error if base is negative (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should throw an error if height is negative",
+        "status": "passed",
+        "inputs": {
+          "calculateTriangleArea": [
+            5,
+            -1
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if base is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculateTriangleArea": [
+            "abc",
+            5
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if height is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculateTriangleArea": [
+            5,
+            "abc"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if base or height is null",
+        "status": "passed",
+        "inputs": {
+          "calculateTriangleArea": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if base or height is undefined (2 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should calculate area with large base and height",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1000000
+          ]
+        }
+      },
+      {
+        "name": "should calculate area with decimal base and height",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            4.375
+          ]
+        }
+      },
+      {
+        "name": "should calculate perimeter with valid radius",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            "2 * Math.PI * 5"
+          ]
+        }
+      },
+      {
+        "name": "should calculate perimeter with zero radius",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should throw an error if radius is negative (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should calculate perimeter with a large radius",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            "2 * Math.PI * 1000"
+          ]
+        }
+      },
+      {
+        "name": "should calculate perimeter with a decimal radius",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            "2 * Math.PI * 2.5"
+          ]
+        }
+      },
+      {
+        "name": "should calculate perimeter with valid length and width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            30
+          ]
+        }
+      },
+      {
+        "name": "should calculate perimeter with zero length and width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if length or width is undefined (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should calculate perimeter with large length and width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            6000
+          ]
+        }
+      },
+      {
+        "name": "should calculate perimeter with decimal length and width",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            12
+          ]
+        }
+      },
+      {
+        "name": "should calculate distance with valid coordinates",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        }
+      },
+      {
+        "name": "should calculate distance with same coordinates",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if any coordinate is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculateDistance": [
+            0,
+            0,
+            0,
+            "abc"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if any coordinate is null (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should throw a TypeError if any coordinate is undefined",
+        "status": "passed",
+        "inputs": {
+          "calculateDistance": [
+            0,
+            0,
+            0,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "should calculate distance with decimal coordinates (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should calculate distance when x1 and x2 are the same",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            10
+          ]
+        }
+      },
+      {
+        "name": "should calculate distance when y1 and y2 are the same",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            10
+          ]
+        }
+      },
+      {
+        "name": "should calculate the area of a circle with a positive radius",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            "Math.PI * 5 * 5"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate the area of a circle with a zero radius",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should throw a TypeError when the radius is NaN",
+        "status": "passed",
+        "inputs": {
+          "calculateCircleArea": [
+            "NaN"
+          ],
+          "toThrow": [
+            "Radius must be a number"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should throw a TypeError when the radius is null",
+        "status": "passed",
+        "inputs": {
+          "calculateCircleArea": [
+            null
+          ],
+          "toThrow": [
+            "Radius must be a number"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should throw a TypeError when the radius is undefined",
+        "status": "passed",
+        "inputs": {
+          "calculateCircleArea": [
+            null
+          ],
+          "toThrow": [
+            "Radius must be a number"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate the area of a rectangle with positive dimensions",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            50
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate the area of a rectangle with one dimension being zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate the area of a rectangle with both dimensions being zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should throw an error when both dimensions are negative",
+        "status": "passed",
+        "inputs": {
+          "calculateRectangleArea": [
+            -5,
+            -10
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should throw a TypeError when both dimensions are not numbers",
+        "status": "passed",
+        "inputs": {
+          "calculateRectangleArea": [
+            "abc",
+            "def"
+          ],
+          "toThrow": [
+            "Both length and width must be numbers"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should throw a TypeError when the length is NaN",
+        "status": "passed",
+        "inputs": {
+          "calculateRectangleArea": [
+            "NaN",
+            10
+          ],
+          "toThrow": [
+            "Both length and width must be numbers"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should throw a TypeError when the width is NaN",
+        "status": "passed",
+        "inputs": {
+          "calculateRectangleArea": [
+            5,
+            "NaN"
+          ],
+          "toThrow": [
+            "Both length and width must be numbers"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should throw a TypeError when both dimensions are NaN",
+        "status": "passed",
+        "inputs": {
+          "calculateRectangleArea": [
+            "NaN",
+            "NaN"
+          ],
+          "toThrow": [
+            "Both length and width must be numbers"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate the area of a triangle with positive dimensions",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            25
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate the area of a triangle with one dimension being zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate the area of a triangle with both dimensions being zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should throw a TypeError when the base is NaN",
+        "status": "passed",
+        "inputs": {
+          "calculateTriangleArea": [
+            "NaN",
+            10
+          ],
+          "toThrow": [
+            "Both base and height must be numbers"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should throw a TypeError when the height is NaN",
+        "status": "passed",
+        "inputs": {
+          "calculateTriangleArea": [
+            5,
+            "NaN"
+          ],
+          "toThrow": [
+            "Both base and height must be numbers"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate the perimeter of a circle with a positive radius",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            "2 * Math.PI * 5"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate the perimeter of a circle with a zero radius",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate the perimeter of a rectangle with positive dimensions",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            30
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate the perimeter of a rectangle with one dimension being zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            20
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate the perimeter of a rectangle with both dimensions being zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate the distance between two points with positive coordinates",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate the distance between two points with negative coordinates",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate the distance between two points with mixed positive and negative coordinates",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            7.8102
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should calculate the distance between two identical points",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should throw a TypeError when all coordinates are not numbers",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      }
+    ],
+    "raw_output": "(node:25966) Warning: `--localstorage-file` was provided without a valid path\n(Use `node --trace-warnings ...` to show where the warning was created)\nPASS testcases/vertex_ai/geometry.test_20260205_144835.js\n  calculateCircleArea\n    \u2713 should calculate circle area with a positive radius\n    \u2713 should calculate circle area with a zero radius\n    \u2713 should throw an error when the radius is negative (3 ms)\n    \u2713 should throw a TypeError when the radius is not a number (1 ms)\n    \u2713 should calculate circle area with a large positive radius\n    \u2713 should calculate circle area with a decimal radius\n  calculateRectangleArea\n    \u2713 should calculate rectangle area with positive length and width\n    \u2713 should calculate rectangle area with zero length and positive width\n    \u2713 should calculate rectangle area with positive length and zero width\n    \u2713 should calculate rectangle area with zero length and zero width\n    \u2713 should throw an error when the length is negative\n    \u2713 should throw an error when the width is negative\n    \u2713 should throw a TypeError when the length is not a number\n    \u2713 should throw a TypeError when the width is not a number\n    \u2713 should calculate rectangle area with large positive length and width\n    \u2713 should calculate rectangle area with decimal length and width\n  calculateTriangleArea\n    \u2713 should calculate triangle area with positive base and height\n    \u2713 should calculate triangle area with zero base and positive height\n    \u2713 should calculate triangle area with positive base and zero height\n    \u2713 should calculate triangle area with zero base and zero height\n    \u2713 should throw an error when the base is negative\n    \u2713 should throw an error when the height is negative\n    \u2713 should throw a TypeError when the base is not a number\n    \u2713 should throw a TypeError when the height is not a number\n    \u2713 should calculate triangle area with large positive base and height\n    \u2713 should calculate triangle area with decimal base and height\n  calculateCirclePerimeter\n    \u2713 should calculate circle perimeter with a positive radius (1 ms)\n    \u2713 should calculate circle perimeter with a zero radius\n    \u2713 should throw an error when the radius is negative\n    \u2713 should throw a TypeError when the radius is not a number\n    \u2713 should calculate circle perimeter with a large positive radius\n    \u2713 should calculate circle perimeter with a decimal radius\n  calculateRectanglePerimeter\n    \u2713 should calculate rectangle perimeter with positive length and width\n    \u2713 should calculate rectangle perimeter with zero length and positive width\n    \u2713 should calculate rectangle perimeter with positive length and zero width\n    \u2713 should calculate rectangle perimeter with zero length and zero width (1 ms)\n    \u2713 should throw an error when the length is negative\n    \u2713 should throw an error when the width is negative\n    \u2713 should throw a TypeError when the length is not a number\n    \u2713 should throw a TypeError when the width is not a number\n    \u2713 should calculate rectangle perimeter with large positive length and width\n    \u2713 should calculate rectangle perimeter with decimal length and width\n  calculateDistance\n    \u2713 should calculate distance between two points\n    \u2713 should calculate distance between the same point\n    \u2713 should calculate distance with negative coordinates\n    \u2713 should calculate distance with mixed positive and negative coordinates\n    \u2713 should throw a TypeError when x1 is not a number (1 ms)\n    \u2713 should throw a TypeError when y1 is not a number\n    \u2713 should throw a TypeError when x2 is not a number\n    \u2713 should throw a TypeError when y2 is not a number\n    \u2713 should calculate distance with large coordinates\n    \u2713 should calculate distance with decimal coordinates\n\nTest Suites: 1 passed, 1 total\nTests:       52 passed, 52 total\nSnapshots:   0 total\nTime:        0.192 s\nRan all test suites matching /testcases\\/vertex_ai\\/geometry.test_20260205_144835.js/i.\n"
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "calculateCircleArea",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              "Math.PI * 2.5 * 2.5"
+            ],
+            "toBe": [
+              0
+            ],
+            "calculateCircleArea": [
+              "NaN"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate circle area with a positive radius",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              "Math.PI * 5 * 5"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate circle area with a zero radius",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error when the radius is negative",
+          "type": "test",
+          "inputs": {
+            "calculateCircleArea": [
+              -5
+            ],
+            "toThrow": [
+              "Radius cannot be negative"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when the radius is not a number",
+          "type": "test",
+          "inputs": {
+            "calculateCircleArea": [
+              "NaN"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate circle area with a large positive radius",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              "Math.PI * 1000 * 1000"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate circle area with a decimal radius",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              "Math.PI * 2.5 * 2.5"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculateRectangleArea",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              8.75
+            ],
+            "calculateRectangleArea": [
+              5,
+              null
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate rectangle area with positive length and width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              50
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate rectangle area with zero length and positive width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate rectangle area with positive length and zero width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate rectangle area with zero length and zero width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error when the length is negative",
+          "type": "test",
+          "inputs": {
+            "calculateRectangleArea": [
+              -5,
+              10
+            ],
+            "toThrow": [
+              "Dimensions cannot be negative"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error when the width is negative",
+          "type": "test",
+          "inputs": {
+            "calculateRectangleArea": [
+              5,
+              -10
+            ],
+            "toThrow": [
+              "Dimensions cannot be negative"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when the length is not a number",
+          "type": "test",
+          "inputs": {
+            "calculateRectangleArea": [
+              null,
+              10
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when the width is not a number",
+          "type": "test",
+          "inputs": {
+            "calculateRectangleArea": [
+              5,
+              null
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate rectangle area with large positive length and width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2000000
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate rectangle area with decimal length and width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              8.75
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculateTriangleArea",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              4.375
+            ],
+            "calculateTriangleArea": [
+              5,
+              null
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate triangle area with positive base and height",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              25
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate triangle area with zero base and positive height",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate triangle area with positive base and zero height",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate triangle area with zero base and zero height",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error when the base is negative",
+          "type": "test",
+          "inputs": {
+            "calculateTriangleArea": [
+              -5,
+              10
+            ],
+            "toThrow": [
+              "Dimensions cannot be negative"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error when the height is negative",
+          "type": "test",
+          "inputs": {
+            "calculateTriangleArea": [
+              5,
+              -10
+            ],
+            "toThrow": [
+              "Dimensions cannot be negative"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when the base is not a number",
+          "type": "test",
+          "inputs": {
+            "calculateTriangleArea": [
+              null,
+              10
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when the height is not a number",
+          "type": "test",
+          "inputs": {
+            "calculateTriangleArea": [
+              5,
+              null
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate triangle area with large positive base and height",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000000
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate triangle area with decimal base and height",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              4.375
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculateCirclePerimeter",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              "2 * Math.PI * 2.5"
+            ],
+            "toBe": [
+              0
+            ],
+            "calculateCirclePerimeter": [
+              "NaN"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate circle perimeter with a positive radius",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              "2 * Math.PI * 5"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate circle perimeter with a zero radius",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate circle perimeter with a large positive radius",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              "2 * Math.PI * 1000"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate circle perimeter with a decimal radius",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              "2 * Math.PI * 2.5"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculateRectanglePerimeter",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              12
+            ],
+            "calculateRectanglePerimeter": [
+              5,
+              null
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate rectangle perimeter with positive length and width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              30
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate rectangle perimeter with zero length and positive width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              20
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate rectangle perimeter with positive length and zero width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              10
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate rectangle perimeter with zero length and zero width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate rectangle perimeter with large positive length and width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              6000
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate rectangle perimeter with decimal length and width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              12
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculateDistance",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ],
+            "toBeCloseTo": [
+              2.828
+            ],
+            "calculateDistance": [
+              0,
+              0,
+              0,
+              null
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate distance between two points",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate distance between the same point",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate distance with negative coordinates",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate distance with mixed positive and negative coordinates",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              2.828
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when x1 is not a number",
+          "type": "test",
+          "inputs": {
+            "calculateDistance": [
+              null,
+              0,
+              0,
+              0
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when y1 is not a number",
+          "type": "test",
+          "inputs": {
+            "calculateDistance": [
+              0,
+              null,
+              0,
+              0
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when x2 is not a number",
+          "type": "test",
+          "inputs": {
+            "calculateDistance": [
+              0,
+              0,
+              null,
+              0
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when y2 is not a number",
+          "type": "test",
+          "inputs": {
+            "calculateDistance": [
+              0,
+              0,
+              0,
+              null
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate distance with large coordinates",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              1414.21
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate distance with decimal coordinates",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              2.828
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate area with valid radius",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              "Math.PI * 5 * 5"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate area with zero radius",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error if radius is negative",
+          "type": "test",
+          "inputs": {
+            "calculateCircleArea": [
+              -1
+            ],
+            "toThrow": [
+              "Radius cannot be negative"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if radius is not a number",
+          "type": "test",
+          "inputs": {
+            "calculateCircleArea": [
+              "123"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if radius is null",
+          "type": "test",
+          "inputs": {
+            "calculateCircleArea": [
+              null
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if radius is undefined",
+          "type": "test",
+          "inputs": {
+            "calculateCircleArea": [
+              null
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if radius is NaN",
+          "type": "test",
+          "inputs": {
+            "calculateCircleArea": [
+              "NaN"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate area with a large radius",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              "Math.PI * 1000 * 1000"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate area with a decimal radius",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              "Math.PI * 2.5 * 2.5"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate area with valid length and width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              50
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate area with zero length and width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error if length is negative",
+          "type": "test",
+          "inputs": {
+            "calculateRectangleArea": [
+              -1,
+              5
+            ],
+            "toThrow": [
+              "Dimensions cannot be negative"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error if width is negative",
+          "type": "test",
+          "inputs": {
+            "calculateRectangleArea": [
+              5,
+              -1
+            ],
+            "toThrow": [
+              "Dimensions cannot be negative"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if length is not a number",
+          "type": "test",
+          "inputs": {
+            "calculateRectangleArea": [
+              "abc",
+              5
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if width is not a number",
+          "type": "test",
+          "inputs": {
+            "calculateRectangleArea": [
+              5,
+              "abc"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if length or width is null",
+          "type": "test",
+          "inputs": {
+            "calculateRectangleArea": [
+              5,
+              null
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if length or width is undefined",
+          "type": "test",
+          "inputs": {
+            "calculateRectangleArea": [
+              5,
+              null
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate area with large length and width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2000000
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate area with decimal length and width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              8.75
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate area with valid base and height",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              25
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate area with zero base and height",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error if base is negative",
+          "type": "test",
+          "inputs": {
+            "calculateTriangleArea": [
+              -1,
+              5
+            ],
+            "toThrow": [
+              "Dimensions cannot be negative"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error if height is negative",
+          "type": "test",
+          "inputs": {
+            "calculateTriangleArea": [
+              5,
+              -1
+            ],
+            "toThrow": [
+              "Dimensions cannot be negative"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if base is not a number",
+          "type": "test",
+          "inputs": {
+            "calculateTriangleArea": [
+              "abc",
+              5
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if height is not a number",
+          "type": "test",
+          "inputs": {
+            "calculateTriangleArea": [
+              5,
+              "abc"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if base or height is null",
+          "type": "test",
+          "inputs": {
+            "calculateTriangleArea": [
+              5,
+              null
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if base or height is undefined",
+          "type": "test",
+          "inputs": {
+            "calculateTriangleArea": [
+              5,
+              null
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate area with large base and height",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000000
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate area with decimal base and height",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              4.375
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate perimeter with valid radius",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              "2 * Math.PI * 5"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate perimeter with zero radius",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate perimeter with a large radius",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              "2 * Math.PI * 1000"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate perimeter with a decimal radius",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              "2 * Math.PI * 2.5"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate perimeter with valid length and width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              30
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate perimeter with zero length and width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate perimeter with large length and width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              6000
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate perimeter with decimal length and width",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              12
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate distance with valid coordinates",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate distance with same coordinates",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if any coordinate is not a number",
+          "type": "test",
+          "inputs": {
+            "calculateDistance": [
+              0,
+              0,
+              0,
+              "abc"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if any coordinate is null",
+          "type": "test",
+          "inputs": {
+            "calculateDistance": [
+              0,
+              0,
+              0,
+              null
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if any coordinate is undefined",
+          "type": "test",
+          "inputs": {
+            "calculateDistance": [
+              0,
+              0,
+              0,
+              null
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate distance when x1 and x2 are the same",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              10
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate distance when y1 and y2 are the same",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              10
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the area of a circle with a positive radius",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              "Math.PI * 5 * 5"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the area of a circle with a zero radius",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when the radius is NaN",
+          "type": "test",
+          "inputs": {
+            "calculateCircleArea": [
+              "NaN"
+            ],
+            "toThrow": [
+              "Radius must be a number"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when the radius is null",
+          "type": "test",
+          "inputs": {
+            "calculateCircleArea": [
+              null
+            ],
+            "toThrow": [
+              "Radius must be a number"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when the radius is undefined",
+          "type": "test",
+          "inputs": {
+            "calculateCircleArea": [
+              null
+            ],
+            "toThrow": [
+              "Radius must be a number"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the area of a rectangle with positive dimensions",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              50
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the area of a rectangle with one dimension being zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the area of a rectangle with both dimensions being zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error when both dimensions are negative",
+          "type": "test",
+          "inputs": {
+            "calculateRectangleArea": [
+              -5,
+              -10
+            ],
+            "toThrow": [
+              "Dimensions cannot be negative"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when both dimensions are not numbers",
+          "type": "test",
+          "inputs": {
+            "calculateRectangleArea": [
+              "abc",
+              "def"
+            ],
+            "toThrow": [
+              "Both length and width must be numbers"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when the length is NaN",
+          "type": "test",
+          "inputs": {
+            "calculateRectangleArea": [
+              "NaN",
+              10
+            ],
+            "toThrow": [
+              "Both length and width must be numbers"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when the width is NaN",
+          "type": "test",
+          "inputs": {
+            "calculateRectangleArea": [
+              5,
+              "NaN"
+            ],
+            "toThrow": [
+              "Both length and width must be numbers"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when both dimensions are NaN",
+          "type": "test",
+          "inputs": {
+            "calculateRectangleArea": [
+              "NaN",
+              "NaN"
+            ],
+            "toThrow": [
+              "Both length and width must be numbers"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the area of a triangle with positive dimensions",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              25
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the area of a triangle with one dimension being zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the area of a triangle with both dimensions being zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when the base is NaN",
+          "type": "test",
+          "inputs": {
+            "calculateTriangleArea": [
+              "NaN",
+              10
+            ],
+            "toThrow": [
+              "Both base and height must be numbers"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when the height is NaN",
+          "type": "test",
+          "inputs": {
+            "calculateTriangleArea": [
+              5,
+              "NaN"
+            ],
+            "toThrow": [
+              "Both base and height must be numbers"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the perimeter of a circle with a positive radius",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              "2 * Math.PI * 5"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the perimeter of a circle with a zero radius",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the perimeter of a rectangle with positive dimensions",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              30
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the perimeter of a rectangle with one dimension being zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              20
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the perimeter of a rectangle with both dimensions being zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the distance between two points with positive coordinates",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the distance between two points with negative coordinates",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the distance between two points with mixed positive and negative coordinates",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              7.8102
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the distance between two identical points",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error when the radius is negative (3 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when the radius is not a number (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should calculate circle perimeter with a positive radius (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should calculate rectangle perimeter with zero length and zero width (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when x1 is not a number (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should calculate area with valid radius (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw an error if radius is negative (4 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if radius is not a number (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should calculate area with a large radius (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw an error if base is negative (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if base or height is undefined (2 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw an error if radius is negative (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if length or width is undefined (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if any coordinate is null (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should calculate distance with decimal coordinates (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when all coordinates are not numbers",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "calculateCircleArea",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            "Math.PI * 2.5 * 2.5"
+          ],
+          "toBe": [
+            0
+          ],
+          "calculateCircleArea": [
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate circle area with a positive radius",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            "Math.PI * 5 * 5"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate circle area with a zero radius",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error when the radius is negative",
+        "type": "test",
+        "inputs": {
+          "calculateCircleArea": [
+            -5
+          ],
+          "toThrow": [
+            "Radius cannot be negative"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when the radius is not a number",
+        "type": "test",
+        "inputs": {
+          "calculateCircleArea": [
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate circle area with a large positive radius",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            "Math.PI * 1000 * 1000"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate circle area with a decimal radius",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            "Math.PI * 2.5 * 2.5"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculateRectangleArea",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            8.75
+          ],
+          "calculateRectangleArea": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate rectangle area with positive length and width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            50
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate rectangle area with zero length and positive width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate rectangle area with positive length and zero width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate rectangle area with zero length and zero width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error when the length is negative",
+        "type": "test",
+        "inputs": {
+          "calculateRectangleArea": [
+            -5,
+            10
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error when the width is negative",
+        "type": "test",
+        "inputs": {
+          "calculateRectangleArea": [
+            5,
+            -10
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when the length is not a number",
+        "type": "test",
+        "inputs": {
+          "calculateRectangleArea": [
+            null,
+            10
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when the width is not a number",
+        "type": "test",
+        "inputs": {
+          "calculateRectangleArea": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate rectangle area with large positive length and width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2000000
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate rectangle area with decimal length and width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            8.75
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculateTriangleArea",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            4.375
+          ],
+          "calculateTriangleArea": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate triangle area with positive base and height",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            25
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate triangle area with zero base and positive height",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate triangle area with positive base and zero height",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate triangle area with zero base and zero height",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error when the base is negative",
+        "type": "test",
+        "inputs": {
+          "calculateTriangleArea": [
+            -5,
+            10
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error when the height is negative",
+        "type": "test",
+        "inputs": {
+          "calculateTriangleArea": [
+            5,
+            -10
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when the base is not a number",
+        "type": "test",
+        "inputs": {
+          "calculateTriangleArea": [
+            null,
+            10
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when the height is not a number",
+        "type": "test",
+        "inputs": {
+          "calculateTriangleArea": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate triangle area with large positive base and height",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000000
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate triangle area with decimal base and height",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            4.375
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculateCirclePerimeter",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            "2 * Math.PI * 2.5"
+          ],
+          "toBe": [
+            0
+          ],
+          "calculateCirclePerimeter": [
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate circle perimeter with a positive radius",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            "2 * Math.PI * 5"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate circle perimeter with a zero radius",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate circle perimeter with a large positive radius",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            "2 * Math.PI * 1000"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate circle perimeter with a decimal radius",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            "2 * Math.PI * 2.5"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculateRectanglePerimeter",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            12
+          ],
+          "calculateRectanglePerimeter": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate rectangle perimeter with positive length and width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            30
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate rectangle perimeter with zero length and positive width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            20
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate rectangle perimeter with positive length and zero width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            10
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate rectangle perimeter with zero length and zero width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate rectangle perimeter with large positive length and width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            6000
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate rectangle perimeter with decimal length and width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            12
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculateDistance",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ],
+          "toBeCloseTo": [
+            2.828
+          ],
+          "calculateDistance": [
+            0,
+            0,
+            0,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate distance between two points",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate distance between the same point",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate distance with negative coordinates",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate distance with mixed positive and negative coordinates",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            2.828
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when x1 is not a number",
+        "type": "test",
+        "inputs": {
+          "calculateDistance": [
+            null,
+            0,
+            0,
+            0
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when y1 is not a number",
+        "type": "test",
+        "inputs": {
+          "calculateDistance": [
+            0,
+            null,
+            0,
+            0
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when x2 is not a number",
+        "type": "test",
+        "inputs": {
+          "calculateDistance": [
+            0,
+            0,
+            null,
+            0
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when y2 is not a number",
+        "type": "test",
+        "inputs": {
+          "calculateDistance": [
+            0,
+            0,
+            0,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate distance with large coordinates",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            1414.21
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate distance with decimal coordinates",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            2.828
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate area with valid radius",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            "Math.PI * 5 * 5"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate area with zero radius",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error if radius is negative",
+        "type": "test",
+        "inputs": {
+          "calculateCircleArea": [
+            -1
+          ],
+          "toThrow": [
+            "Radius cannot be negative"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if radius is not a number",
+        "type": "test",
+        "inputs": {
+          "calculateCircleArea": [
+            "123"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if radius is null",
+        "type": "test",
+        "inputs": {
+          "calculateCircleArea": [
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if radius is undefined",
+        "type": "test",
+        "inputs": {
+          "calculateCircleArea": [
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if radius is NaN",
+        "type": "test",
+        "inputs": {
+          "calculateCircleArea": [
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate area with a large radius",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            "Math.PI * 1000 * 1000"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate area with a decimal radius",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            "Math.PI * 2.5 * 2.5"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate area with valid length and width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            50
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate area with zero length and width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error if length is negative",
+        "type": "test",
+        "inputs": {
+          "calculateRectangleArea": [
+            -1,
+            5
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error if width is negative",
+        "type": "test",
+        "inputs": {
+          "calculateRectangleArea": [
+            5,
+            -1
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if length is not a number",
+        "type": "test",
+        "inputs": {
+          "calculateRectangleArea": [
+            "abc",
+            5
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if width is not a number",
+        "type": "test",
+        "inputs": {
+          "calculateRectangleArea": [
+            5,
+            "abc"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if length or width is null",
+        "type": "test",
+        "inputs": {
+          "calculateRectangleArea": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if length or width is undefined",
+        "type": "test",
+        "inputs": {
+          "calculateRectangleArea": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate area with large length and width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2000000
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate area with decimal length and width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            8.75
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate area with valid base and height",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            25
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate area with zero base and height",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error if base is negative",
+        "type": "test",
+        "inputs": {
+          "calculateTriangleArea": [
+            -1,
+            5
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error if height is negative",
+        "type": "test",
+        "inputs": {
+          "calculateTriangleArea": [
+            5,
+            -1
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if base is not a number",
+        "type": "test",
+        "inputs": {
+          "calculateTriangleArea": [
+            "abc",
+            5
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if height is not a number",
+        "type": "test",
+        "inputs": {
+          "calculateTriangleArea": [
+            5,
+            "abc"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if base or height is null",
+        "type": "test",
+        "inputs": {
+          "calculateTriangleArea": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if base or height is undefined",
+        "type": "test",
+        "inputs": {
+          "calculateTriangleArea": [
+            5,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate area with large base and height",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000000
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate area with decimal base and height",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            4.375
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate perimeter with valid radius",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            "2 * Math.PI * 5"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate perimeter with zero radius",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate perimeter with a large radius",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            "2 * Math.PI * 1000"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate perimeter with a decimal radius",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            "2 * Math.PI * 2.5"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate perimeter with valid length and width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            30
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate perimeter with zero length and width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate perimeter with large length and width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            6000
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate perimeter with decimal length and width",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            12
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate distance with valid coordinates",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate distance with same coordinates",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if any coordinate is not a number",
+        "type": "test",
+        "inputs": {
+          "calculateDistance": [
+            0,
+            0,
+            0,
+            "abc"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if any coordinate is null",
+        "type": "test",
+        "inputs": {
+          "calculateDistance": [
+            0,
+            0,
+            0,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if any coordinate is undefined",
+        "type": "test",
+        "inputs": {
+          "calculateDistance": [
+            0,
+            0,
+            0,
+            null
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate distance when x1 and x2 are the same",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            10
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate distance when y1 and y2 are the same",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            10
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the area of a circle with a positive radius",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            "Math.PI * 5 * 5"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the area of a circle with a zero radius",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when the radius is NaN",
+        "type": "test",
+        "inputs": {
+          "calculateCircleArea": [
+            "NaN"
+          ],
+          "toThrow": [
+            "Radius must be a number"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when the radius is null",
+        "type": "test",
+        "inputs": {
+          "calculateCircleArea": [
+            null
+          ],
+          "toThrow": [
+            "Radius must be a number"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when the radius is undefined",
+        "type": "test",
+        "inputs": {
+          "calculateCircleArea": [
+            null
+          ],
+          "toThrow": [
+            "Radius must be a number"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the area of a rectangle with positive dimensions",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            50
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the area of a rectangle with one dimension being zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the area of a rectangle with both dimensions being zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error when both dimensions are negative",
+        "type": "test",
+        "inputs": {
+          "calculateRectangleArea": [
+            -5,
+            -10
+          ],
+          "toThrow": [
+            "Dimensions cannot be negative"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when both dimensions are not numbers",
+        "type": "test",
+        "inputs": {
+          "calculateRectangleArea": [
+            "abc",
+            "def"
+          ],
+          "toThrow": [
+            "Both length and width must be numbers"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when the length is NaN",
+        "type": "test",
+        "inputs": {
+          "calculateRectangleArea": [
+            "NaN",
+            10
+          ],
+          "toThrow": [
+            "Both length and width must be numbers"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when the width is NaN",
+        "type": "test",
+        "inputs": {
+          "calculateRectangleArea": [
+            5,
+            "NaN"
+          ],
+          "toThrow": [
+            "Both length and width must be numbers"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when both dimensions are NaN",
+        "type": "test",
+        "inputs": {
+          "calculateRectangleArea": [
+            "NaN",
+            "NaN"
+          ],
+          "toThrow": [
+            "Both length and width must be numbers"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the area of a triangle with positive dimensions",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            25
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the area of a triangle with one dimension being zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the area of a triangle with both dimensions being zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when the base is NaN",
+        "type": "test",
+        "inputs": {
+          "calculateTriangleArea": [
+            "NaN",
+            10
+          ],
+          "toThrow": [
+            "Both base and height must be numbers"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when the height is NaN",
+        "type": "test",
+        "inputs": {
+          "calculateTriangleArea": [
+            5,
+            "NaN"
+          ],
+          "toThrow": [
+            "Both base and height must be numbers"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the perimeter of a circle with a positive radius",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            "2 * Math.PI * 5"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the perimeter of a circle with a zero radius",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the perimeter of a rectangle with positive dimensions",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            30
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the perimeter of a rectangle with one dimension being zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            20
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the perimeter of a rectangle with both dimensions being zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the distance between two points with positive coordinates",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the distance between two points with negative coordinates",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the distance between two points with mixed positive and negative coordinates",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            7.8102
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the distance between two identical points",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error when the radius is negative (3 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when the radius is not a number (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should calculate circle perimeter with a positive radius (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should calculate rectangle perimeter with zero length and zero width (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when x1 is not a number (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should calculate area with valid radius (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw an error if radius is negative (4 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if radius is not a number (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should calculate area with a large radius (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw an error if base is negative (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if base or height is undefined (2 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw an error if radius is negative (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if length or width is undefined (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if any coordinate is null (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should calculate distance with decimal coordinates (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when all coordinates are not numbers",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      }
+    ]
+  }
+}
