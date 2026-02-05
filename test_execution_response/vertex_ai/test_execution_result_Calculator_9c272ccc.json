@@ -1,0 +1,1135 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "java",
+    "test_framework": "junit",
+    "execution_timestamp": "2026-02-05T12:01:35.535909",
+    "execution_timestamp_unix": 1770273095.535912,
+    "source_file": "Calculator.java",
+    "test_file": "testcases/vertex_ai/CalculatorTest_9c272ccc.java",
+    "commit_hash": "9c272ccc"
+  },
+  "execution_summary": {
+    "status": "failed",
+    "duration_seconds": 2.318,
+    "duration_readable": "2.32s",
+    "test_statistics": {
+      "total_unique_test_cases": 70,
+      "test_cases_passed": 4,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 66,
+      "test_cases_other_status": 0,
+      "test_cases_breakdown": {
+        "passed": 4,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 66,
+        "other": 0,
+        "_total": 70
+      },
+      "test_executions": {
+        "total_run": 100,
+        "passed": 96,
+        "failed": 2,
+        "errors": 2,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": true,
+      "output_length": 7264,
+      "key_messages": [
+        "Error: Expected exception: java.lang.IllegalArgumentException"
+      ]
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 0.0,
+      "lines_covered": 0,
+      "lines_total": 0,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": false
+  },
+  "test_results": {
+    "summary": {
+      "status": "failed",
+      "passed": 96,
+      "failed": 2,
+      "errors": 2,
+      "skipped": 0,
+      "duration_seconds": 2.318
+    },
+    "test_details": [
+      {
+        "name": "Failures",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "factorial",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "testFactorial_largeValue",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "invoke",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      }
+    ],
+    "raw_output": "\nThanks for using JUnit! Support its development at https://junit.org/sponsoring\n\n\u001b[36m\u2577\u001b[0m\n\u001b[36m\u251c\u2500\u001b[0m \u001b[36mJUnit Jupiter\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u251c\u2500\u001b[0m \u001b[36mJUnit Vintage\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502  \u2514\u2500\u001b[0m \u001b[36mCalculatorTest\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestMultiplyNumbers_oneValue\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestSubtractNumbers_exceedsMaxResultPositive\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestSubtractNumbers_validInput\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestLeastCommonMultiple_oneNumberIsZero\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_negativeNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestMultiplyNumbers_negativeNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestLeastCommonMultiple_validInput\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_zeroValues\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestIsPrime_evenNumberGreaterThanTwo\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddThreeNumbers_negativeNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddThreeNumbers_decimalValues\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddThreeNumbers_validInput\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestMultiplyNumbers_decimalValues\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestModuloNumbers_negativeDivisor\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestGreatestCommonDivisor_bothNumbersAreSame\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestGreatestCommonDivisor_bothNumbersAreZero\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestDivideNumbers_negativeNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestFactorial_oneValue\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_largeNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestModuloNumbers_divideByZero\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestIsPrime_compositeNumber\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestPowerNumbers_decimalExponent\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestFactorial_validInput\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestFibonacci_negativeNumber\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestIsPrime_twoValue\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestPowerNumbers_validInput\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestPowerNumbers_exceedsMaxResult\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_validInput\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestDivideNumbers_validInput\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestModuloNumbers_validInput\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestModuloNumbers_negativeDividend\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestPowerNumbers_oneExponent\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestRoundToDecimal_negativeDecimals\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestLeastCommonMultiple_bothNumbersAreSame\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestSquareRoot_decimalValue\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestRoundToDecimal_validInput\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestFibonacci_zeroValue\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestFibonacci_largeValue\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestSquareRoot_zeroValue\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestFactorial_exceedsMaxResult\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestFibonacci_oneValue\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestSubtractNumbers_negativeResult\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestSubtractNumbers_largeNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestGreatestCommonDivisor_coprimeNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestMultiplyNumbers_zeroValue\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestDivideNumbers_divideByZero\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestDivideNumbers_decimalValues\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestIsPrime_numberLessThanTwo\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestFactorial_zeroValue\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestRoundToDecimal_zeroDecimals\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestMultiplyNumbers_exceedsMaxResult\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[31mtestFibonacci_exceedsMaxResult\u001b[0m \u001b[31m\u2718\u001b[0m \u001b[31mExpected exception: java.lang.IllegalArgumentException\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestSquareRoot_validInput\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestGreatestCommonDivisor_oneNumberIsZero\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestLeastCommonMultiple_exceedsMaxResult\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestSubtractNumbers_zeroResult\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[31mtestFactorial_largeValue\u001b[0m \u001b[31m\u2718\u001b[0m \u001b[31mResult 3628800 exceeds maximum allowed value 1000000.00\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestPowerNumbers_zeroExponent\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestLeastCommonMultiple_coprimeNumbers\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_nanInputBoth\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestPowerNumbers_negativeBase\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_nanInputA\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_nanInputB\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestDivideNumbers_exceedsMaxResult\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddNumbers_decimalValues\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestAddThreeNumbers_exceedsMaxResult\u001b[0m \u001b[32m\u2714\u001b[0m\n\u001b[36m\u2502     \u251c\u2500\u001b[0m \u001b[34mtestGreate\n... (truncated, full output too long)"
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "testAddNumbers_validInput",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_negativeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_zeroValues",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_largeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2000000.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_decimalValues",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "3.5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_validInput",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_negativeResult",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_zeroResult",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_largeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "999999.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_validInput",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "6.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_negativeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-6.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_zeroValue",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_oneValue",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testMultiplyNumbers_decimalValues",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "3.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testDivideNumbers_validInput",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testDivideNumbers_negativeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testDivideNumbers_decimalValues",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddThreeNumbers_validInput",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "6.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddThreeNumbers_negativeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddThreeNumbers_zeroValues",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddThreeNumbers_decimalValues",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "6.5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testPowerNumbers_validInput",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "8.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testPowerNumbers_zeroExponent",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testPowerNumbers_oneExponent",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testPowerNumbers_negativeBase",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-8.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testPowerNumbers_decimalExponent",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.828",
+          "status": "not_executed"
+        },
+        {
+          "name": "testModuloNumbers_validInput",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testModuloNumbers_zeroRemainder",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testModuloNumbers_negativeDividend",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testModuloNumbers_negativeDivisor",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSquareRoot_validInput",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSquareRoot_zeroValue",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSquareRoot_decimalValue",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.414",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFactorial_validInput",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "6",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFactorial_zeroValue",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFactorial_oneValue",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFactorial_largeValue",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "3628800",
+          "status": "passed",
+          "error": null,
+          "actual_output": "3628800"
+        },
+        {
+          "name": "testGreatestCommonDivisor_validInput",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "6",
+          "status": "not_executed"
+        },
+        {
+          "name": "testGreatestCommonDivisor_coprimeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1",
+          "status": "not_executed"
+        },
+        {
+          "name": "testGreatestCommonDivisor_oneNumberIsZero",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testGreatestCommonDivisor_bothNumbersAreSame",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "10",
+          "status": "not_executed"
+        },
+        {
+          "name": "testGreatestCommonDivisor_negativeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "6",
+          "status": "not_executed"
+        },
+        {
+          "name": "testLeastCommonMultiple_validInput",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "36",
+          "status": "not_executed"
+        },
+        {
+          "name": "testLeastCommonMultiple_coprimeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "91",
+          "status": "not_executed"
+        },
+        {
+          "name": "testLeastCommonMultiple_bothNumbersAreSame",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "10",
+          "status": "not_executed"
+        },
+        {
+          "name": "testLeastCommonMultiple_largeNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "999990",
+          "status": "not_executed"
+        },
+        {
+          "name": "testIsPrime_validInput",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "true",
+          "status": "not_executed"
+        },
+        {
+          "name": "testIsPrime_compositeNumber",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "false",
+          "status": "not_executed"
+        },
+        {
+          "name": "testIsPrime_twoValue",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "true",
+          "status": "not_executed"
+        },
+        {
+          "name": "testIsPrime_evenNumberGreaterThanTwo",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "false",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFibonacci_validInput",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFibonacci_zeroValue",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFibonacci_oneValue",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1",
+          "status": "not_executed"
+        },
+        {
+          "name": "testFibonacci_largeValue",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "55",
+          "status": "not_executed"
+        },
+        {
+          "name": "testRoundToDecimal_validInput",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "3.14",
+          "status": "not_executed"
+        },
+        {
+          "name": "testRoundToDecimal_zeroDecimals",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "3.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testRoundToDecimal_moreDecimalsThanAvailable",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "3.14159",
+          "status": "not_executed"
+        },
+        {
+          "name": "testRoundToDecimal_negativeNumber",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "-3.14",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_positiveNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "5.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_mixedNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_zero",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_decimalNumbers",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "3.3",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_withinMaxResult",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "1.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_NaN_throwsIllegalArgumentException",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              "Double.NaN",
+              3.0
+            ],
+            "catch": [
+              "IllegalArgumentException e"
+            ]
+          },
+          "expected_output": "Both arguments must be numbers",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_NaN_throwsIllegalArgumentException2",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              3.0,
+              "Double.NaN"
+            ],
+            "catch": [
+              "IllegalArgumentException e"
+            ]
+          },
+          "expected_output": "Both arguments must be numbers",
+          "status": "not_executed"
+        },
+        {
+          "name": "testAddNumbers_NaN_throwsIllegalArgumentException3",
+          "type": "method",
+          "inputs": {
+            "calculator.addNumbers": [
+              "Double.NaN",
+              "Double.NaN"
+            ],
+            "catch": [
+              "IllegalArgumentException e"
+            ]
+          },
+          "expected_output": "Both arguments must be numbers",
+          "status": "not_executed"
+        },
+        {
+          "name": "testSubtractNumbers_positiveResult",
+          "type": "method",
+          "inputs": null,
+          "expected_output": "2.0",
+          "status": "not_executed"
+        },
+        {
+          "name": "Failures",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "factorial",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "invoke",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "testAddNumbers_validInput",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_negativeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_zeroValues",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_largeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2000000.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_decimalValues",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "3.5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_validInput",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_negativeResult",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_zeroResult",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_largeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "999999.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_validInput",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "6.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_negativeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-6.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_zeroValue",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_oneValue",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testMultiplyNumbers_decimalValues",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "3.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testDivideNumbers_validInput",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testDivideNumbers_negativeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testDivideNumbers_decimalValues",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddThreeNumbers_validInput",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "6.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddThreeNumbers_negativeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddThreeNumbers_zeroValues",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddThreeNumbers_decimalValues",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "6.5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testPowerNumbers_validInput",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "8.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testPowerNumbers_zeroExponent",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testPowerNumbers_oneExponent",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testPowerNumbers_negativeBase",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-8.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testPowerNumbers_decimalExponent",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.828",
+        "status": "not_executed"
+      },
+      {
+        "name": "testModuloNumbers_validInput",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testModuloNumbers_zeroRemainder",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testModuloNumbers_negativeDividend",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testModuloNumbers_negativeDivisor",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSquareRoot_validInput",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSquareRoot_zeroValue",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSquareRoot_decimalValue",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.414",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFactorial_validInput",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "6",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFactorial_zeroValue",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFactorial_oneValue",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFactorial_largeValue",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "3628800",
+        "status": "passed",
+        "error": null,
+        "actual_output": "3628800"
+      },
+      {
+        "name": "testGreatestCommonDivisor_validInput",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "6",
+        "status": "not_executed"
+      },
+      {
+        "name": "testGreatestCommonDivisor_coprimeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1",
+        "status": "not_executed"
+      },
+      {
+        "name": "testGreatestCommonDivisor_oneNumberIsZero",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testGreatestCommonDivisor_bothNumbersAreSame",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "10",
+        "status": "not_executed"
+      },
+      {
+        "name": "testGreatestCommonDivisor_negativeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "6",
+        "status": "not_executed"
+      },
+      {
+        "name": "testLeastCommonMultiple_validInput",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "36",
+        "status": "not_executed"
+      },
+      {
+        "name": "testLeastCommonMultiple_coprimeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "91",
+        "status": "not_executed"
+      },
+      {
+        "name": "testLeastCommonMultiple_bothNumbersAreSame",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "10",
+        "status": "not_executed"
+      },
+      {
+        "name": "testLeastCommonMultiple_largeNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "999990",
+        "status": "not_executed"
+      },
+      {
+        "name": "testIsPrime_validInput",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "true",
+        "status": "not_executed"
+      },
+      {
+        "name": "testIsPrime_compositeNumber",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "false",
+        "status": "not_executed"
+      },
+      {
+        "name": "testIsPrime_twoValue",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "true",
+        "status": "not_executed"
+      },
+      {
+        "name": "testIsPrime_evenNumberGreaterThanTwo",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "false",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFibonacci_validInput",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFibonacci_zeroValue",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFibonacci_oneValue",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1",
+        "status": "not_executed"
+      },
+      {
+        "name": "testFibonacci_largeValue",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "55",
+        "status": "not_executed"
+      },
+      {
+        "name": "testRoundToDecimal_validInput",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "3.14",
+        "status": "not_executed"
+      },
+      {
+        "name": "testRoundToDecimal_zeroDecimals",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "3.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testRoundToDecimal_moreDecimalsThanAvailable",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "3.14159",
+        "status": "not_executed"
+      },
+      {
+        "name": "testRoundToDecimal_negativeNumber",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "-3.14",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_positiveNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "5.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_mixedNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_zero",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_decimalNumbers",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "3.3",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_withinMaxResult",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "1.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_NaN_throwsIllegalArgumentException",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            "Double.NaN",
+            3.0
+          ],
+          "catch": [
+            "IllegalArgumentException e"
+          ]
+        },
+        "expected_output": "Both arguments must be numbers",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_NaN_throwsIllegalArgumentException2",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            3.0,
+            "Double.NaN"
+          ],
+          "catch": [
+            "IllegalArgumentException e"
+          ]
+        },
+        "expected_output": "Both arguments must be numbers",
+        "status": "not_executed"
+      },
+      {
+        "name": "testAddNumbers_NaN_throwsIllegalArgumentException3",
+        "type": "method",
+        "inputs": {
+          "calculator.addNumbers": [
+            "Double.NaN",
+            "Double.NaN"
+          ],
+          "catch": [
+            "IllegalArgumentException e"
+          ]
+        },
+        "expected_output": "Both arguments must be numbers",
+        "status": "not_executed"
+      },
+      {
+        "name": "testSubtractNumbers_positiveResult",
+        "type": "method",
+        "inputs": null,
+        "expected_output": "2.0",
+        "status": "not_executed"
+      },
+      {
+        "name": "Failures",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "factorial",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "invoke",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      }
+    ]
+  }
+}
