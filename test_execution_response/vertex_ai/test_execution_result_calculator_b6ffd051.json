@@ -1,0 +1,7943 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "javascript",
+    "test_framework": "jest",
+    "execution_timestamp": "2026-02-05T13:32:17.654742",
+    "execution_timestamp_unix": 1770278537.654746,
+    "source_file": "calculator.js",
+    "test_file": "testcases/vertex_ai/calculator.test_b6ffd051.js",
+    "commit_hash": "b6ffd051"
+  },
+  "execution_summary": {
+    "status": "failed",
+    "duration_seconds": 7.69,
+    "duration_readable": "7.69s",
+    "test_statistics": {
+      "total_unique_test_cases": 219,
+      "test_cases_passed": 156,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 0,
+      "test_cases_other_status": 63,
+      "test_cases_breakdown": {
+        "passed": 156,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 0,
+        "other": 63,
+        "_total": 219
+      },
+      "test_executions": {
+        "total_run": 216,
+        "passed": 215,
+        "failed": 1,
+        "errors": 0,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": true,
+      "output_length": 8001,
+      "key_messages": []
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 58.54,
+      "lines_covered": 113,
+      "lines_total": 193,
+      "branches_covered": 109,
+      "branches_total": 201
+    },
+    "filtered_to_changed_methods": false
+  },
+  "test_results": {
+    "summary": {
+      "status": "failed",
+      "passed": 215,
+      "failed": 1,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 7.69
+    },
+    "test_details": [
+      {
+        "name": "adds two positive numbers",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        }
+      },
+      {
+        "name": "throws an error if either argument is not a number",
+        "status": "passed",
+        "duration": 7,
+        "inputs": {
+          "calculator.addNumbers": [
+            "a",
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "throws an error if divisor is zero",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "calculator.divideNumbers": [
+            5,
+            0
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        }
+      },
+      {
+        "name": "calculates square root of zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "throws an error if argument is not an integer",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "calculator.factorial": [
+            5.5
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "calculates LCM of two negative integers",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            36
+          ]
+        }
+      },
+      {
+        "name": "returns false for non-prime numbers",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            false
+          ]
+        }
+      },
+      {
+        "name": "calculates LCM of two integers with no common factors",
+        "status": "passed"
+      },
+      {
+        "name": "Calculator",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "addNumbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            2
+          ],
+          "calculator.addNumbers": [
+            1,
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "adds a positive and a negative number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        }
+      },
+      {
+        "name": "adds two negative numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -1
+          ]
+        }
+      },
+      {
+        "name": "adds zero to a number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            7
+          ]
+        }
+      },
+      {
+        "name": "adds two zeros",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        }
+      },
+      {
+        "name": "throws an error if either argument is NaN",
+        "status": "passed",
+        "inputs": {
+          "calculator.addNumbers": [
+            "NaN",
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "subtractNumbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ],
+          "calculator.subtractNumbers": [
+            0,
+            -1000002
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "subtracts two positive numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        }
+      },
+      {
+        "name": "subtracts a positive and a negative number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            7
+          ]
+        }
+      },
+      {
+        "name": "subtracts two negative numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        }
+      },
+      {
+        "name": "subtracts zero from a number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        }
+      },
+      {
+        "name": "subtracts a number from zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -5
+          ]
+        }
+      },
+      {
+        "name": "throws an error if result exceeds maximum allowed value",
+        "status": "passed",
+        "inputs": {
+          "calculator.subtractNumbers": [
+            1,
+            -1000002
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "multiplyNumbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5
+          ],
+          "calculator.multiplyNumbers": [
+            1001,
+            1001
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "multiplies two positive numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            10
+          ]
+        }
+      },
+      {
+        "name": "multiplies a positive and a negative number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -10
+          ]
+        }
+      },
+      {
+        "name": "multiplies two negative numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        }
+      },
+      {
+        "name": "multiplies a number by zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "multiplies two zeros",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "divideNumbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            500000
+          ],
+          "calculator.divideNumbers": [
+            2000003,
+            1
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "divides two positive numbers",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        }
+      },
+      {
+        "name": "divides a positive and a negative number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -5
+          ]
+        }
+      },
+      {
+        "name": "divides two negative numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        }
+      },
+      {
+        "name": "divides a number by one",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        }
+      },
+      {
+        "name": "powerNumbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -8
+          ],
+          "toBeCloseTo": [
+            0.5
+          ],
+          "calculator.powerNumbers": [
+            100,
+            3
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "raises a number to a positive power",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            8
+          ]
+        }
+      },
+      {
+        "name": "raises a number to a negative power",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            0.5
+          ]
+        }
+      },
+      {
+        "name": "raises a number to the power of zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        }
+      },
+      {
+        "name": "raises zero to a positive power",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "raises zero to the power of zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        }
+      },
+      {
+        "name": "moduloNumbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ],
+          "calculator.moduloNumbers": [
+            1,
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates modulo of two positive numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        }
+      },
+      {
+        "name": "calculates modulo of a positive and a negative number",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        }
+      },
+      {
+        "name": "calculates modulo of two negative numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -1
+          ]
+        }
+      },
+      {
+        "name": "calculates modulo of a number and zero",
+        "status": "passed",
+        "inputs": {
+          "calculator.moduloNumbers": [
+            5,
+            0
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates modulo of zero and a number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "squareRoot",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1000
+          ],
+          "calculator.squareRoot": [
+            "largeNumber"
+          ],
+          "toThrow": [
+            "Error"
+          ],
+          "toBeCloseTo": [
+            0.2
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates square root of a positive number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        }
+      },
+      {
+        "name": "throws an error if number is negative",
+        "status": "passed",
+        "inputs": {
+          "calculator.squareRoot": [
+            -1
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "throws an error if argument is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculator.squareRoot": [
+            "a"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "absoluteValue",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1000001
+          ],
+          "calculator.absoluteValue": [
+            "a"
+          ],
+          "toThrow": [
+            "TypeError"
+          ],
+          "toBeCloseTo": [
+            1e-05
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates absolute value of a positive number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        }
+      },
+      {
+        "name": "calculates absolute value of a negative number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        }
+      },
+      {
+        "name": "calculates absolute value of zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "averageNumbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ],
+          "toThrow": [
+            "TypeError"
+          ],
+          "calculator.averageNumbers": [
+            1,
+            "b"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates average of positive numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates average of positive and negative numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            "2/3"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates average of negative numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -2
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates average of zero and numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "throws an error if no numbers are provided",
+        "status": "passed",
+        "inputs": {
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "throws an error if any argument is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculator.averageNumbers": [
+            1,
+            2,
+            "c"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "factorial",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            3628800
+          ],
+          "calculator.factorial": [
+            11
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates factorial of 0",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates factorial of 1",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates factorial of a positive integer",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            120
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "greatestCommonDivisor",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            12
+          ],
+          "calculator.greatestCommonDivisor": [
+            1,
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates GCD of two positive integers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        }
+      },
+      {
+        "name": "calculates GCD of a positive and a negative integer",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates GCD of two negative integers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates GCD of a number and zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            12
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates GCD of two zeros",
+        "status": "passed",
+        "inputs": {
+          "calculator.greatestCommonDivisor": [
+            0,
+            0
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "throws an error if either argument is not an integer",
+        "status": "passed",
+        "inputs": {
+          "calculator.greatestCommonDivisor": [
+            1,
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "leastCommonMultiple",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            36
+          ],
+          "calculator.leastCommonMultiple": [
+            1000000,
+            2
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates LCM of two positive integers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            36
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates LCM of two integers where one is a multiple of the other",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            12
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates LCM of two integers with no common factors (other than 1)",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            35
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates LCM of a positive and a negative integer",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            36
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "throws an error if either number is zero",
+        "status": "passed",
+        "inputs": {
+          "calculator.leastCommonMultiple": [
+            0,
+            18
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "isPrime",
+        "status": "passed",
+        "inputs": {
+          "calculator.isPrime": [
+            5.5
+          ],
+          "toThrow": [
+            "TypeError"
+          ],
+          "toBe": [
+            false
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "returns false for numbers less than 2",
+        "status": "passed",
+        "inputs": {
+          "calculator.isPrime": [
+            0
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "returns true for 2",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            true
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "returns true for prime numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            true
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "fibonacci",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            55
+          ],
+          "calculator.fibonacci": [
+            100
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "returns 0 for n = 0",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "returns 1 for n = 1",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "returns the correct Fibonacci number for n > 1",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            55
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "throws an error if n is negative",
+        "status": "passed",
+        "inputs": {
+          "calculator.fibonacci": [
+            -1
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "roundToDecimal",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "adds two positive numbers correctly",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            10
+          ]
+        }
+      },
+      {
+        "name": "adds a positive and a negative number correctly",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            4
+          ]
+        }
+      },
+      {
+        "name": "divides two large numbers correctly",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            500000
+          ]
+        }
+      },
+      {
+        "name": "calculates square root of zero correctly",
+        "status": "passed",
+        "duration": 2,
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "throws error if result exceeds max value",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "calculator.divideNumbers": [
+            2000002,
+            1
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        }
+      },
+      {
+        "name": "throws an error if argument is a negative number",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "calculator.squareRoot": [
+            -9
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        }
+      },
+      {
+        "name": "Calculator Functions",
+        "status": "passed",
+        "inputs": {},
+        "output": null
+      },
+      {
+        "name": "adds two negative numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            -6
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "adds zero to a number correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            7
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "adds two large numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            1000002
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "adds decimal numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            8
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "adds two NaN values throws error",
+        "status": "unknown",
+        "inputs": {
+          "calculator.addNumbers": [
+            "NaN",
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "subtracts two positive numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "subtracts two negative numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            -2
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "subtracts a positive and a negative number correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            8
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "subtracts zero from a number correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "subtracts a number from zero correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            -5
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "subtracts two large numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            500000
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "subtracts decimal numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "multiplies two positive numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            15
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "multiplies two negative numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            15
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "multiplies a positive and a negative number correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            -15
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "multiplies a number by zero correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "multiplies two large numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "calculator.multiplyNumbers": [
+            1001,
+            1000
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "multiplies by 1 correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            7
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "multiplies decimal numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "multiplies zero by negative number correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "divides two positive numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "divides two negative numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "divides a positive and a negative number correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            -2
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "divides a number by 1 correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "divides decimal numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "raises a number to a positive power correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            8
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "raises a number to the power of zero correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "raises a number to a negative power correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            0.5
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "raises a negative number to an even power correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            4
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "raises a negative number to an odd power correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            -8
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "raises a decimal number to a power correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            6.25
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates modulo of two positive numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates modulo of two negative numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            -2
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates modulo of a positive and a negative number correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates modulo of a number and 1 correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates modulo with larger numbers",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates modulo with decimal numbers",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            1.5
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates square root of a positive number correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates square root of a large number correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            100
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates square root of a decimal number correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            2.5
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates square root of 1",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        }
+      },
+      {
+        "name": "calculates absolute value of a positive number correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates absolute value of a negative number correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates absolute value of zero correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates absolute value of a large negative number",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            1000000
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates absolute value of a decimal number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            2.5
+          ]
+        }
+      },
+      {
+        "name": "calculates absolute value of NaN",
+        "status": "unknown",
+        "inputs": {
+          "calculator.absoluteValue": [
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates average of positive numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates average of negative numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            -3
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates average of positive and negative numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates average of zero and positive numbers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            1.5
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates average of larger numbers",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            200
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates average of decimal numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            2.5
+          ]
+        }
+      },
+      {
+        "name": "calculates factorial of 0 correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates factorial of 1 correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates factorial of a positive integer correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            120
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates factorial of a larger number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5040
+          ]
+        }
+      },
+      {
+        "name": "calculates factorial of 2",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates GCD of two positive integers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates GCD of two negative integers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates GCD of a positive and a negative integer correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates GCD of a number and zero correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            12
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates GCD of zero and a number correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            12
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "throws an error if both numbers are zero",
+        "status": "unknown",
+        "inputs": {
+          "calculator.greatestCommonDivisor": [
+            0,
+            0
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates GCD of relatively prime numbers",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates GCD with larger numbers",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            72
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates LCM of two positive integers correctly",
+        "status": "unknown",
+        "inputs": {
+          "toBe": [
+            36
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "throws TypeError if first argument is not a number",
+        "status": "passed",
+        "duration": 8,
+        "inputs": {
+          "calculator.moduloNumbers": [
+            "a",
+            2
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "throws TypeError if second argument is NaN",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "calculator.addNumbers": [
+            1,
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "throws Error if result exceeds maximum allowed value",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "calculator.powerNumbers": [
+            100,
+            3
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        }
+      },
+      {
+        "name": "throws TypeError if second argument is not a number",
+        "status": "passed",
+        "duration": 2,
+        "inputs": {
+          "calculator.moduloNumbers": [
+            1,
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "adds two positive numbers (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "throws TypeError if first argument is not a number (8 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "throws TypeError if both arguments are not numbers",
+        "status": "passed",
+        "inputs": {
+          "calculator.addNumbers": [
+            "a",
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "throws TypeError if first argument is NaN",
+        "status": "passed",
+        "inputs": {
+          "calculator.addNumbers": [
+            "NaN",
+            2
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "throws TypeError if second argument is NaN (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "subtracts two zeros",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "throws Error if result exceeds maximum allowed value (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "subtracts numbers resulting in negative value",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -3
+          ]
+        }
+      },
+      {
+        "name": "subtracts large numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            999999
+          ]
+        }
+      },
+      {
+        "name": "subtracts identical numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "multiplies a number by one",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        }
+      },
+      {
+        "name": "multiplies a number by negative one",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -5
+          ]
+        }
+      },
+      {
+        "name": "multiplies large numbers within limit",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1000000
+          ]
+        }
+      },
+      {
+        "name": "multiplies decimal numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        }
+      },
+      {
+        "name": "divides two positive numbers (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "divides zero by a number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "throws Error if divisor is zero",
+        "status": "passed",
+        "inputs": {
+          "calculator.moduloNumbers": [
+            5,
+            0
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        }
+      },
+      {
+        "name": "divides large numbers within limit",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            500000
+          ]
+        }
+      },
+      {
+        "name": "raises a negative number to an even power",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            4
+          ]
+        }
+      },
+      {
+        "name": "raises a negative number to an odd power",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -8
+          ]
+        }
+      },
+      {
+        "name": "calculates modulo of a positive and a negative number (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "calculates modulo of a negative and a positive number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -1
+          ]
+        }
+      },
+      {
+        "name": "throws TypeError if second argument is not a number (2 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "calculates modulo with large numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        }
+      },
+      {
+        "name": "calculates modulo with identical numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "throws Error if number is negative",
+        "status": "passed",
+        "inputs": {
+          "calculator.factorial": [
+            -1
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        }
+      },
+      {
+        "name": "throws TypeError if argument is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculator.absoluteValue": [
+            "a"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "calculates square root of a large number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1000
+          ]
+        }
+      },
+      {
+        "name": "calculates square root of a decimal number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1.5
+          ]
+        }
+      },
+      {
+        "name": "calculates square root of a number close to the limit",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1000
+          ]
+        }
+      },
+      {
+        "name": "square root of a small number",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            0.2
+          ]
+        }
+      },
+      {
+        "name": "calculates absolute value of a large number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1000000
+          ]
+        }
+      },
+      {
+        "name": "absolute value of positive decimal",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            2.5
+          ]
+        }
+      },
+      {
+        "name": "absolute value of a very small negative number",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            1e-05
+          ]
+        }
+      },
+      {
+        "name": "absolute value of a number close to the limit",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1000000
+          ]
+        }
+      },
+      {
+        "name": "absolute value of the maximum number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1000001
+          ]
+        }
+      },
+      {
+        "name": "calculates average of two positive numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            3.5
+          ]
+        }
+      },
+      {
+        "name": "calculates average of two negative numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -1.5
+          ]
+        }
+      },
+      {
+        "name": "calculates average of a positive and a negative number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1.5
+          ]
+        }
+      },
+      {
+        "name": "calculates average of multiple numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        }
+      },
+      {
+        "name": "calculates average of zero and a number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            2.5
+          ]
+        }
+      },
+      {
+        "name": "throws Error if no numbers are provided",
+        "status": "passed",
+        "inputs": {
+          "toThrow": [
+            "Error"
+          ]
+        }
+      },
+      {
+        "name": "throws TypeError if any argument is not a number",
+        "status": "passed",
+        "inputs": {
+          "calculator.averageNumbers": [
+            1,
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "calculates average of large numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1000000
+          ]
+        }
+      },
+      {
+        "name": "calculates average with mixed positive and negative numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "calculates factorial of zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        }
+      },
+      {
+        "name": "calculates factorial of one",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        }
+      },
+      {
+        "name": "calculates factorial of a positive number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            120
+          ]
+        }
+      },
+      {
+        "name": "throws TypeError if argument is not an integer",
+        "status": "passed",
+        "inputs": {
+          "calculator.factorial": [
+            2.5
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        }
+      },
+      {
+        "name": "factorial of a number that exceeds the limit throws an error",
+        "status": "passed",
+        "inputs": {
+          "calculator.factorial": [
+            11
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        }
+      },
+      {
+        "name": "calculates factorial of a small number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        }
+      },
+      {
+        "name": "square root of a number that exceeds the limit throws an error",
+        "status": "passed",
+        "inputs": {
+          "calculator.squareRoot": [
+            "largeNumber"
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates factorial of a maximum allowed number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            3628800
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "calculates factorial of the maximum number that does not exceed the limit",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            3628800
+          ]
+        },
+        "output": null
+      }
+    ],
+    "raw_output": "(node:55922) Warning: `--localstorage-file` was provided without a valid path\n(Use `node --trace-warnings ...` to show where the warning was created)\nFAIL testcases/vertex_ai/calculator.test_20260205_133204.js\n  Calculator Functions\n    addNumbers\n      \u2713 adds two positive numbers (1 ms)\n      \u2713 adds two negative numbers\n      \u2713 adds a positive and a negative number\n      \u2713 adds zero to a number\n      \u2713 adds two zeros\n      \u2713 throws TypeError if first argument is not a number (8 ms)\n      \u2713 throws TypeError if second argument is not a number\n      \u2713 throws TypeError if both arguments are not numbers\n      \u2713 throws TypeError if first argument is NaN\n      \u2713 throws TypeError if second argument is NaN (1 ms)\n    subtractNumbers\n      \u2713 subtracts two positive numbers\n      \u2713 subtracts two negative numbers\n      \u2713 subtracts a positive and a negative number\n      \u2713 subtracts zero from a number\n      \u2713 subtracts a number from zero\n      \u2713 subtracts two zeros\n      \u2713 throws Error if result exceeds maximum allowed value (1 ms)\n      \u2713 subtracts numbers resulting in negative value\n      \u2713 subtracts large numbers\n      \u2713 subtracts identical numbers\n    multiplyNumbers\n      \u2713 multiplies two positive numbers\n      \u2713 multiplies two negative numbers\n      \u2713 multiplies a positive and a negative number\n      \u2713 multiplies a number by zero\n      \u2713 multiplies two zeros\n      \u2713 multiplies a number by one\n      \u2713 multiplies a number by negative one\n      \u2713 throws Error if result exceeds maximum allowed value\n      \u2713 multiplies large numbers within limit\n      \u2713 multiplies decimal numbers\n    divideNumbers\n      \u2713 divides two positive numbers (1 ms)\n      \u2713 divides two negative numbers\n      \u2713 divides a positive and a negative number\n      \u2713 divides a number by one\n      \u2713 divides zero by a number\n      \u2713 throws Error if divisor is zero\n      \u2713 throws TypeError if first argument is not a number\n      \u2713 throws TypeError if second argument is not a number\n      \u2713 divides large numbers within limit\n      \u2713 throws Error if result exceeds maximum allowed value\n    powerNumbers\n      \u2713 raises a number to a positive power\n      \u2713 raises a number to a negative power\n      \u2713 raises a number to the power of zero\n      \u2713 raises zero to a positive power\n      \u2713 raises zero to the power of zero\n      \u2713 raises a negative number to an even power\n      \u2713 raises a negative number to an odd power\n      \u2713 throws TypeError if first argument is not a number\n      \u2713 throws TypeError if second argument is not a number\n      \u2715 throws Error if result exceeds maximum allowed value\n    moduloNumbers\n      \u2713 calculates modulo of two positive numbers\n      \u2713 calculates modulo of two negative numbers\n      \u2713 calculates modulo of a positive and a negative number (1 ms)\n      \u2713 calculates modulo of a negative and a positive number\n      \u2713 calculates modulo of zero and a number\n      \u2713 throws Error if divisor is zero\n      \u2713 throws TypeError if first argument is not a number\n      \u2713 throws TypeError if second argument is not a number (2 ms)\n      \u2713 calculates modulo with large numbers\n      \u2713 calculates modulo with identical numbers\n    squareRoot\n      \u2713 calculates square root of a positive number\n      \u2713 calculates square root of zero\n      \u2713 throws Error if number is negative\n      \u2713 throws TypeError if argument is not a number\n      \u2713 calculates square root of a large number\n      \u2713 calculates square root of a decimal number\n      \u2713 calculates square root of 1\n      \u2713 calculates square root of a number close to the limit\n      \u2715 square root of a number that exceeds the limit throws an error\n      \u2713 square root of a small number\n    absoluteValue\n      \u2713 calculates absolute value of a positive number\n      \u2713 calculates absolute value of a negative number\n      \u2713 calculates absolute value of zero\n      \u2713 calculates absolute value of a large number\n      \u2713 throws TypeError if argument is not a number\n      \u2713 calculates absolute value of a decimal number\n      \u2713 absolute value of positive decimal\n      \u2713 absolute value of a very small negative number\n      \u2713 absolute value of a number close to the limit\n      \u2713 absolute value of the maximum number\n    averageNumbers\n      \u2713 calculates average of two positive numbers\n      \u2713 calculates average of two negative numbers\n      \u2713 calculates average of a positive and a negative number\n      \u2713 calculates average of multiple numbers\n      \u2713 calculates average of zero and a number\n      \u2713 throws Error if no numbers are provided\n      \u2713 throws TypeError if any argument is not a number\n      \u2713 calculates average of large numbers\n      \u2713 calculates average of decimal numbers\n      \u2713 calculates average with mixed positive and negative numbers\n    factorial\n      \u2713 calculates factorial of zero\n      \u2713 calculates factorial of one\n      \u2713 calculates factorial of a positive number\n      \u2713 throws Error if number is negative\n      \u2713 throws TypeError if argument is not an integer\n      \u2713 calculates factorial of a larger number\n    \n... (truncated, full output too long)"
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "addNumbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2
+            ],
+            "calculator.addNumbers": [
+              1,
+              "NaN"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "adds two positive numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "adds two negative numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "adds a positive and a negative number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "adds zero to a number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              7
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "adds two zeros",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws TypeError if first argument is not a number",
+          "type": "test",
+          "inputs": {
+            "calculator.moduloNumbers": [
+              "a",
+              2
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws TypeError if second argument is not a number",
+          "type": "test",
+          "inputs": {
+            "calculator.moduloNumbers": [
+              1,
+              "b"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws TypeError if both arguments are not numbers",
+          "type": "test",
+          "inputs": {
+            "calculator.addNumbers": [
+              "a",
+              "b"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws TypeError if first argument is NaN",
+          "type": "test",
+          "inputs": {
+            "calculator.addNumbers": [
+              "NaN",
+              2
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws TypeError if second argument is NaN",
+          "type": "test",
+          "inputs": {
+            "calculator.addNumbers": [
+              1,
+              "NaN"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "subtractNumbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ],
+            "calculator.subtractNumbers": [
+              0,
+              -1000002
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "subtracts two positive numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              3
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "subtracts two negative numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "subtracts a positive and a negative number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              7
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "subtracts zero from a number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "subtracts a number from zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "subtracts two zeros",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws Error if result exceeds maximum allowed value",
+          "type": "test",
+          "inputs": {
+            "calculator.powerNumbers": [
+              100,
+              3
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "subtracts numbers resulting in negative value",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -3
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "subtracts large numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              999999
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "subtracts identical numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "multiplyNumbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ],
+            "calculator.multiplyNumbers": [
+              1001,
+              1001
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "multiplies two positive numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              10
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "multiplies two negative numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "multiplies a positive and a negative number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -10
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "multiplies a number by zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "multiplies two zeros",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "multiplies a number by one",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "multiplies a number by negative one",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "multiplies large numbers within limit",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000000
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "multiplies decimal numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "divideNumbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              500000
+            ],
+            "calculator.divideNumbers": [
+              2000003,
+              1
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "divides two positive numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "divides two negative numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "divides a positive and a negative number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "divides a number by one",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "divides zero by a number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws Error if divisor is zero",
+          "type": "test",
+          "inputs": {
+            "calculator.moduloNumbers": [
+              5,
+              0
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "divides large numbers within limit",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              500000
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "powerNumbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -8
+            ],
+            "toBeCloseTo": [
+              0.5
+            ],
+            "calculator.powerNumbers": [
+              100,
+              3
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "raises a number to a positive power",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              8
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "raises a number to a negative power",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              0.5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "raises a number to the power of zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "raises zero to a positive power",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "raises zero to the power of zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "raises a negative number to an even power",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              4
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "raises a negative number to an odd power",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -8
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "moduloNumbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ],
+            "calculator.moduloNumbers": [
+              1,
+              "b"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates modulo of two positive numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates modulo of two negative numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates modulo of a positive and a negative number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates modulo of a negative and a positive number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates modulo of zero and a number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates modulo with large numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates modulo with identical numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "squareRoot",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000
+            ],
+            "calculator.squareRoot": [
+              "largeNumber"
+            ],
+            "toThrow": [
+              "Error"
+            ],
+            "toBeCloseTo": [
+              0.2
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates square root of a positive number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              3
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates square root of zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws Error if number is negative",
+          "type": "test",
+          "inputs": {
+            "calculator.factorial": [
+              -1
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws TypeError if argument is not a number",
+          "type": "test",
+          "inputs": {
+            "calculator.absoluteValue": [
+              "a"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates square root of a large number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates square root of a decimal number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1.5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates square root of 1",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates square root of a number close to the limit",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "square root of a number that exceeds the limit throws an error",
+          "type": "test",
+          "inputs": {
+            "calculator.squareRoot": [
+              "largeNumber"
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "square root of a small number",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              0.2
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "absoluteValue",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000001
+            ],
+            "calculator.absoluteValue": [
+              "a"
+            ],
+            "toThrow": [
+              "TypeError"
+            ],
+            "toBeCloseTo": [
+              1e-05
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates absolute value of a positive number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates absolute value of a negative number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates absolute value of zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates absolute value of a large number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000000
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates absolute value of a decimal number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2.5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "absolute value of positive decimal",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2.5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "absolute value of a very small negative number",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              1e-05
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "absolute value of a number close to the limit",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000000
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "absolute value of the maximum number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000001
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "averageNumbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ],
+            "toThrow": [
+              "TypeError"
+            ],
+            "calculator.averageNumbers": [
+              1,
+              "b"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates average of two positive numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              3.5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates average of two negative numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -1.5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates average of a positive and a negative number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1.5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates average of multiple numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              3
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates average of zero and a number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2.5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws Error if no numbers are provided",
+          "type": "test",
+          "inputs": {
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws TypeError if any argument is not a number",
+          "type": "test",
+          "inputs": {
+            "calculator.averageNumbers": [
+              1,
+              "b"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates average of large numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000000
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates average of decimal numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2.5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates average with mixed positive and negative numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "factorial",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              3628800
+            ],
+            "calculator.factorial": [
+              11
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates factorial of zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates factorial of one",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates factorial of a positive number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              120
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws TypeError if argument is not an integer",
+          "type": "test",
+          "inputs": {
+            "calculator.factorial": [
+              2.5
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates factorial of a larger number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5040
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates factorial of a maximum allowed number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              3628800
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "factorial of a number that exceeds the limit throws an error",
+          "type": "test",
+          "inputs": {
+            "calculator.factorial": [
+              11
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates factorial of a small number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates factorial of the maximum number that does not exceed the limit",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              3628800
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws an error if either argument is not a number",
+          "type": "test",
+          "inputs": {
+            "calculator.addNumbers": [
+              "a",
+              "b"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws an error if either argument is NaN",
+          "type": "test",
+          "inputs": {
+            "calculator.addNumbers": [
+              "NaN",
+              "NaN"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws an error if result exceeds maximum allowed value",
+          "type": "test",
+          "inputs": {
+            "calculator.subtractNumbers": [
+              1,
+              -1000002
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws an error if divisor is zero",
+          "type": "test",
+          "inputs": {
+            "calculator.divideNumbers": [
+              5,
+              0
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates modulo of a number and zero",
+          "type": "test",
+          "inputs": {
+            "calculator.moduloNumbers": [
+              5,
+              0
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws an error if number is negative",
+          "type": "test",
+          "inputs": {
+            "calculator.squareRoot": [
+              -1
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws an error if argument is not a number",
+          "type": "test",
+          "inputs": {
+            "calculator.squareRoot": [
+              "a"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates average of positive numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates average of positive and negative numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              "2/3"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates average of negative numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -2
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates average of zero and numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws an error if no numbers are provided",
+          "type": "test",
+          "inputs": {
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws an error if any argument is not a number",
+          "type": "test",
+          "inputs": {
+            "calculator.averageNumbers": [
+              1,
+              2,
+              "c"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates factorial of 0",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates factorial of 1",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates factorial of a positive integer",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              120
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws an error if argument is not an integer",
+          "type": "test",
+          "inputs": {
+            "calculator.factorial": [
+              5.5
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "greatestCommonDivisor",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              12
+            ],
+            "calculator.greatestCommonDivisor": [
+              1,
+              "b"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates GCD of two positive integers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              6
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates GCD of a positive and a negative integer",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              6
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates GCD of two negative integers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              6
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates GCD of a number and zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              12
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates GCD of two zeros",
+          "type": "test",
+          "inputs": {
+            "calculator.greatestCommonDivisor": [
+              0,
+              0
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws an error if either argument is not an integer",
+          "type": "test",
+          "inputs": {
+            "calculator.greatestCommonDivisor": [
+              1,
+              "b"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "leastCommonMultiple",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              36
+            ],
+            "calculator.leastCommonMultiple": [
+              1000000,
+              2
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates LCM of two positive integers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              36
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates LCM of two integers where one is a multiple of the other",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              12
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates LCM of two integers with no common factors (other than 1)",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              35
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates LCM of a positive and a negative integer",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              36
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates LCM of two negative integers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              36
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws an error if either number is zero",
+          "type": "test",
+          "inputs": {
+            "calculator.leastCommonMultiple": [
+              0,
+              18
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "isPrime",
+          "type": "test",
+          "inputs": {
+            "calculator.isPrime": [
+              5.5
+            ],
+            "toThrow": [
+              "TypeError"
+            ],
+            "toBe": [
+              false
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "returns false for numbers less than 2",
+          "type": "test",
+          "inputs": {
+            "calculator.isPrime": [
+              0
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "returns true for 2",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              true
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "returns true for prime numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              true
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "returns false for non-prime numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              false
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "fibonacci",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              55
+            ],
+            "calculator.fibonacci": [
+              100
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "returns 0 for n = 0",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "returns 1 for n = 1",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "returns the correct Fibonacci number for n > 1",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              55
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws an error if n is negative",
+          "type": "test",
+          "inputs": {
+            "calculator.fibonacci": [
+              -1
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "adds two positive numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              10
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "adds two negative numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -6
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "adds a positive and a negative number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              4
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "adds zero to a number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              7
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "adds two large numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000002
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "adds decimal numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              8
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "adds two NaN values throws error",
+          "type": "test",
+          "inputs": {
+            "calculator.addNumbers": [
+              "NaN",
+              "NaN"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "subtracts two positive numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "subtracts two negative numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -2
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "subtracts a positive and a negative number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              8
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "subtracts zero from a number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "subtracts a number from zero correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -5
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "subtracts two large numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              500000
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "subtracts decimal numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              3
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "multiplies two positive numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              15
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "multiplies two negative numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              15
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "multiplies a positive and a negative number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -15
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "multiplies a number by zero correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "multiplies two large numbers correctly",
+          "type": "test",
+          "inputs": {
+            "calculator.multiplyNumbers": [
+              1001,
+              1000
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "multiplies by 1 correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              7
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "multiplies decimal numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "multiplies zero by negative number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "divides two positive numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "divides two negative numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "divides a positive and a negative number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -2
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "divides a number by 1 correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "divides two large numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              500000
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "divides decimal numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              3
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "throws error if result exceeds max value",
+          "type": "test",
+          "inputs": {
+            "calculator.divideNumbers": [
+              2000002,
+              1
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "raises a number to a positive power correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              8
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "raises a number to the power of zero correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "raises a number to a negative power correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0.5
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "raises a negative number to an even power correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              4
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "raises a negative number to an odd power correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -8
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "raises a decimal number to a power correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              6.25
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates modulo of two positive numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates modulo of two negative numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -2
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates modulo of a positive and a negative number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates modulo of a number and 1 correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates modulo with larger numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates modulo with decimal numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1.5
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates square root of a positive number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              3
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates square root of zero correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "throws an error if argument is a negative number",
+          "type": "test",
+          "inputs": {
+            "calculator.squareRoot": [
+              -9
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "calculates square root of a large number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              100
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates square root of a decimal number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2.5
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates absolute value of a positive number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates absolute value of a negative number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates absolute value of zero correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates absolute value of a large negative number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000000
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates absolute value of NaN",
+          "type": "test",
+          "inputs": {
+            "calculator.absoluteValue": [
+              "NaN"
+            ],
+            "toThrow": [
+              "TypeError"
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates average of positive numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              3
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates average of negative numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -3
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates average of positive and negative numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates average of zero and positive numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1.5
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates average of larger numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              200
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates factorial of 0 correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates factorial of 1 correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates factorial of a positive integer correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              120
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates factorial of 2",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates GCD of two positive integers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              6
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates GCD of two negative integers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              6
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates GCD of a positive and a negative integer correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              6
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates GCD of a number and zero correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              12
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates GCD of zero and a number correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              12
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "throws an error if both numbers are zero",
+          "type": "test",
+          "inputs": {
+            "calculator.greatestCommonDivisor": [
+              0,
+              0
+            ],
+            "toThrow": [
+              "Error"
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates GCD of relatively prime numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates GCD with larger numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              72
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates LCM of two positive integers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              36
+            ]
+          },
+          "expected_output": null,
+          "status": "unknown",
+          "error": null
+        },
+        {
+          "name": "calculates LCM of two integers with no common factors",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "Calculator",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "roundToDecimal",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "Calculator Functions",
+          "status": "passed",
+          "inputs": {},
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "adds two positive numbers (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "throws TypeError if first argument is not a number (8 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "throws TypeError if second argument is NaN (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "throws Error if result exceeds maximum allowed value (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "divides two positive numbers (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "calculates modulo of a positive and a negative number (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "throws TypeError if second argument is not a number (2 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "addNumbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2
+          ],
+          "calculator.addNumbers": [
+            1,
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "adds two positive numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "adds two negative numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "adds a positive and a negative number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "adds zero to a number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            7
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "adds two zeros",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws TypeError if first argument is not a number",
+        "type": "test",
+        "inputs": {
+          "calculator.moduloNumbers": [
+            "a",
+            2
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws TypeError if second argument is not a number",
+        "type": "test",
+        "inputs": {
+          "calculator.moduloNumbers": [
+            1,
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws TypeError if both arguments are not numbers",
+        "type": "test",
+        "inputs": {
+          "calculator.addNumbers": [
+            "a",
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws TypeError if first argument is NaN",
+        "type": "test",
+        "inputs": {
+          "calculator.addNumbers": [
+            "NaN",
+            2
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws TypeError if second argument is NaN",
+        "type": "test",
+        "inputs": {
+          "calculator.addNumbers": [
+            1,
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "subtractNumbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ],
+          "calculator.subtractNumbers": [
+            0,
+            -1000002
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "subtracts two positive numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "subtracts two negative numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "subtracts a positive and a negative number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            7
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "subtracts zero from a number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "subtracts a number from zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "subtracts two zeros",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws Error if result exceeds maximum allowed value",
+        "type": "test",
+        "inputs": {
+          "calculator.powerNumbers": [
+            100,
+            3
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "subtracts numbers resulting in negative value",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -3
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "subtracts large numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            999999
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "subtracts identical numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "multiplyNumbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ],
+          "calculator.multiplyNumbers": [
+            1001,
+            1001
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "multiplies two positive numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            10
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "multiplies two negative numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "multiplies a positive and a negative number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -10
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "multiplies a number by zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "multiplies two zeros",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "multiplies a number by one",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "multiplies a number by negative one",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "multiplies large numbers within limit",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000000
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "multiplies decimal numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "divideNumbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            500000
+          ],
+          "calculator.divideNumbers": [
+            2000003,
+            1
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "divides two positive numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "divides two negative numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "divides a positive and a negative number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "divides a number by one",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "divides zero by a number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws Error if divisor is zero",
+        "type": "test",
+        "inputs": {
+          "calculator.moduloNumbers": [
+            5,
+            0
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "divides large numbers within limit",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            500000
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "powerNumbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -8
+          ],
+          "toBeCloseTo": [
+            0.5
+          ],
+          "calculator.powerNumbers": [
+            100,
+            3
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "raises a number to a positive power",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            8
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "raises a number to a negative power",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            0.5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "raises a number to the power of zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "raises zero to a positive power",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "raises zero to the power of zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "raises a negative number to an even power",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            4
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "raises a negative number to an odd power",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -8
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "moduloNumbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ],
+          "calculator.moduloNumbers": [
+            1,
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates modulo of two positive numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates modulo of two negative numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates modulo of a positive and a negative number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates modulo of a negative and a positive number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates modulo of zero and a number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates modulo with large numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates modulo with identical numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "squareRoot",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000
+          ],
+          "calculator.squareRoot": [
+            "largeNumber"
+          ],
+          "toThrow": [
+            "Error"
+          ],
+          "toBeCloseTo": [
+            0.2
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates square root of a positive number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates square root of zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws Error if number is negative",
+        "type": "test",
+        "inputs": {
+          "calculator.factorial": [
+            -1
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws TypeError if argument is not a number",
+        "type": "test",
+        "inputs": {
+          "calculator.absoluteValue": [
+            "a"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates square root of a large number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates square root of a decimal number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1.5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates square root of 1",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates square root of a number close to the limit",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "square root of a number that exceeds the limit throws an error",
+        "type": "test",
+        "inputs": {
+          "calculator.squareRoot": [
+            "largeNumber"
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "square root of a small number",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            0.2
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "absoluteValue",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000001
+          ],
+          "calculator.absoluteValue": [
+            "a"
+          ],
+          "toThrow": [
+            "TypeError"
+          ],
+          "toBeCloseTo": [
+            1e-05
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates absolute value of a positive number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates absolute value of a negative number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates absolute value of zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates absolute value of a large number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000000
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates absolute value of a decimal number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2.5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "absolute value of positive decimal",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2.5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "absolute value of a very small negative number",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            1e-05
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "absolute value of a number close to the limit",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000000
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "absolute value of the maximum number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000001
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "averageNumbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ],
+          "toThrow": [
+            "TypeError"
+          ],
+          "calculator.averageNumbers": [
+            1,
+            "b"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates average of two positive numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            3.5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates average of two negative numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -1.5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates average of a positive and a negative number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1.5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates average of multiple numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates average of zero and a number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2.5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws Error if no numbers are provided",
+        "type": "test",
+        "inputs": {
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws TypeError if any argument is not a number",
+        "type": "test",
+        "inputs": {
+          "calculator.averageNumbers": [
+            1,
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates average of large numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000000
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates average of decimal numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2.5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates average with mixed positive and negative numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "factorial",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            3628800
+          ],
+          "calculator.factorial": [
+            11
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates factorial of zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates factorial of one",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates factorial of a positive number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            120
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws TypeError if argument is not an integer",
+        "type": "test",
+        "inputs": {
+          "calculator.factorial": [
+            2.5
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates factorial of a larger number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5040
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates factorial of a maximum allowed number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            3628800
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "factorial of a number that exceeds the limit throws an error",
+        "type": "test",
+        "inputs": {
+          "calculator.factorial": [
+            11
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates factorial of a small number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates factorial of the maximum number that does not exceed the limit",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            3628800
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws an error if either argument is not a number",
+        "type": "test",
+        "inputs": {
+          "calculator.addNumbers": [
+            "a",
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws an error if either argument is NaN",
+        "type": "test",
+        "inputs": {
+          "calculator.addNumbers": [
+            "NaN",
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws an error if result exceeds maximum allowed value",
+        "type": "test",
+        "inputs": {
+          "calculator.subtractNumbers": [
+            1,
+            -1000002
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws an error if divisor is zero",
+        "type": "test",
+        "inputs": {
+          "calculator.divideNumbers": [
+            5,
+            0
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates modulo of a number and zero",
+        "type": "test",
+        "inputs": {
+          "calculator.moduloNumbers": [
+            5,
+            0
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws an error if number is negative",
+        "type": "test",
+        "inputs": {
+          "calculator.squareRoot": [
+            -1
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws an error if argument is not a number",
+        "type": "test",
+        "inputs": {
+          "calculator.squareRoot": [
+            "a"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates average of positive numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates average of positive and negative numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            "2/3"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates average of negative numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -2
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates average of zero and numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws an error if no numbers are provided",
+        "type": "test",
+        "inputs": {
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws an error if any argument is not a number",
+        "type": "test",
+        "inputs": {
+          "calculator.averageNumbers": [
+            1,
+            2,
+            "c"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates factorial of 0",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates factorial of 1",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates factorial of a positive integer",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            120
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws an error if argument is not an integer",
+        "type": "test",
+        "inputs": {
+          "calculator.factorial": [
+            5.5
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "greatestCommonDivisor",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            12
+          ],
+          "calculator.greatestCommonDivisor": [
+            1,
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates GCD of two positive integers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates GCD of a positive and a negative integer",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates GCD of two negative integers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates GCD of a number and zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            12
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates GCD of two zeros",
+        "type": "test",
+        "inputs": {
+          "calculator.greatestCommonDivisor": [
+            0,
+            0
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws an error if either argument is not an integer",
+        "type": "test",
+        "inputs": {
+          "calculator.greatestCommonDivisor": [
+            1,
+            "b"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "leastCommonMultiple",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            36
+          ],
+          "calculator.leastCommonMultiple": [
+            1000000,
+            2
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates LCM of two positive integers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            36
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates LCM of two integers where one is a multiple of the other",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            12
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates LCM of two integers with no common factors (other than 1)",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            35
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates LCM of a positive and a negative integer",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            36
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates LCM of two negative integers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            36
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws an error if either number is zero",
+        "type": "test",
+        "inputs": {
+          "calculator.leastCommonMultiple": [
+            0,
+            18
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "isPrime",
+        "type": "test",
+        "inputs": {
+          "calculator.isPrime": [
+            5.5
+          ],
+          "toThrow": [
+            "TypeError"
+          ],
+          "toBe": [
+            false
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "returns false for numbers less than 2",
+        "type": "test",
+        "inputs": {
+          "calculator.isPrime": [
+            0
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "returns true for 2",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            true
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "returns true for prime numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            true
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "returns false for non-prime numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            false
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "fibonacci",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            55
+          ],
+          "calculator.fibonacci": [
+            100
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "returns 0 for n = 0",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "returns 1 for n = 1",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "returns the correct Fibonacci number for n > 1",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            55
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws an error if n is negative",
+        "type": "test",
+        "inputs": {
+          "calculator.fibonacci": [
+            -1
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "adds two positive numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            10
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "adds two negative numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -6
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "adds a positive and a negative number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            4
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "adds zero to a number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            7
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "adds two large numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000002
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "adds decimal numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            8
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "adds two NaN values throws error",
+        "type": "test",
+        "inputs": {
+          "calculator.addNumbers": [
+            "NaN",
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "subtracts two positive numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "subtracts two negative numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -2
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "subtracts a positive and a negative number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            8
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "subtracts zero from a number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "subtracts a number from zero correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -5
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "subtracts two large numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            500000
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "subtracts decimal numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "multiplies two positive numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            15
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "multiplies two negative numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            15
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "multiplies a positive and a negative number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -15
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "multiplies a number by zero correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "multiplies two large numbers correctly",
+        "type": "test",
+        "inputs": {
+          "calculator.multiplyNumbers": [
+            1001,
+            1000
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "multiplies by 1 correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            7
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "multiplies decimal numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "multiplies zero by negative number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "divides two positive numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "divides two negative numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "divides a positive and a negative number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -2
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "divides a number by 1 correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "divides two large numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            500000
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "divides decimal numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "throws error if result exceeds max value",
+        "type": "test",
+        "inputs": {
+          "calculator.divideNumbers": [
+            2000002,
+            1
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "raises a number to a positive power correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            8
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "raises a number to the power of zero correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "raises a number to a negative power correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0.5
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "raises a negative number to an even power correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            4
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "raises a negative number to an odd power correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -8
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "raises a decimal number to a power correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            6.25
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates modulo of two positive numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates modulo of two negative numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -2
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates modulo of a positive and a negative number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates modulo of a number and 1 correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates modulo with larger numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates modulo with decimal numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1.5
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates square root of a positive number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates square root of zero correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "throws an error if argument is a negative number",
+        "type": "test",
+        "inputs": {
+          "calculator.squareRoot": [
+            -9
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "calculates square root of a large number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            100
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates square root of a decimal number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2.5
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates absolute value of a positive number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates absolute value of a negative number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates absolute value of zero correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates absolute value of a large negative number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000000
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates absolute value of NaN",
+        "type": "test",
+        "inputs": {
+          "calculator.absoluteValue": [
+            "NaN"
+          ],
+          "toThrow": [
+            "TypeError"
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates average of positive numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates average of negative numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -3
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates average of positive and negative numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates average of zero and positive numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1.5
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates average of larger numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            200
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates factorial of 0 correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates factorial of 1 correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates factorial of a positive integer correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            120
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates factorial of 2",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates GCD of two positive integers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates GCD of two negative integers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates GCD of a positive and a negative integer correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            6
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates GCD of a number and zero correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            12
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates GCD of zero and a number correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            12
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "throws an error if both numbers are zero",
+        "type": "test",
+        "inputs": {
+          "calculator.greatestCommonDivisor": [
+            0,
+            0
+          ],
+          "toThrow": [
+            "Error"
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates GCD of relatively prime numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates GCD with larger numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            72
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates LCM of two positive integers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            36
+          ]
+        },
+        "expected_output": null,
+        "status": "unknown",
+        "error": null
+      },
+      {
+        "name": "calculates LCM of two integers with no common factors",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "Calculator",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "roundToDecimal",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "Calculator Functions",
+        "status": "passed",
+        "inputs": {},
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "adds two positive numbers (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "throws TypeError if first argument is not a number (8 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "throws TypeError if second argument is NaN (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "throws Error if result exceeds maximum allowed value (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "divides two positive numbers (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "calculates modulo of a positive and a negative number (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "throws TypeError if second argument is not a number (2 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      }
+    ]
+  }
+}
