@@ -437,27 +437,26 @@ def fibonacci(n: int) -> int:
     return b
 
 
-def round_to_decimal(number: float, decimals: int) -> float:
+def calculate_percentage(value: float, percentage: float) -> float:
     """
-    Round a number to a specified number of decimal places.
+    Calculate percentage of a value.
     
     Args:
-        number: The number to round
-        decimals: Number of decimal places (must be non-negative)
+        value: The base value
+        percentage: The percentage to calculate (e.g., 25 for 25%)
     
     Returns:
-        Rounded number
+        The percentage of the value
     
     Raises:
-        ValueError: If decimals is negative
-        TypeError: If arguments are not numbers
+        TypeError: If either argument is not a number
+        ValueError: If result exceeds maximum allowed value
     """
-    if not isinstance(number, (int, float)):
-        raise TypeError("First argument must be a number")
-    if not isinstance(decimals, int):
-        raise TypeError("Second argument must be an integer")
-    if decimals < 0:
-        raise ValueError("Number of decimal places must be non-negative")
-    
-    return round(number, decimals)
+    if not isinstance(value, (int, float)) or not isinstance(percentage, (int, float)):
+        raise TypeError("Both arguments must be numbers")
+    result = (value * percentage) / 100
+    if abs(result) > MAX_RESULT:
+        raise ValueError(f"Result {result} exceeds maximum allowed value {MAX_RESULT}")
+    return result
+
     

@@ -278,21 +278,20 @@ public class Calculator {
     }
 
     /**
-     * Round a number to a specified number of decimal places.
+     * Calculate percentage of a value.
      *
-     * @param number The number to round
-     * @param decimals Number of decimal places (must be non-negative)
-     * @return Rounded number
-     * @throws IllegalArgumentException if decimals is negative
+     * @param value The base value
+     * @param percentage The percentage to calculate (e.g., 25 for 25%)
+     * @return The percentage of the value
+     * @throws IllegalArgumentException if result exceeds maximum allowed value
      */
-    public double roundToDecimal(double number, int decimals) {
-        if (decimals < 0) {
-            throw new IllegalArgumentException("Number of decimal places must be non-negative");
+    public double calculatePercentage(double value, double percentage) {
+        double result = (value * percentage) / 100;
+        if (Math.abs(result) > MAX_RESULT) {
+            throw new IllegalArgumentException(
+                String.format("Result %.2f exceeds maximum allowed value %.2f", result, MAX_RESULT)
+            );
         }
-        if (decimals == 0) {
-            return Math.round(number);
-        }
-        double multiplier = Math.pow(10, decimals);
-        return Math.round(number * multiplier) / multiplier;
+        return result;
     }
 }

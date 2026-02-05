@@ -340,28 +340,26 @@ function fibonacci(n) {
 }
 
 /**
- * Round a number to a specified number of decimal places.
+ * Calculate the mean (average) of an array of numbers.
  * 
- * @param {number} number - The number to round
- * @param {number} decimals - Number of decimal places (must be non-negative)
- * @returns {number} Rounded number
- * @throws {Error} If decimals is negative
- * @throws {TypeError} If arguments are not numbers
+ * @param {...number} numbers - Variable number of numbers to calculate mean for
+ * @returns {number} Mean of all provided numbers
+ * @throws {Error} If no numbers are provided
+ * @throws {TypeError} If any argument is not a number
  */
-function roundToDecimal(number, decimals) {
-    if (typeof number !== 'number' || isNaN(number)) {
-        throw new TypeError("First argument must be a number");
-    }
-    if (!Number.isInteger(decimals)) {
-        throw new TypeError("Second argument must be an integer");
-    }
-    if (decimals < 0) {
-        throw new Error("Number of decimal places must be non-negative");
+function calculateMean(...numbers) {
+    if (numbers.length === 0) {
+        throw new Error("At least one number must be provided");
     }
     
-    // Use Math.round with multiplier for precise decimal rounding
-    const multiplier = Math.pow(10, decimals);
-    return Math.round(number * multiplier) / multiplier;
+    for (const num of numbers) {
+        if (typeof num !== 'number' || isNaN(num)) {
+            throw new TypeError("All arguments must be numbers");
+        }
+    }
+    
+    const sum = numbers.reduce((total, num) => total + num, 0);
+    return sum / numbers.length;
 }
 
 /**
@@ -592,7 +590,7 @@ if (typeof module !== 'undefined' && module.exports) {
         leastCommonMultiple,
         isPrime,
         fibonacci,
-        roundToDecimal,
+        calculateMean,
         addThreeNumbers,
         multiplyThreeNumbers,
         percentage,
