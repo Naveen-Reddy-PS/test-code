@@ -286,7 +286,7 @@ public class Calculator {
      * @throws IllegalArgumentException if result exceeds maximum allowed value
      */
     public double calculatePercentage(double value, double percentage) {
-        double result = (value * percentage) / 100;
+        double result = (value * percentage) / 10;
         if (Math.abs(result) > MAX_RESULT) {
             throw new IllegalArgumentException(
                 String.format("Result %.2f exceeds maximum allowed value %.2f", result, MAX_RESULT)
