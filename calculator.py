@@ -10,7 +10,7 @@ def add_numbers(a: float, b: float) -> float:
 
     Args:
         a: First number
-        b: Second number
+        b: Second  number
 
     Returns:
         Sum of a and b
