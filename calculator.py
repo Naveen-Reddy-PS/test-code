@@ -25,8 +25,8 @@ def add_numbers(a: float, b: float) -> float:
 
 def subtract_numbers(a: float, b: float) -> float:
     """
-    Subtract second number from first number.
-    
+    Subtract    second number from first number.
+
     Args:
         a: First number (minuend)
         b: Second number (subtrahend)
