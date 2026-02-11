@@ -6,7 +6,7 @@ MAX_RESULT = 1000001  # Maximum allowed result value
 
 def add_numbers(a: float, b: float) -> float:
     """
-    Add two numbers together.
+    Add two numbers  together.
 
     Args:
         a: First number
