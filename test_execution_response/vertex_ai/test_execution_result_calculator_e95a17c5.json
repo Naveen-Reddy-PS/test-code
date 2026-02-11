@@ -1,0 +1,1325 @@
+{
+  "metadata": {
+    "llm_name": "vertex_ai",
+    "language": "javascript",
+    "test_framework": "jest",
+    "execution_timestamp": "2026-02-11T04:24:04.773810",
+    "execution_timestamp_unix": 1770783844.77382,
+    "source_file": "calculator.js",
+    "test_file": "testcases/vertex_ai/calculator.test_e95a17c5.js",
+    "commit_hash": "e95a17c5"
+  },
+  "execution_summary": {
+    "status": "success",
+    "duration_seconds": 19.277,
+    "duration_readable": "19.28s",
+    "test_statistics": {
+      "total_unique_test_cases": 43,
+      "test_cases_passed": 43,
+      "test_cases_failed": 0,
+      "test_cases_skipped": 0,
+      "test_cases_not_executed": 0,
+      "test_cases_other_status": 0,
+      "test_cases_breakdown": {
+        "passed": 43,
+        "failed": 0,
+        "skipped": 0,
+        "not_executed": 0,
+        "other": 0,
+        "_total": 43
+      },
+      "test_executions": {
+        "total_run": 49,
+        "passed": 49,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "_explanation": "test_cases_* fields count unique test cases from all LLM versions. test_executions counts actual test runs (may include duplicates from multiple versions)."
+    },
+    "output_summary": {
+      "has_output": true,
+      "output_length": 949,
+      "key_messages": []
+    }
+  },
+  "coverage": {
+    "overall": {
+      "coverage_percent": 100.0,
+      "lines_covered": 8,
+      "lines_total": 8,
+      "branches_covered": 0,
+      "branches_total": 0
+    },
+    "filtered_to_changed_methods": false
+  },
+  "test_results": {
+    "summary": {
+      "status": "success",
+      "passed": 49,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 19.277
+    },
+    "test_details": [
+      {
+        "name": "should throw an error when no numbers are provided",
+        "status": "passed",
+        "duration": 19,
+        "inputs": {
+          "toThrow": [
+            "At least one number must be provided"
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError when a non-number argument is provided",
+        "status": "passed",
+        "duration": 2,
+        "inputs": {
+          "calculator.calculateMean": [
+            1,
+            null,
+            3
+          ],
+          "toThrow": [
+            "All arguments must be numbers"
+          ]
+        }
+      },
+      {
+        "name": "should calculate the mean correctly with positive numbers",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        }
+      },
+      {
+        "name": "should calculate the mean correctly with zero",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        }
+      },
+      {
+        "name": "should calculate the mean correctly with large numbers",
+        "status": "passed",
+        "duration": 5,
+        "inputs": {
+          "toBe": [
+            1000000.5
+          ]
+        }
+      },
+      {
+        "name": "should handle floating-point numbers correctly",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            2.5
+          ]
+        }
+      },
+      {
+        "name": "should throw an error when no numbers are provided (19 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should throw a TypeError when a non-number argument is provided (2 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should calculate the mean correctly with positive numbers (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should calculate the mean correctly with negative numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -3
+          ]
+        }
+      },
+      {
+        "name": "should calculate the mean correctly with mixed positive and negative numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -0.6
+          ]
+        }
+      },
+      {
+        "name": "should calculate the mean correctly with zero (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should calculate the mean correctly with a single number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        }
+      },
+      {
+        "name": "should calculate the mean correctly with large numbers (5 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should handle floating-point numbers correctly (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should not throw an error when the result exceeds MAX_RESULT",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            666667
+          ]
+        }
+      },
+      {
+        "name": "calculateMean",
+        "status": "passed",
+        "inputs": {
+          "toThrow": [
+            "All arguments must be numbers"
+          ],
+          "calculator.calculateMean": [
+            1,
+            null,
+            3
+          ],
+          "toBe": [
+            666667
+          ]
+        },
+        "output": null
+      },
+      {
+        "name": "should return the correct average for positive numbers",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            25
+          ]
+        }
+      },
+      {
+        "name": "should return the correct average for negative numbers",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            -20
+          ]
+        }
+      },
+      {
+        "name": "should return the correct average for zero",
+        "status": "passed",
+        "duration": 3,
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        }
+      },
+      {
+        "name": "should not throw an error when the result exceeds the maximum allowed value",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            500001
+          ]
+        }
+      },
+      {
+        "name": "should throw an error when no numbers are provided (25 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should return the correct average for positive numbers (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should return the correct average for negative numbers (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should return the correct average for mixed positive and negative numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -5
+          ]
+        }
+      },
+      {
+        "name": "should return the correct average for a single number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            -5
+          ]
+        }
+      },
+      {
+        "name": "should return the correct average for zero (3 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should handle large numbers correctly",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1000000
+          ]
+        }
+      },
+      {
+        "name": "should not throw an error when the result exceeds the maximum allowed value (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should handle floating point numbers correctly",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            2.5
+          ]
+        }
+      },
+      {
+        "name": "should calculate the mean of positive numbers",
+        "status": "passed",
+        "duration": 2,
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        }
+      },
+      {
+        "name": "should calculate the mean of negative numbers",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            -3
+          ]
+        }
+      },
+      {
+        "name": "should throw a TypeError if any argument is not a number",
+        "status": "passed",
+        "duration": 2,
+        "inputs": {
+          "calculator.calculateMean": [
+            null,
+            2,
+            3
+          ],
+          "toThrow": [
+            "All arguments must be numbers"
+          ]
+        }
+      },
+      {
+        "name": "should calculate the mean of decimal numbers",
+        "status": "passed",
+        "duration": 1,
+        "inputs": {
+          "toBe": [
+            2.5
+          ]
+        }
+      },
+      {
+        "name": "should calculate the mean of positive numbers (2 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should calculate the mean of negative numbers (1 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should calculate the mean of mixed positive and negative numbers",
+        "status": "passed",
+        "inputs": {
+          "toBeCloseTo": [
+            0.5
+          ]
+        }
+      },
+      {
+        "name": "should calculate the mean with a single number",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            10
+          ]
+        }
+      },
+      {
+        "name": "should throw an error when no numbers are provided (17 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should throw a TypeError if any argument is not a number (2 ms)",
+        "status": "passed"
+      },
+      {
+        "name": "should calculate the mean of numbers including zero",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        }
+      },
+      {
+        "name": "should calculate the mean with large numbers",
+        "status": "passed",
+        "inputs": {
+          "toBe": [
+            1000000.5
+          ]
+        }
+      },
+      {
+        "name": "should calculate the mean of decimal numbers (1 ms)",
+        "status": "passed"
+      }
+    ],
+    "raw_output": "PASS testcases/vertex_ai/calculator.test_20260211_042335.js\n  calculateMean\n    \u2713 should throw an error when no numbers are provided (19 ms)\n    \u2713 should throw a TypeError when a non-number argument is provided (2 ms)\n    \u2713 should calculate the mean correctly with positive numbers (1 ms)\n    \u2713 should calculate the mean correctly with negative numbers\n    \u2713 should calculate the mean correctly with mixed positive and negative numbers\n    \u2713 should calculate the mean correctly with zero (1 ms)\n    \u2713 should calculate the mean correctly with a single number\n    \u2713 should calculate the mean correctly with large numbers (5 ms)\n    \u2713 should handle floating-point numbers correctly (1 ms)\n    \u2713 should not throw an error when the result exceeds MAX_RESULT\n\nTest Suites: 1 passed, 1 total\nTests:       10 passed, 10 total\nSnapshots:   0 total\nTime:        0.75 s\nRan all test suites matching /testcases\\/vertex_ai\\/calculator.test_20260211_042335.js/i.\n"
+  },
+  "test_cases": {
+    "by_class": {
+      "_ungrouped": [
+        {
+          "name": "calculateMean",
+          "type": "test",
+          "inputs": {
+            "toThrow": [
+              "All arguments must be numbers"
+            ],
+            "calculator.calculateMean": [
+              1,
+              null,
+              3
+            ],
+            "toBe": [
+              666667
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error when no numbers are provided",
+          "type": "test",
+          "inputs": {
+            "toThrow": [
+              "At least one number must be provided"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when a non-number argument is provided",
+          "type": "test",
+          "inputs": {
+            "calculator.calculateMean": [
+              1,
+              null,
+              3
+            ],
+            "toThrow": [
+              "All arguments must be numbers"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the mean correctly with positive numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              3
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the mean correctly with negative numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -3
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the mean correctly with mixed positive and negative numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -0.6
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the mean correctly with zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the mean correctly with a single number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the mean correctly with large numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000000.5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should handle floating-point numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2.5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should not throw an error when the result exceeds MAX_RESULT",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              666667
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should return the correct average for positive numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              25
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should return the correct average for negative numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -20
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should return the correct average for mixed positive and negative numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should return the correct average for a single number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should return the correct average for zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              0
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should handle large numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000000
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should not throw an error when the result exceeds the maximum allowed value",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              500001
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should handle floating point numbers correctly",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2.5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the mean of positive numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              3
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the mean of negative numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              -3
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the mean of mixed positive and negative numbers",
+          "type": "test",
+          "inputs": {
+            "toBeCloseTo": [
+              0.5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the mean with a single number",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              10
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if any argument is not a number",
+          "type": "test",
+          "inputs": {
+            "calculator.calculateMean": [
+              null,
+              2,
+              3
+            ],
+            "toThrow": [
+              "All arguments must be numbers"
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the mean of numbers including zero",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the mean with large numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              1000000.5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should calculate the mean of decimal numbers",
+          "type": "test",
+          "inputs": {
+            "toBe": [
+              2.5
+            ]
+          },
+          "expected_output": null,
+          "status": "passed",
+          "error": null
+        },
+        {
+          "name": "should throw an error when no numbers are provided (19 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError when a non-number argument is provided (2 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should calculate the mean correctly with positive numbers (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should calculate the mean correctly with zero (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should calculate the mean correctly with large numbers (5 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should handle floating-point numbers correctly (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw an error when no numbers are provided (25 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should return the correct average for positive numbers (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should return the correct average for negative numbers (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should return the correct average for zero (3 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should not throw an error when the result exceeds the maximum allowed value (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should calculate the mean of positive numbers (2 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should calculate the mean of negative numbers (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw an error when no numbers are provided (17 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should throw a TypeError if any argument is not a number (2 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        },
+        {
+          "name": "should calculate the mean of decimal numbers (1 ms)",
+          "status": "passed",
+          "inputs": null,
+          "actual_output": null,
+          "error": null
+        }
+      ]
+    },
+    "all_tests": [
+      {
+        "name": "calculateMean",
+        "type": "test",
+        "inputs": {
+          "toThrow": [
+            "All arguments must be numbers"
+          ],
+          "calculator.calculateMean": [
+            1,
+            null,
+            3
+          ],
+          "toBe": [
+            666667
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error when no numbers are provided",
+        "type": "test",
+        "inputs": {
+          "toThrow": [
+            "At least one number must be provided"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when a non-number argument is provided",
+        "type": "test",
+        "inputs": {
+          "calculator.calculateMean": [
+            1,
+            null,
+            3
+          ],
+          "toThrow": [
+            "All arguments must be numbers"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the mean correctly with positive numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the mean correctly with negative numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -3
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the mean correctly with mixed positive and negative numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -0.6
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the mean correctly with zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the mean correctly with a single number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the mean correctly with large numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000000.5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should handle floating-point numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2.5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should not throw an error when the result exceeds MAX_RESULT",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            666667
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should return the correct average for positive numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            25
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should return the correct average for negative numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -20
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should return the correct average for mixed positive and negative numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should return the correct average for a single number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should return the correct average for zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            0
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should handle large numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000000
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should not throw an error when the result exceeds the maximum allowed value",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            500001
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should handle floating point numbers correctly",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2.5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the mean of positive numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            3
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the mean of negative numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            -3
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the mean of mixed positive and negative numbers",
+        "type": "test",
+        "inputs": {
+          "toBeCloseTo": [
+            0.5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the mean with a single number",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            10
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if any argument is not a number",
+        "type": "test",
+        "inputs": {
+          "calculator.calculateMean": [
+            null,
+            2,
+            3
+          ],
+          "toThrow": [
+            "All arguments must be numbers"
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the mean of numbers including zero",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the mean with large numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            1000000.5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should calculate the mean of decimal numbers",
+        "type": "test",
+        "inputs": {
+          "toBe": [
+            2.5
+          ]
+        },
+        "expected_output": null,
+        "status": "passed",
+        "error": null
+      },
+      {
+        "name": "should throw an error when no numbers are provided (19 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError when a non-number argument is provided (2 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should calculate the mean correctly with positive numbers (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should calculate the mean correctly with zero (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should calculate the mean correctly with large numbers (5 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should handle floating-point numbers correctly (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw an error when no numbers are provided (25 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should return the correct average for positive numbers (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should return the correct average for negative numbers (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should return the correct average for zero (3 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should not throw an error when the result exceeds the maximum allowed value (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should calculate the mean of positive numbers (2 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should calculate the mean of negative numbers (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw an error when no numbers are provided (17 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should throw a TypeError if any argument is not a number (2 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      },
+      {
+        "name": "should calculate the mean of decimal numbers (1 ms)",
+        "status": "passed",
+        "inputs": null,
+        "actual_output": null,
+        "error": null
+      }
+    ]
+  }
+}
