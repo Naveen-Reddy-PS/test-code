@@ -13,7 +13,7 @@ def add_numbers(a: float,   b: float) -> float:
         b: Second  number
 
     Returns:
-        Sum of a and b
+        Sum of a and  b
 
     Raises:
         TypeError: If either argument is not a number
